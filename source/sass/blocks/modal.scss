@@ -138,11 +138,13 @@
   @include font(22px, 30px, 400, $second-color);
 
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .modal__article-content-text {
   @include font(22px, 30px, 400, $second-color);
   color: $second-color;
   text-align: justify;
+  margin: 0;
+  margin-bottom: 30px;
 }

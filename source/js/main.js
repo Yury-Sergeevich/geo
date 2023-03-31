@@ -5,8 +5,7 @@ import { Form } from './modules/form-validate/form';
 import { initSwiperArticles } from './modules/swiper-articles/swiper-articles';
 import { initMobMenu } from './modules/mob-menu/toggle-btn';
 import { initSwiperTopNews } from './modules/swiper-top-news/swiper-top-news';
-import { initSwiperEcologyCrimea } from './modules/ecology-crimea/ecology-crimea';
-import { initSwiperEthnoCreimea } from './modules/ecology-crimea/ecology-crimea-ethno';
+import { initSwiperGeoEco } from './modules/categories/SwiperGeoEco';
 import { initAnimScroll } from './utils/animate-scroll';
 
 // ---------------------------------
@@ -24,8 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initMobMenu();
   initSwiperArticles(swiper);
   initSwiperTopNews(swiper);
-  initSwiperEcologyCrimea(swiper);
-  initSwiperEthnoCreimea(swiper);
+  initSwiperGeoEco(swiper);
   initAnimScroll();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

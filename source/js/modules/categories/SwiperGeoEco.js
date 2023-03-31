@@ -1,18 +1,13 @@
 /* eslint-disable object-curly-spacing */
-const initSwiperEcologyCrimea = (swiper) => {
-  const pagination = document.querySelector('.swiper-pagination-2');
+const initSwiperGeoEco = (swiper) => {
   if (swiper) {
     // eslint-disable-next-line
-    new Swiper('#ecologyCrimeaSwiper', {
+    new Swiper('#SwiperGeoEco', {
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        prevEl: '.categories__button--geo-eco-prev',
+        nextEl: '.categories__button--geo-eco-next',
       },
 
-      pagination: {
-        el: pagination,
-        clickable: true,
-      },
       mousewheel: true,
       keyboard: true,
 
@@ -32,6 +27,13 @@ const initSwiperEcologyCrimea = (swiper) => {
         },
 
         1024: {
+          slidesPerView: 4,
+          slidesPerGroup: 2,
+          spaceBetween: 20,
+          initialSlide: 3,
+        },
+
+        1184: {
           slidesPerView: 5,
           slidesPerGroup: 2,
           spaceBetween: 20,
@@ -49,4 +51,4 @@ const initSwiperEcologyCrimea = (swiper) => {
   }
 };
 
-export { initSwiperEcologyCrimea };
+export { initSwiperGeoEco };
