@@ -1492,9 +1492,13 @@ button,
   line-height: 17px;
   font-weight: 400;
   color: #515151;
+  width: 100px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1539,7 +1543,7 @@ button,
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -1588,7 +1592,6 @@ button,
 
 .modal__content {
   position: relative;
-  width: 100%;
   padding: 40px;
   margin-bottom: auto;
   background-color: transparent;
@@ -1636,37 +1639,37 @@ button,
   pointer-events: auto;
 }
 
-.modal__search-wrapper {
+.modal__article-wrapper {
   width: 800px;
   margin: 0 auto;
+  text-align: center;
 }
 
-.modal__search-wrapper p {
+.modal__article-title {
   font-size: 48px;
-  line-height: 52px;
+  line-height: 68px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.modal__article-subtitle {
+  font-size: 22px;
+  line-height: 30px;
   font-weight: 400;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
-.modal__search-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.modal__search-icon {
-  margin-left: -40px;
-  margin-top: 14px;
-}
-
-.modal__search-content input {
-  outline: none;
-  border: none;
-  padding: 15px 45px 15px 25px;
-  border-radius: 10px;
-  width: 100%;
+.modal__article-content-text {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  color: #ffffff;
+  text-align: justify;
 }
 
 .custom-input,
@@ -2378,39 +2381,6 @@ button,
   margin-right: 48px;
 }
 
-.nav__user-link {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #515151;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 12px 20px;
-}
-
-.nav__user-link--allowance {
-  padding: 15px 0;
-}
-
-.nav__user-link--subscribe {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #000000;
-  text-transform: uppercase;
-  border: 1px solid #1d1d1d;
-  padding: 12px 20px;
-}
-
-.nav__user-link--subscribe:hover {
-  border: 1px solid #8e8e8e;
-  color: #333333;
-}
-
-.nav__search-icon {
-  margin-right: 5px;
-}
-
 .nav__bottom-nav {
   padding: 30px 0 15px 0;
 }
@@ -2441,56 +2411,14 @@ button,
   text-transform: uppercase;
 }
 
-.nav__toggle-paid-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  border: none;
-  border-radius: 50px;
+.nav__main-link-title {
+  text-align: center;
+  margin: 0;
 }
 
-.nav__toggle-paid-content span {
-  position: relative;
-  display: inline-block;
-  border-radius: 50px;
-  width: 3px;
-  height: 3px;
-  background-color: #1d1d1d;
-}
-
-.nav__toggle-paid-content span::after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 0;
-  border-radius: 50px;
-  width: 3px;
-  height: 3px;
-  background-color: #1d1d1d;
-}
-
-.nav__toggle-paid-content span::before {
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: 0;
-  border-radius: 50px;
-  width: 3px;
-  height: 3px;
-  background-color: #1d1d1d;
-}
-
-.nav__paid-content-list {
-  display: none;
+.nav__main-link-sub-title {
+  text-align: center;
+  margin: 0;
 }
 
 .promo-slider__container {
@@ -3062,7 +2990,7 @@ button,
   text-transform: uppercase;
 }
 
-.ecology-crimea__title {
+.categories__title {
   font-size: 32px;
   line-height: 42px;
   font-weight: 400;
@@ -3070,12 +2998,12 @@ button,
   font-family: "Rubik Dirt", "Arial", sans-serif;
 }
 
-.ecology-crimea__card {
+.categories__card {
   min-height: 290px;
   border-radius: 20px;
 }
 
-.ecology-crimea__card-link {
+.categories__card-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3089,23 +3017,22 @@ button,
   height: 100%;
 }
 
-.ecology-crimea__card-title {
-  font-size: 16px;
-  line-height: 22px;
+.categories__card-title {
+  font-size: 22px;
+  line-height: 28px;
   font-weight: 400;
   color: #000000;
-  text-align: center;
   margin-top: auto;
   margin: 0;
 }
 
-.ecology-crimea__image-wrapper {
+.categories__image-wrapper {
   position: relative;
   padding-top: 100%;
   width: 100%;
 }
 
-.ecology-crimea__image {
+.categories__image {
   position: absolute;
   left: 0;
   top: 0;
@@ -3115,11 +3042,12 @@ button,
   min-height: 260px;
 }
 
-.ecology-crimea__wrapper-swiper {
+.categories__wrapper-swiper {
   position: relative;
+  margin-bottom: 40px;
 }
 
-.ecology-crimea__button {
+.categories__button {
   position: absolute;
   top: 50%;
   border: none;
@@ -3149,20 +3077,57 @@ button,
   transform: translate(-50%, -50%);
 }
 
-.ecology-crimea__button--ethno-prev {
+.categories__button--ethno-prev {
   left: -40px;
 }
 
-.ecology-crimea__button--ethno-prev::after {
+.categories__button--ethno-prev::after {
   content: "prev";
 }
 
-.ecology-crimea__button--ethno-next {
+.categories__button--ethno-next {
   right: -65px;
 }
 
-.ecology-crimea__button--ethno-next::after {
+.categories__button--ethno-next::after {
   content: "next";
+}
+
+.recept__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000000;
+  color: #ffffff;
+}
+
+.recept__sub-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000000;
+  color: #ffffff;
+}
+
+.recept__ingridient-item {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.recept__footer-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.recept__footer-advisory {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: end;
 }
 
 /* @mixin hover-focus {
@@ -3238,7 +3203,7 @@ button,
     padding: 0 24px;
   }
 
-  .modal__search-wrapper {
+  .modal__article-wrapper {
     width: 100%;
   }
 

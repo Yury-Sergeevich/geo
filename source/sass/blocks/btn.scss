@@ -1,7 +1,9 @@
 .btn {
   @include font(14px, 17px, 400, #515151);
 
+  width: 100px;
   display: inline-flex;
+  justify-content: end;
   align-items: center;
   border: none;
   cursor: pointer;

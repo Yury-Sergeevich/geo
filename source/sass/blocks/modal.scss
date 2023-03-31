@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($first-color, 0.8);
+  background-color: rgba($first-color, 0.9);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -57,7 +57,6 @@
   &__content {
     position: relative;
 
-    width: 100%;
     padding: 40px;
     margin-bottom: auto;
 
@@ -117,35 +116,33 @@
   }
 }
 
-.modal__search-wrapper {
+.modal__article-wrapper {
   width: 800px;
   margin: 0 auto;
+
+  text-align: center;
 
   @include vp-1023 {
     width: 100%;
   }
 }
 
-.modal__search-wrapper p {
-  @include font(48px, 52px, 400, $second-color);
+.modal__article-title {
+  @include font(48px, 68px, 600, $second-color);
 
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
-.modal__search-content {
-  display: flex;
+.modal__article-subtitle {
+  @include font(22px, 30px, 400, $second-color);
+
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-.modal__search-icon {
-  margin-left: -40px;
-  margin-top: 14px;
-}
-
-.modal__search-content input {
-  outline: none;
-  border: none;
-  padding: 15px 45px 15px 25px;
-  border-radius: 10px;
-  width: 100%;
+.modal__article-content-text {
+  @include font(22px, 30px, 400, $second-color);
+  color: $second-color;
+  text-align: justify;
 }

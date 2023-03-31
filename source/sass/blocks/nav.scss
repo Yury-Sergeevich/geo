@@ -28,34 +28,6 @@
   }
 }
 
-.nav__user-link {
-  @include font(16px, 22px, 400, #515151);
-  display: inline-block;
-  vertical-align: middle;
-  padding: 12px 20px;
-
-  &--allowance {
-    padding: 15px 0;
-  }
-
-  &--subscribe {
-    @include font(12px, 18px, 500, $first-color);
-    text-transform: uppercase;
-
-    border: 1px solid #1d1d1d;
-    padding: 12px 20px;
-
-    &:hover {
-      border: 1px solid #8e8e8e;
-      color: #333333;
-    }
-  }
-}
-
-.nav__search-icon {
-  margin-right: 5px;
-}
-
 //main-nav
 
 .nav__bottom-nav {
@@ -82,48 +54,12 @@
   text-transform: uppercase;
 }
 
-.nav__toggle-paid-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  border: none;
-  border-radius: 50px;
+.nav__main-link-title {
+  text-align: center;
+  margin: 0;
 }
 
-.nav__toggle-paid-content span {
-  position: relative;
-  display: inline-block;
-  border-radius: 50px;
-  width: 3px;
-  height: 3px;
-  background-color: #1d1d1d;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 0;
-    border-radius: 50px;
-    width: 3px;
-    height: 3px;
-    background-color: #1d1d1d;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: 0;
-    border-radius: 50px;
-    width: 3px;
-    height: 3px;
-    background-color: #1d1d1d;
-  }
-}
-
-.nav__paid-content-list {
-  display: none;
+.nav__main-link-sub-title {
+  text-align: center;
+  margin: 0;
 }
