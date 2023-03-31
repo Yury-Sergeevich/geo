@@ -1,0 +1,25 @@
+.btn {
+  @include font(14px, 17px, 400, #515151);
+
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  vertical-align: text-bottom;
+  padding: 15px 0;
+  transition: opacity $trans-default;
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+.btn span {
+  @include font(16px, 19px, 400, #515151);
+}

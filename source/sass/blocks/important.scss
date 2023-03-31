@@ -1,0 +1,44 @@
+.important__container {
+  min-height: 104px;
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.important__content {
+  background: linear-gradient(90.38deg, #f4f4f4 33.6%, rgba(244, 244, 244, 0.67) 90.03%);
+  padding: 20px 0;
+  width: 100%;
+  overflow: hidden;
+
+  @include vp-1023 {
+    padding: 22px 0;
+  }
+}
+
+.important__content p {
+  @include font(32px, 40px, 400, $first-color);
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  width: 90%;
+  margin: 0 auto;
+
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+
+  @include vp-1023 {
+    @include font(26px, 36px, 400, $first-color);
+  }
+
+  @include vp-767 {
+    @include font(21px, 26px, 400, $first-color);
+  }
+}
+
+.important__content p.active {
+  transform: translate(0, 0);
+  opacity: 1;
+}

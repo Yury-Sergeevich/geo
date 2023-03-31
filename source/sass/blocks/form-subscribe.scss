@@ -1,0 +1,20 @@
+.form-subscribe__field input {
+  width: 100%;
+  border: none;
+  padding: 12.5px 0 12.5px 15px;
+  margin-bottom: 10px;
+}
+
+.form-subscribe__button-submit {
+  width: 100%;
+  padding: 13px 0;
+  border: none;
+  outline: none;
+  background-color: $first-color;
+  color: $second-color;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
