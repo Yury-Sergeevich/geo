@@ -2759,27 +2759,6 @@ button,
   top: 58%;
 }
 
-.form-subscribe__field input {
-  width: 100%;
-  border: none;
-  padding: 12.5px 0 12.5px 15px;
-  margin-bottom: 10px;
-}
-
-.form-subscribe__button-submit {
-  width: 100%;
-  padding: 13px 0;
-  border: none;
-  outline: none;
-  background-color: #000000;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.form-subscribe__button-submit:hover {
-  opacity: 0.8;
-}
-
 .footer__container {
   padding-top: 72px;
   padding-bottom: 57px;
@@ -3166,6 +3145,32 @@ button,
     display: none;
   }
 
+  .nav__bottom-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    z-index: 3;
+    min-height: 100vh;
+    width: 90%;
+  }
+
+  .nav__main-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .nav__main-link-title {
+    text-align: start;
+  }
+
+  .nav__main-link-sub-title {
+    text-align: start;
+  }
+
   .promo-slider .container {
     padding: 0;
   }
@@ -3206,6 +3211,14 @@ button,
 
   .top-news__image {
     height: auto;
+  }
+
+  .categories__button--geo-eco-prev {
+    left: 40px;
+  }
+
+  .categories__button--geo-eco-next {
+    left: 65px;
   }
 }
 

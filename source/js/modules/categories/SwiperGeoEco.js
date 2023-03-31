@@ -41,7 +41,7 @@ const initSwiperGeoEco = (swiper) => {
         },
 
         1440: {
-          slidesPerView: 4,
+          slidesPerView: 5,
           slidesPerGroup: 1,
           spaceBetween: 30,
           initialSlide: 0,
