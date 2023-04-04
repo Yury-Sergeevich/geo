@@ -1,6 +1,8 @@
 .categories__title {
-  @include font(32px, 42px, 400, $first-color);
+  @include font(26px, 42px, 400, $first-color);
   font-family: "Rubik Dirt", "Arial", sans-serif;
+
+  text-transform: uppercase;
 }
 
 .categories__card {

@@ -6,6 +6,7 @@ import { initSwiperArticles } from './modules/swiper-articles/swiper-articles';
 import { initMobMenu } from './modules/mob-menu/toggle-btn';
 import { initSwiperTopNews } from './modules/swiper-top-news/swiper-top-news';
 import { initSwiperGeoEco } from './modules/categories/SwiperGeoEco';
+import { initSwiperEcoEconomica } from './modules/categories/SwiperEcoEconomica';
 import { initAnimScroll } from './utils/animate-scroll';
 
 // ---------------------------------
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initSwiperArticles(swiper);
   initSwiperTopNews(swiper);
   initSwiperGeoEco(swiper);
+  initSwiperEcoEconomica(swiper);
   initAnimScroll();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
