@@ -3,9 +3,8 @@
   text-align: center;
   text-transform: uppercase;
 
-  border-bottom: 1px solid #d9d9d9;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 30px;
 
   transform: translate(0px, 80%);
@@ -19,7 +18,7 @@
 }
 
 .top-news__wrapper-swiper {
-  padding-top: 40px;
+  // padding-top: 40px;
   position: relative;
   margin-bottom: 80px;
 }
@@ -27,7 +26,7 @@
 .top-news__item {
   position: relative;
   box-shadow: 5px 5px 10px 5px #f4f4f4;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
 
   &--still {
@@ -58,7 +57,7 @@
   }
 
   @media (max-width: 1279px) {
-    height: 30vw;
+    height: 23vw;
   }
 
   @include vp-1023 {
@@ -92,37 +91,6 @@
   opacity: 0;
   transform: scale(0);
 }
-
-// .top-news__news-list {
-//   margin-left: 170px;
-// }
-
-// .top-news__swiper-pagination .swiper-pagination {
-//   width: 7px;
-//   margin: 0 auto;
-// }
-
-// .top-news__swiper-pagination .swiper-pagination-bullet {
-//   width: 15px;
-//   height: 15px;
-//   display: inline-block;
-//   border-radius: 50%;
-//   background: #d9d9d9;
-//   left: 50%;
-// }
-
-// .top-news__swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-//   position: absolute;
-//   bottom: 45px;
-//   left: 0;
-//   width: 100%;
-// }
-
-// .top-news__swiper-pagination .swiper-pagination-bullet-active {
-//   opacity: var(--swiper-pagination-bullet-opacity, 1);
-//   border: 2px solid #d9d9d9;
-//   background: #ffffff;
-// }
 
 .top-news__autor {
   display: inline-block;

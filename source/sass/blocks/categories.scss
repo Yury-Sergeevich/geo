@@ -13,7 +13,6 @@
 .categories__card-link {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 }
 
@@ -24,20 +23,13 @@
   margin: 0;
 }
 
-.categories__image-wrapper {
-  position: relative;
-  padding-top: 100%;
-  width: 100%;
-}
-
 .categories__image {
-  position: absolute;
-  left: 0;
-  top: 0;
   border-radius: 20px;
   width: 100%;
   height: auto;
   min-height: 260px;
+  margin-bottom: 15px;
+  object-fit: cover;
 }
 
 .categories__wrapper-swiper {
@@ -66,6 +58,8 @@
   height: 32px;
   transform: translate(-50%, -50%);
 
+  &--ecoeconomica-prev,
+  &--cossaks-prev,
   &--geo-eco-prev {
     left: -40px;
 
@@ -77,6 +71,8 @@
     }
   }
 
+  &--ecoeconomica-next,
+  &--cossaks-next,
   &--geo-eco-next {
     right: -65px;
     &::after {

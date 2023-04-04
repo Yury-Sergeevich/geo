@@ -128,9 +128,10 @@
 }
 
 .modal__article-title {
-  @include font(48px, 68px, 600, $second-color);
+  @include font(36px, 44px, 600, $second-color);
 
-  margin: 0;
+  width: 600px;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 
@@ -147,4 +148,70 @@
   text-align: justify;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.modal__article-content-text-italic {
+  @include font(22px, 30px, 400, $second-color);
+  color: $second-color;
+  text-align: justify;
+  margin: 0;
+  font-style: italic;
+}
+
+.modal__article-image-gallery {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.modal__article-image {
+  width: 380px;
+  height: 250px;
+  object-fit: cover;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+
+  &--contain {
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+
+  &--fullscreen {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &--manufacturers-turkey {
+    width: 500px;
+    height: 100%;
+  }
+
+  &--cossaks {
+    height: auto;
+  }
+}
+
+.modal__article-image-title {
+  width: 300px;
+  @include font(16px, 24px, 600, $second-color);
+
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.modal__article-description-list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.modal__article-description-item {
+  margin: 0;
+  color: $second-color;
+  text-align: start;
+}
+
+.modal__article-end-title {
+  display: block;
+  text-align: end;
 }

@@ -1646,11 +1646,12 @@ button,
 }
 
 .modal__article-title {
-  font-size: 48px;
-  line-height: 68px;
+  font-size: 36px;
+  line-height: 44px;
   font-weight: 600;
   color: #ffffff;
-  margin: 0;
+  width: 600px;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 
@@ -1672,6 +1673,82 @@ button,
   text-align: justify;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.modal__article-content-text-italic {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  color: #ffffff;
+  text-align: justify;
+  margin: 0;
+  font-style: italic;
+}
+
+.modal__article-image-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.modal__article-image {
+  width: 380px;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.modal__article-image--contain {
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.modal__article-image--fullscreen {
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.modal__article-image--manufacturers-turkey {
+  width: 500px;
+  height: 100%;
+}
+
+.modal__article-image--cossaks {
+  height: auto;
+}
+
+.modal__article-image-title {
+  width: 300px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.modal__article-description-list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.modal__article-description-item {
+  margin: 0;
+  color: #ffffff;
+  text-align: start;
+}
+
+.modal__article-end-title {
+  display: block;
+  text-align: end;
 }
 
 .custom-input,
@@ -2465,8 +2542,8 @@ button,
 .promo-slider__slides-link h3 {
   width: 100%;
   letter-spacing: 0.05em;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 26px;
+  line-height: 38px;
   margin: 0;
   position: absolute;
   bottom: 45px;
@@ -2476,6 +2553,70 @@ button,
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
+}
+
+.promo-gym__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.promo-gym__description {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 415px auto;
+  grid-template-columns: 415px auto;
+  gap: 22px;
+}
+
+.promo-gym__content {
+  padding-left: 60px;
+  z-index: 2;
+}
+
+.promo-gym__content h2 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 6px;
+  padding-top: 39px;
+}
+
+.promo-gym__content span {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 39px;
+}
+
+.promo-gym__content p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 300;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.promo-gym__content p + p {
+  margin: 0;
+}
+
+.promo-gym__gallery {
+  position: relative;
+}
+
+.promo-gym__gallery-image {
+  margin-left: auto;
+  height: 29.3vw;
 }
 
 .important__container {
@@ -2622,9 +2763,8 @@ button,
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 1px solid #d9d9d9;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 30px;
   -webkit-transform: translate(0px, 80%);
   -ms-transform: translate(0px, 80%);
@@ -2643,7 +2783,6 @@ button,
 }
 
 .top-news__wrapper-swiper {
-  padding-top: 40px;
   position: relative;
   margin-bottom: 80px;
 }
@@ -2652,7 +2791,7 @@ button,
   position: relative;
   -webkit-box-shadow: 5px 5px 10px 5px #f4f4f4;
   box-shadow: 5px 5px 10px 5px #f4f4f4;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -2868,9 +3007,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   height: 100%;
 }
 
@@ -2883,20 +3019,14 @@ button,
   margin: 0;
 }
 
-.categories__image-wrapper {
-  position: relative;
-  padding-top: 100%;
-  width: 100%;
-}
-
 .categories__image {
-  position: absolute;
-  left: 0;
-  top: 0;
   border-radius: 20px;
   width: 100%;
   height: auto;
   min-height: 260px;
+  margin-bottom: 15px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .categories__wrapper-swiper {
@@ -2934,18 +3064,26 @@ button,
   transform: translate(-50%, -50%);
 }
 
+.categories__button--ecoeconomica-prev,
+.categories__button--cossaks-prev,
 .categories__button--geo-eco-prev {
   left: -40px;
 }
 
+.categories__button--ecoeconomica-prev::after,
+.categories__button--cossaks-prev::after,
 .categories__button--geo-eco-prev::after {
   content: "prev";
 }
 
+.categories__button--ecoeconomica-next,
+.categories__button--cossaks-next,
 .categories__button--geo-eco-next {
   right: -65px;
 }
 
+.categories__button--ecoeconomica-next::after,
+.categories__button--cossaks-next::after,
 .categories__button--geo-eco-next::after {
   content: "next";
 }
@@ -3046,7 +3184,7 @@ button,
   }
 
   .top-news__image {
-    height: 30vw;
+    height: 23vw;
   }
 
   .footer__container {
@@ -3062,6 +3200,48 @@ button,
 
   .modal__article-wrapper {
     width: 100%;
+  }
+
+  .promo-gym__container {
+    padding-top: 107px;
+    padding-bottom: 103px;
+  }
+
+  .promo-gym__description {
+    display: block;
+  }
+
+  .promo-gym__content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .promo-gym__content h2 {
+    font-size: 42px;
+    line-height: 49px;
+    font-weight: 600;
+    color: #000000;
+    padding: 2px 15px 0 0;
+    margin: 0;
+  }
+
+  .promo-gym__content span {
+    margin-bottom: 33px;
+  }
+
+  .promo-gym__content p {
+    width: 76%;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+
+  .promo-gym__content p + p {
+    display: none;
+  }
+
+  .promo-gym__gallery-image {
+    width: 100%;
+    height: 44.8vw;
   }
 
   .important__content {
@@ -3188,6 +3368,42 @@ button,
     right: 0;
   }
 
+  .promo-gym__container {
+    padding: 64px 0 30px 0;
+  }
+
+  .promo-gym__description {
+    margin-bottom: 40px;
+  }
+
+  .promo-gym__content {
+    text-align: inherit;
+    padding: 0 15px;
+  }
+
+  .promo-gym__content h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+
+  .promo-gym__content span {
+    margin-bottom: 24px;
+  }
+
+  .promo-gym__content p {
+    margin: 0 0 33px 0;
+    width: 93%;
+  }
+
+  .promo-gym__gallery-image {
+    height: 97.8vw;
+    margin-bottom: 40px;
+  }
+
   .important__container {
     padding: 0;
   }
@@ -3208,10 +3424,14 @@ button,
     height: auto;
   }
 
+  .categories__button--ecoeconomica-prev,
+  .categories__button--cossaks-prev,
   .categories__button--geo-eco-prev {
     left: 40px;
   }
 
+  .categories__button--ecoeconomica-next,
+  .categories__button--cossaks-next,
   .categories__button--geo-eco-next {
     left: 65px;
   }
