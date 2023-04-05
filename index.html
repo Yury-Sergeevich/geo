@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта" />
+    <title>ProjectName</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__overlay">
+            <nav class="header__nav nav">
+              <div class="nav__top-nav">
+                <a class="logo" href="#">LOGO</a>
+                <a class="btn" href="#" data-open-modal="live">
+                  <span class="btn__text">Live</span>
+                </a>
+              </div>
+              <div class="nav__bottom-nav">
+                <ul class="nav__main-list reset-list">
+                  <li class="nav__main-item rubrick-menu">
+                    <a class="nav__main-link" href="#categories">рубрики</a>
+                    <ul class="rubrick-menu__list reset-list">
+                      <li class="rubrick-menu__item">
+                        <h2 class="rubrick-menu__item-title">Большое Причерноморье</h2>
+                      </li>
+                      <li class="rubrick-menu__item">
+                        <a class="rubrick-menu__link" href="#geo-eco">Географические и экологические особенности</a>
+                      </li>
+                      <li class="rubrick-menu__item">
+                        <a class="rubrick-menu__link" href="#eco-economica">экоэкономика и органическое хозяйство</a>
+                      </li>
+                      <li class="rubrick-menu__item">
+                        <a class="rubrick-menu__link" href="#">Этиотуризм и региональная кухня</a>
+                      </li>
+                      <li class="rubrick-menu__item">
+                        <a class="rubrick-menu__link" href="#art-cultural">Исскуство и культурное наследие</a>
+                      </li>
+                      <li class="rubrick-menu__item">
+                        <a class="rubrick-menu__link" href="#ethnic-cossacs">Аборигенное казачество и интересные люди</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav__main-item">
+                    <a class="nav__main-link" href="#">срочно</a>
+                  </li>
+                  <li class="nav__main-item">
+                    <a class="nav__main-link" href="#">афиша</a>
+                  </li>
+                  <li class="nav__main-item">
+                    <a class="nav__main-link" href="#">La patrimoine</a>
+                  </li>
+                  <li class="nav__main-item">
+                    <a class="nav__main-link" href="#">
+                      <p class="nav__main-link-title">крымские гипотезы</p>
+                      <p class="nav__main-link-sub-title">альманах этернализма</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <button class="header__menu-toggle menu-toggle" type="button">
+          <span class="menu-toggle__line"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </header>
+      <main>
+        <section class="promo-slider">
+          <h2 class="visually-hidden">Самые интересные новости</h2>
+          <div class="container">
+            <div class="promo-slider__container">
+              <div class="promo-slider__swiper-slides swiper" id="swiperArticle">
+                <ul class="swiper__list swiper-wrapper reset-list">
+                  <li class="promo-slider__slides-item swiper-slide">
+                    <a href="#" class="promo-slider__slides-link" data-open-modal="ethnic-cossacs">
+                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-1@1x.jpg" width="800" height="682" alt="" />
+                      <h3 class="promo-slider__slides-title">Становление этнического казачества в Крыму</h3>
+                    </a>
+                  </li>
+                  <li class="promo-slider__slides-item swiper-slide">
+                    <a href="#" class="promo-slider__slides-link" data-open-modal="house-arhitector">
+                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-2@1x.jpg" width="800" height="682" alt="" />
+                      <h3>Снос дома архитектора Николая Краснова в Ялте</h3>
+                    </a>
+                  </li>
+                </ul>
+                <button class="promo-slider__button promo-slider__button--prev swiper-button-prev" type="button">
+                  <svg class="promo-slider__button-icon promo-slider__button-icon--prev" role="img" aria-label="кнопка назад." width="16" height="32">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button class="promo-slider__button promo-slider__button--next swiper-button-next" type="button">
+                  <svg class="promo-slider__button-icon promo-slider__button-icon--next" role="img" aria-label="кнопка вперед." width="16" height="32">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="promo-gym">
+          <div class="promo-gym__container container">
+            <div class="promo-gym__description">
+              <div class="promo-gym__content">
+                <h2>Тренажерный зал</h2>
+                <span>Просторный зал площадью 900 кв/м</span>
+                <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место&nbsp; для&nbsp; укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+                <p>В&nbsp;зале расположены отдельная зона для Crossfit и кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              </div>
+              <div class="promo-gym__gallery">
+                <picture>
+                  <source type="image/webp" srcset="img/content-images/gym@1x.webp 1x, img/content-images/gym@2x.webp 2x" />
+                  <img class="promo-gym__gallery-image" src="img/content-images/gym@1x.jpg" srcset="img/content-images/gym@2x.jpg 2x" width="660" height="401" loading="lazy" alt="Наш спортзал." />
+                </picture>
+                <div class="promo-gym__video video">
+                  <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" aria-label="Промо видео нашего зала">
+                    <picture>
+                      <source type="image/webp" srcset="img/content-images/gym-video@1x.webp 1x, img/content-images/gym-video@2x.webp 2x" />
+                      <img class="video__media" src="img/content-images/gym-video@1x.jpg" srcset="img/content-images/gym-video@2x.jpg 2x" width="364" height="228" alt="Промо видео нашего зала" />
+                    </picture>
+                  </a>
+                  <button class="video__button" aria-label="Звпустить видео">
+                    <img src="img/svg/play-button.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <section class="important">
+          <h2 class="visually-hidden">Важно-неупусти</h2>
+          <div class="important__container container">
+            <div class="important__content active">
+              <p class="anim-items">Узнавай больше первым! Пробные 7 дней доступа к платному контенту!</p>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__container container">
+            <div class="about__top-background-wrapper"></div>
+            <div class="about__content">
+              <div class="about__title active">
+                <h2 class="anim-items">КРЫМСКИЙ КАЛЕЙДОСКОП</h2>
+              </div>
+              <div class="about__image-wrapper">
+                <div class="about__image">
+                  <img src="img/about/photo-img@1x.jpg" width="251" height="124" alt="" />
+                </div>
+                <p class="anim-items">-----*1883* к 140-летнему юбилею начала печати международной газеты И. Гаспринского «Терджиман-Переводчикъ» *2023* -----</p>
+              </div>
+              <div class="about__description active">
+                <p class="anim-items">Свободное Интернет издание, освещающее экологические, экономические, этнографические, правовые, культурно-просветительские и&nbsp;повседневные вопросы Крыма с&nbsp;Фэнзин приложением Альманахом этернализма &laquo;Крымские гипотезы&raquo;</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="top-news">
+          <div class="categories container">
+            <div class="categories__geo-eco">
+              <h2 class="categories__title">самое актуальное</h2>
+              <div class="categories__wrapper-swiper">
+                <div class="swiper" id="topNewsSwiper">
+                  <ul class="categories__list swiper-wrapper reset-list">
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="big-black-1">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/top-news-slider/slide-2.png" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Особенности Большого Причерноморья (1 часть)</h2>
+                      </a>
+                    </li>
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="big-black-2">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/top-news-slider/slide-2.png" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Особенности Большого Причерноморья (2 часть)</h2>
+                      </a>
+                    </li>
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="big-black-3">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/top-news-slider/slide-2.png" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Особенности Большого Причерноморья (3 часть)</h2>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="categories__button categories__button--geo-eco-prev" type="button"></button>
+                <button class="categories__button categories__button--geo-eco-next" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="categories" id="categories">
+          <div class="container">
+            <div class="categories__geo-eco" id="geo-eco">
+              <h2 class="categories__title">Географические и экологические особенности</h2>
+              <div class="categories__wrapper-swiper">
+                <div class="swiper" id="SwiperGeoEco">
+                  <ul class="categories__list swiper-wrapper reset-list">
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="big-black-1">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/top-news-slider/slide-2.png" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Особенности Большого Причерноморья (1 часть)</h2>
+                      </a>
+                    </li>
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="big-black-2">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/top-news-slider/slide-2.png" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Особенности Большого Причерноморья (2 часть)</h2>
+                      </a>
+                    </li>
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="big-black-3">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/top-news-slider/slide-2.png" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Особенности Большого Причерноморья (3 часть)</h2>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="categories__button categories__button--geo-eco-prev" type="button"></button>
+                <button class="categories__button categories__button--geo-eco-next" type="button"></button>
+              </div>
+            </div>
+            <div class="categories__ecoeconomica" id="eco-economica">
+              <h2 class="categories__title">экоэкономика и органическое хозяйство</h2>
+              <div class="categories__wrapper-swiper">
+                <div class="swiper" id="SwiperEcoEconomica">
+                  <ul class="categories__list swiper-wrapper reset-list">
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="organic-farming-1">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/categories/title/image012.jpg" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Начало <span class="categories__card-title-decor">ЭКО</span>начал… (1 часть)</h2>
+                      </a>
+                    </li>
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="organic-farming-2">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/categories/part-2/image001.jpg" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Начало <span class="categories__card-title-decor">ЭКО</span>начал… (2 часть)</h2>
+                      </a>
+                    </li>
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="organic-turkey">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/categories/part-2/image002.jpg" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Органическая Турция (3 часть)</h2>
+                      </a>
+                    </li>
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="manufacturers-turkey">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/categories/manufacturers-turkey/image003.jpg" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Органические производители Турции</h2>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="categories__button categories__button--ecoeconomica-prev" type="button"></button>
+                <button class="categories__button categories__button--ecoeconomica-next" type="button"></button>
+              </div>
+            </div>
+            <div class="categories__regional-cuisine">
+              <h2 class="categories__title">Этиотуризм и региональная кухня</h2>
+              <div class="categories__wrapper-swiper">
+                <div class="swiper" id="SwiperGeoEco">
+                  <ul class="categories__list swiper-wrapper reset-list">
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="harcho" id="harcho">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/categories/cusine/harcho-light.jpg" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Харчо</h2>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="categories__button categories__button--ethno-prev" type="button"></button>
+                <button class="categories__button categories__button--ethno-next" type="button"></button>
+              </div>
+            </div>
+            <div class="categories__art-cultural" id="art-cultural">
+              <h2 class="categories__title">Исскуство и культурное наследие</h2>
+              <div class="categories__wrapper-swiper">
+                <div class="swiper" id="ArtCultural">
+                  <ul class="categories__list swiper-wrapper reset-list">
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="house-arhitector">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/categories/art-cultural/image004.jpg" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Снос дома архитектора Николая Краснова в Ялте</h2>
+                      </a>
+                    </li>
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="house-arhitector">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/categories/art-cultural/image004.jpg" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Снос дома архитектора Николая Краснова в Ялте</h2>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="categories__button categories__button--art-prev" type="button"></button>
+                <button class="categories__button categories__button--art-next" type="button"></button>
+              </div>
+            </div>
+            <div class="categories__cossaks" id="ethnic-cossacs">
+              <h2 class="categories__title">Аборигенное казачество и&nbsp;интересные люди</h2>
+              <div class="categories__wrapper-swiper">
+                <div class="swiper" id="SwiperEthinicCossaks">
+                  <ul class="categories__list swiper-wrapper reset-list">
+                    <li class="categories__card swiper-slide">
+                      <a class="categories__card-link" href="#" data-open-modal="ethnic-cossacs">
+                        <div class="categories__image-wrapper">
+                          <img class="categories__image" src="./img/categories/ethnic-cossaks/image003.jpg" width="370" height="369" alt="" />
+                        </div>
+                        <h2 class="categories__card-title">Становление этнического козачества в&nbsp;Крыму</h2>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="categories__button categories__button--cossaks-prev" type="button"></button>
+                <button class="categories__button categories__button--cossaks-next" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__logo">
+            <a class="logo" href="#">
+              <p>Крымский калейдоскоп</p>
+              <span>Свободное Интернет издание</span>
+            </a>
+          </div>
+          <ul class="footer__list-nav reset-list">
+            <li class="footer__item-nav">
+              <a class="footer__link-nav" href="categories.html">Рубрики</a>
+            </li>
+            <li class="footer__item-nav">
+              <a class="footer__link-nav" href="#">СРОЧНО</a>
+            </li>
+            <li class="footer__item-nav">
+              <a class="footer__link-nav" href="#">ОТЗЫВЫ</a>
+            </li>
+            <li class="footer__item-nav">
+              <a class="footer__link-nav" href="#">РЕКЛАМОДАТЕЛЯМ</a>
+            </li>
+            <li class="footer__item-nav">
+              <a class="footer__link-nav" href="#">АРХИВ</a>
+            </li>
+            <li class="footer__item-nav">
+              <a class="footer__link-nav" href="#">La patrimoine</a>
+            </li>
+            <li class="footer__item-nav">
+              <a class="footer__link-nav" href="#">АЛЬМАНАХ ЭТЕРНАЛИЗМА</a>
+            </li>
+            <li class="footer__item-nav">
+              <a class="footer__link-nav" href="#">Flipbook</a>
+            </li>
+          </ul>
+          <ul class="footer__contacts-list reset-list">
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-link" href="tel:+79999999999">+7(999)999-99-99</a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-link" href="mailto:mail@mail.ru">mail@mail.ru</a>
+            </li>
+          </ul>
+          <div class="footer__subscripe">
+            <button class="footer__button-subscripe" type="button" title="оформить подписку">
+              <svg class="footer__button-subscripe-icon" role="img" width="30" height="30">
+                <use xlink:href="img/sprite.svg#footer-subscribe"></use>
+              </svg>
+            </button>
+            <span class="footer__button-subscripe-title">подписаться</span>
+          </div>
+        </div>
+        <div class="container">
+          <p>©2023 Крымский калейдоскоп. Все права защищены.</p>
+        </div>
+      </footer> -->
+    </div>
+
+    <!-- Модалки -->
+    <div class="modal modal--preload" data-modal="live">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__search-wrapper">
+            <p>Поиск</p>
+            <div class="modal__search-content">
+              <input type="search" placeholder="Поиск" />
+              <svg class="modal__search-icon" width="20" height="20" role="img" aria-label="Поиск по сайту">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+              </svg>
+            </div>
+          </div>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GEO-ECO -->
+    <div class="modal modal--preload" data-modal="big-black-1">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__article-wrapper">
+            <h2 class="modal__article-title">Особенности Большого Причерноморья</h2>
+            <p class="modal__article-subtitle">1 часть</p>
+            <div class="modal__article-content">
+              <p class="modal__article-content-text">
+                В&nbsp;настоящее время к&nbsp;Большому Причерноморью относят обособленную территорию региона с&nbsp;населением более 322 млн человек и&nbsp;площадью более 19&nbsp;млн.&nbsp;км&sup2;, занимающего 4,7&nbsp;% карты мира и&nbsp;располагающегося на&nbsp;землях 12&nbsp;государств. <br />
+                К&nbsp;указанному региону относят Юго-Восточные Балканы: Добруджу, Дарданию, Дакию, Валахию, Иллирию, Румелию, Санджак, Мёзию, Фракию, Шоплук, весь Буджак, Крым, Кавказ, Кубань, Киммерию, Таврию, Тамань и&nbsp;большую часть территории Малой Азии, а&nbsp;также моря и&nbsp;водоёмы, омывающие эти земли и&nbsp;бассейны рек, впадающие
+                в&nbsp;них. <br />
+                Географически указанные регионы, (в&nbsp;большей своей части), так или иначе связываются с&nbsp;бассейном Чёрного моря. <br />
+                Само-же Чёрное море сформировалось, заполняя изолированную впадину, расположенную между Юго-Восточной Европой и&nbsp;полуостровом Малая Азия. <br />
+                Эта впадина образовалась в&nbsp;эпоху миоцена в&nbsp;процессе активного горообразования, разделившего древний океан Тетис на&nbsp;несколько отдельных водоёмов (из&nbsp;которых впоследствии, кроме Чёрного моря, образовались Восточное Средиземноморье, Азовское и&nbsp;Каспийское моря). <br />
+                Первоначально, 14-10 млн лет назад, Чёрное море входило в&nbsp;состав Сарматского моря (от&nbsp;Балатона до&nbsp;Арала). <br />
+                Затем оно вновь соединилось со&nbsp;Средиземным морем, образовав на&nbsp;несколько миллионов лет Меотическое море. <br />
+                Затем образуется пресноводное Понтическое море (включавшее Каспий), которое сменяет среднеплиоценовый пресноводный Киммерийский бассейн. Солёное Карангатское море, существовавшее 100-20&nbsp;тыс. лет назад, сменило пресноводное Новоевксинское озеро-море (20-7&nbsp;тыс. лет назад). <br />
+                Из&nbsp;древне эти регионы являлись и&nbsp;являются районами с&nbsp;высоким антропогенным воздействием, плотно заселёнными людьми ещё с&nbsp;античных времён. <br />
+                Большое Причерноморье не&nbsp;единожды подвергалось волнам массовой колонизации, причём векторы перемещения тех или иных колонизаторов сменяли друг друга попеременно с&nbsp;запада на&nbsp;восток и&nbsp;с&nbsp;востока на&nbsp;запад с&nbsp;античных времён вплоть до&nbsp;XVIII&nbsp;века. <br />
+                В&nbsp;середине VIII века до&nbsp;н.&nbsp;э. этнический состав Большого Причерноморья был пёстрым, но&nbsp;как и&nbsp;везде, автохтонные народы испытывали натиск иноплеменных переселенческих потоков, сами становясь таковыми или ассимилируясь. <br />
+                К&nbsp;античным этносам данного региона обычно относят тавров, киммерийцев, скифов, готов, гуннов, половцев, древних греков, фракийцев, сарматов, роксолан, синдов, меотов, языгов, сираков, ахейцев, зигов, гуниохов, колхов, каппадокийцев, пафлагонцев, халибов, моссинойков, мосхов. <br />
+                Существовавшая древнегреческая колонизация региона сменилась в&nbsp;VI-V веках до&nbsp;н.&nbsp;э. встречной экспансией&nbsp;&mdash; Персии. Её&nbsp;в&nbsp;IV веке до&nbsp;н.&nbsp;э., в&nbsp;свою очередь, разгромили македоняне Александра Великого. Одним из&nbsp;обломков империи Александра стало объединившее большую часть
+                Причерноморья Понтийское царство. <br />
+                Эпоха эллинизма завершилась во&nbsp;II веке до&nbsp;н.&nbsp;э. подчинением региона Римской империи. <br />
+                В&nbsp;IV&nbsp;веке&nbsp;н.&nbsp;э. империя раскололась, и&nbsp;эти земли на&nbsp;десять веков оказались под властью византийцев, испытав в&nbsp;IV-VII веках непосредственное влияние большинства волн Великого переселения народов. В&nbsp;VII веке на&nbsp;Северном Причерноморье утвердились протоболгары (позже частью откочевавшие
+                на&nbsp;запад и&nbsp;юг, за&nbsp;Дунай), а&nbsp;восточнее их&nbsp;Хазарский каганат. <br />
+                С&nbsp;XI&nbsp;века на&nbsp;севере региона сменяют друг друга племенные союзы половцев и&nbsp;печенегов. <br />
+                Восточное Причерноморье постепенно освободилось от&nbsp;византийской зависимости, в&nbsp;VIII веке появилось Абхазское царство, а&nbsp;в&nbsp;XI веке Имеретинское. В&nbsp;XII-XIII веках Византия вступила в&nbsp;период упадка и&nbsp;феодальной раздробленности. В&nbsp;Малой Азии появились новые экспансионистские силы: турки-
+                -сельджуки и&nbsp;монголо-татары, а&nbsp;на&nbsp;юге Европы талассократические республики Венеции и&nbsp;Генуи. <br />
+                Эволюция государство-образований в&nbsp;Большом Причерноморье уже в&nbsp;XIV-XVI веках затрагивала такие образования, как: Золотая Орда, Трапезундская империя, Византийская империя, Османская империя, Крымское ханство, Синопский эмират Джанджаров, Эмират Эретна, Государство Хулагуидов, Болгарское царство, Имеретинское царство,
+                Румский султанат, Генуэзская республика и&nbsp;Венецианская республика.
+              </p>
+            </div>
+          </div>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--preload" data-modal="big-black-2">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__article-wrapper">
+            <h2 class="modal__article-title">Особенности Большого Причерноморья</h2>
+            <div class="modal__article-content">
+              <p class="modal__article-subtitle">2 часть</p>
+              <p class="modal__article-content-text">
+                Экологическое состояние морей, водоёмов и&nbsp;рек данного региона в&nbsp;большей части неблагоприятное. <br />
+                Среди основных факторов, нарушающих равновесие в&nbsp;экологической системе данного региона следует выделить: сильное загрязнение впадающих в&nbsp;моря рек, особенно стоками с&nbsp;полей, содержащими минеральные удобрения, в&nbsp;особенности нитраты и&nbsp;фосфаты, что влечёт за&nbsp;собой переудобрение (эвтрофикацию) вод,
+                а&nbsp;как следствие, бурный рост фитопланктона (&laquo;цветение&raquo;, интенсивное развитие сине-зелёных водорослей), уменьшение прозрачности вод, а&nbsp;также гибель многоклеточных водорослей. <br />
+                Загрязнение вод и&nbsp;побережья нефтью и&nbsp;нефтепродуктами (самыми загрязнёнными районами являются районы морей, на&nbsp;которые приходится наибольший объём танкерных перевозок, а&nbsp;также акватории портов). Как следствие, это приводит к&nbsp;гибели морских и&nbsp;прибрежных животных, попавших в&nbsp;нефтяные пятна,
+                а&nbsp;также загрязнению атмосферы за&nbsp;счёт испарения нефти и&nbsp;нефтепродуктов с&nbsp;поверхности воды. <br />
+                Основной фактор загрязнения региона, это массовая и&nbsp;зачастую неконтролируемая застройка Большого Причерноморья, в&nbsp;результате чего дно морских шельфов в&nbsp;районах таких застроек загрязнено остатками бетона, цементной пыли и&nbsp;различных химических материалов, применяемых в&nbsp;строительстве, а&nbsp;также загрязнение
+                вод моря отходами человеческой жизнедеятельности. <br />
+                Так, к&nbsp;примеру, только в&nbsp;Чёрное море осуществляют сброс неочищенных или недостаточно очищенных сточных вод 20&nbsp;современных стран Европы!, причём основная нагрузка ложится на&nbsp;северо-западную, наиболее мелководную его часть, где зарождается 65&nbsp;% всех живых организмов и&nbsp;расположены основные нерестилища.
+                <br />
+                Более того, человечество не&nbsp;учитывает тот факт, что по&nbsp;одной из&nbsp;гипотез возникновения Чёрного моря, указанный водоём 7500 лет назад представлял собой самое глубокое на&nbsp;Земле пресноводное озеро, уровень которого был ниже современного на&nbsp;сто с&nbsp;лишним метров. <br />
+                По&nbsp;окончании ледникового периода уровень Мирового океана поднялся, и&nbsp;Босфорский перешеек был прорван. Было затоплено в&nbsp;общей сложности более 150&nbsp;тыс.&nbsp;км&sup2;&nbsp;земли, в&nbsp;том числе освоенной людьми. <br />
+                Возникновение Чёрного моря, согласно данной гипотезе, предположительно, сопровождалось массовой гибелью всего пресноводного живого мира озера, в&nbsp;результате разложения останков которого произошло сероводородное заражение глубинных толщ моря. <br />
+                В&nbsp;настоящее&nbsp;же время, величина осадков, поступления из&nbsp;Азовского моря и&nbsp;речных стоков Причерноморья превышает величину испарения с&nbsp;поверхности, вследствие чего уровень Чёрного моря превышает уровень Мраморного на&nbsp;20-30&nbsp;см! <br />
+                Благодаря этому формируется верхнее течение, направленное из&nbsp;Чёрного моря через пролив Босфор. <br />
+                Нижнее течение, наблюдаемое в&nbsp;более низких слоях воды, выражено менее сильно и&nbsp;направлено через Босфор в&nbsp;обратном направлении. <br />
+                Взаимодействие данных течений дополнительно поддерживает вертикальную стратификацию моря, а&nbsp;также используется рыбой для миграций между морями. <br />
+                Сама&nbsp;же фауна Чёрного моря заметно беднее, чем Средиземного, в&nbsp;частности, здесь нет морских звёзд, морских ежей, морских лилий, осьминогов, каракатиц, кальмаров, кораллов. <br />
+                В&nbsp;Чёрном море обитает лишь 2500 видов животных (из&nbsp;них 500 видов одноклеточных, около 200 видов позвоночных рыб и&nbsp;млекопитающих, 500 видов ракообразных, 200 видов моллюсков, остальное беспозвоночные разных видов), для сравнения, в&nbsp;Средиземном их&nbsp;около 9000&nbsp;видов! <br />
+                Несмотря на&nbsp;это массовый и&nbsp;безнадзорный вылов рыбы в&nbsp;Чёрном море и&nbsp;хищническое освоение черноморских рыбных запасов как минимум дважды за&nbsp;последние 50&nbsp;лет приводило к&nbsp;радикальной перестройке экосистемы моря. Так, в&nbsp;1970-е годы сократилась популяция крупных хищников: дельфинов, скумбрии
+                и&nbsp;тунца. Как следствие, размножились мелкие рыбы вроде кильки и&nbsp;анчоусов. В&nbsp;результате медузы заполнили освободившуюся экологическую нишу, составляя, согласно данным Европейского агентства по&nbsp;окружающей среде, до&nbsp;90&nbsp;% массы всех живых организмов в&nbsp;Чёрном море. <br />
+                Изменение состава, уменьшение количества особей и&nbsp;мутация водного мира под воздействием антропогенных факторов (в&nbsp;том числе замена коренных видов природного мира экзотическими, появляющимися в&nbsp;результате воздействия человека). <br />
+                Так, например, за&nbsp;одно десятилетие (с&nbsp;1976 по&nbsp;1987&nbsp;год) поголовье черноморской афалины сократилось с&nbsp;56&nbsp;тысяч до&nbsp;7&nbsp;тысяч особей! <br />
+                В&nbsp;то&nbsp;же время, в&nbsp;результате массового сброса приплывающими в&nbsp;Чёрное море судами так называемых балластных вод в&nbsp;воду попадают морские организмы, которые в&nbsp;естественных условиях не&nbsp;должны в&nbsp;ней находиться. Именно таким способом в&nbsp;Чёрное море попали такие виды, как моллюск рапана
+                и&nbsp;гребневик Mnemiopsis leidyi нанёсшие значительный урон местной экосистеме. <br />
+                Существенный урон водам и&nbsp;береговой линии северо-западной части Чёрного моря и&nbsp;особенно Керченского пролива нанёс шторм 11&nbsp;ноября 2007&nbsp;года, в&nbsp;результате которого затонули танкер и&nbsp;несколько сухогрузов, перевозивших техническую серу. <br />
+                В&nbsp;воду попало не&nbsp;менее 1600 тон мазута и&nbsp;6800 тон серы, что привело к&nbsp;тому, что общая площадь загрязнения акватории Чёрного и&nbsp;Азовского морей превысила 660&nbsp;км&sup2;, а&nbsp;общая протяжённость загрязнённой нефтепродуктами береговой линии &minus;183&nbsp;км. <br />
+                По&nbsp;мнению ряда специалистов, экологическое состояние Чёрного моря за&nbsp;последнее десятилетие ухудшилось, несмотря на&nbsp;снижение экономической активности в&nbsp;ряде причерноморских стран. <br />
+                Для охраны окружающей среды в&nbsp;районе Чёрного моря в&nbsp;1996 году было принято соглашение ACCOBAMS (&laquo;Agreement on&nbsp;the Conservation of&nbsp;Cetaceans of&nbsp;the Black Sea, Mediterranean Sea and Contiguous Atlantik Area&raquo;), где одним из&nbsp;основных вопросов стоит охрана дельфинов и&nbsp;китов. <br />
+                Основным международным документом, регулирующим вопросы охраны Чёрного моря, является Конвенция о&nbsp;защите Чёрного моря от&nbsp;загрязнения. Также в&nbsp;июне 1994 года представителями Австрии, Болгарии, Хорватии, Чешской Республики, Германии, Венгрии, Молдавии, Румынии, Словакии, Словении, Украины и&nbsp;Европейского союза
+                в&nbsp;городе София была подписана Конвенция о&nbsp;сотрудничестве по&nbsp;защите и&nbsp;устойчивому развитию реки Дунай. <br />
+                Как результат указанных соглашений, были созданы Черноморская комиссия (Стамбул) и&nbsp;Международная комиссия по&nbsp;охране реки Дунай (Вена, 1998&nbsp;год). <br />
+                Данные органы выполняют функцию координации природоохранных программ, осуществляемых в&nbsp;рамках конвенций. <br />
+                31&nbsp;октября 1996&nbsp;года, Болгарией, Грузией, Россией, Румынией, Турцией и&nbsp;Украиной был принят Стратегический план действий по&nbsp;защите и&nbsp;восстановлению Чёрного моря. <br />
+                В&nbsp;память об&nbsp;этом событии 31&nbsp;октября в&nbsp;странах Черноморского региона отмечается Международный день Чёрного моря, проводится кампания по&nbsp;очистке пляжей, иные экологические акции. <br />
+                В&nbsp;конце&nbsp;XX века возросла роль межгосударственных научных программ и&nbsp;экспедиций, так, в&nbsp;1990-1995 годах учёные Болгарии, России, Румынии, США, Турции, Украины совместно работали по&nbsp;программам HydroBlack, CoMSBlack, NATO TU&nbsp;Black Sea. Международные экспедиции решают междисциплинарные задачи, в&nbsp;первую
+                очередь направленные на&nbsp;проведение экологического мониторинга (например, исследования, проводившиеся под эгидой МАГАТЭ в&nbsp;1998-2004&nbsp;годах). <br />
+                На&nbsp;рубеже&nbsp;XX и&nbsp;XXI веков больше половины перевозок по&nbsp;Азово-Черноморскому бассейну приходилось на&nbsp;внешнюю торговлю. Помимо (занимающих основное место) нефти и&nbsp;нефтепродуктов вывозятся руды, металл, цемент (в&nbsp;последние годы одним из&nbsp;основных вывозных товаров стало зерно, ранее, наоборот,
+                ввозившееся через черноморские порты). Основные объёмы ввоза приходятся на&nbsp;руды цветных металлов, металл, сахар и&nbsp;другие продукты питания, машины и&nbsp;оборудование. <br />
+                В&nbsp;причерноморском бассейне широко развиты контейнерные перевозки, существуют крупные контейнерные терминалы. <br />
+                Развиваются перевозки с&nbsp;помощью лихтеров, работают железнодорожные паромные переправы. <br />
+                Через Чёрное море проходит международный транспортный коридор TRACECA (Transport Corridor Europe&nbsp;&mdash; Caucasus&nbsp;&mdash; Asia, Европа&nbsp;&mdash; Кавказ -Азия). Черноморские порты являются конечными пунктами ряда Панъевропейских транспортных коридоров. <br />
+                По&nbsp;реке Дон, впадающей в&nbsp;Азовское море, проходит речной водный путь, соединяющий Чёрное море с&nbsp;Каспийским морем (через Волго-Донской судоходный канал и&nbsp;Волгу), с&nbsp;Балтийским морем и&nbsp;Белым морем (через Волго-Балтийский водный путь и&nbsp;Беломорско-Балтийский канал). Река Дунай через систему каналов
+                соединена с&nbsp;Северным морем. <br />
+                Турция планирует построить западнее Босфора в&nbsp;районе озера Кючюк Чемедже судоходный Стамбульский канал, который соединит Мраморное и&nbsp;Чёрное моря. Планируется, что по&nbsp;нему будет проходить основная масса перевозящих нефть танкеров. <br />
+                В&nbsp;2020 году строительство планировалось завершить к&nbsp;2025-2026&nbsp;годам, но&nbsp;из-за того, что в&nbsp;2021 году строительство так и&nbsp;не&nbsp;началось, очевидно, что сроки будут отложен.
+              </p>
+            </div>
+          </div>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--preload" data-modal="big-black-3">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__article-wrapper">
+            <h2 class="modal__article-title">Особенности Большого Причерноморья</h2>
+            <p class="modal__article-subtitle">3 часть</p>
+            <p class="modal__article-content-text">
+              Не&nbsp;смотря на&nbsp;все вышеуказанные проблемы Большого Причерноморья, в&nbsp;основном водоёме данного региона&nbsp;&mdash; Чёрном море, развиты, как морские пассажирские перевозки, так и&nbsp;туризм. <br />
+              Основной уникальностью Чёрного моря является его характерная особенность, а&nbsp;именно&nbsp;&mdash; отсутствие жизни на&nbsp;глубинах более 150-200&nbsp;м. из-за насыщенности глубинных слоёв воды сероводородом, что способствует формированию лечебных для людей грязей, расположенных в&nbsp;больших случаях в&nbsp;Северном Причерноморье.
+              <br />
+              Более того, Чёрное море является крупнейшим в&nbsp;Мире меромиктическим, (с&nbsp;несмешиваемыми слоями воды) водоёмом, с&nbsp;почти самой низкой солёностью воды! <br />
+              Указанные обстоятельства, в&nbsp;сочетании с&nbsp;благоприятными климатическими условиями во&nbsp;всём Причерноморье способствуют его развитию как важного курортного региона. <br />
+              Так, среди рыб, водящихся в&nbsp;Чёрном море, большая часть являются деликатесными, такие как: камбала-голоса, камбала-калкан, султанка, сарган, луфарь, каспийско-черноморские сельди, кефалевые пяти видов, различные виды бычков (бычок-головач, бычок-кнут, бычок-кругляк, бычок-мартовик, бычок-ротан), азовская хамса, черноморская хамса,
+              съедобная акула-катран, скумбрия, ставрида, черноморско-каспийская тюлька, анчоус и&nbsp;другие. Встречаются осетровые (белуга, севрюга, русский и&nbsp;атлантический осётры) и&nbsp;черноморский лосось! <br />
+              Кроме этого, в&nbsp;Чёрном море отсутствуют опасные для человека акулы, а&nbsp;среди рыб, которые могут нанести кратковременный вред здоровью водятся лишь&nbsp;&mdash; морской дракончик (наиболее опасны колючки спинного плавника и&nbsp;жаберных крышек), черноморская скорпена (ёрш) и&nbsp;один из&nbsp;видов скатов&nbsp;&mdash; морской
+              кот с&nbsp;ядовитыми шипами на&nbsp;хвосте, так как другой скат&nbsp;&mdash; морская лисица (не&nbsp;ядовит), но&nbsp;покрыт шипами и&nbsp;имеет на&nbsp;хвосте колючки, которыми защищаясь, может нанести большое число уколов и&nbsp;царапин. <br />
+              Из&nbsp;птиц распространены чайки, буревестники, утки-нырки, бакланы и&nbsp;ряд других видов. <br />
+              Млекопитающие представлены в&nbsp;Чёрном море двумя видами дельфинов (дельфином-белобочкой и&nbsp;афалиной), азово-черноморской обыкновенной морской свиньёй (нередко называемой азовским дельфином), а&nbsp;также белобрюхим тюленем. <br />
+              Некоторые виды животных, не&nbsp;обитающие в&nbsp;Чёрном море постоянно, зачастую заносятся в&nbsp;него через проливы Босфор и&nbsp;Дарданеллы течением либо приплывают самостоятельно. <br />
+              Климат Чёрного моря, в&nbsp;связи с&nbsp;его среднеконтинентальным положением, в&nbsp;основном континентальный. <br />
+              Черноморское побережье Кавказа и&nbsp;Южный берег Крыма защищены горами от&nbsp;холодных северных ветров и&nbsp;вследствие этого имеют мягкий средиземноморский климат, а&nbsp;к&nbsp;юго-востоку от&nbsp;Туапсе влажный субтропический климат.
+              <br />
+              Побережье Юго-Западного Кавказа имеет самый влажный субтропический климат в&nbsp;Европе! <br />
+              Значительное влияние на&nbsp;погоду над Чёрным морем оказывает Атлантический океан. <br />
+              Юго-западными ветрами обычно в&nbsp;причерноморский регион приносятся тёплые и&nbsp;достаточно влажные средиземноморские воздушные массы. В&nbsp;летнее время над морем находится отрог Азорского антициклона. Как итог, для большей части территории Чёрного моря характерна тёплая влажная зима и&nbsp;жаркое сухое лето. <br />
+              В&nbsp;целом, оценить масштабы развития причерноморского туризма можно с&nbsp;известной долей приблизительности. <br />
+              Так, к&nbsp;примеру, если говорить о&nbsp;6&nbsp;странах, непосредственно выходящих к&nbsp;Чёрному морю, (России, Украины, Турции, Румынии, Грузии и&nbsp;Болгарии) то&nbsp;их&nbsp;суммарный въездной туристский поток оценивается более 90&nbsp;млн. чел. В&nbsp;рамках&nbsp;же Большого Причерноморья или (Организации черноморского
+              экономического сотрудничества), насчитывающей уже 12&nbsp;стран и&nbsp;данный показатель увеличивается до&nbsp;125&nbsp;млн. чел.&nbsp;за&nbsp;счёт туристских потоков, принимаемых Молдовой, Арменией, Азербайджаном, Сербией, Грецией и&nbsp;Албанией. <br />
+              Обеспечивая&nbsp;22,5&nbsp;% международных прибытий и&nbsp;более 15&nbsp;% валютных поступлений от&nbsp;туризма в&nbsp;Европе, страны Причерноморья согласно типологии стран мира по&nbsp;масштабам участия в&nbsp;международном туризме представляют так называемую полупериферию, уступая центру мирового туристского пространства,
+              представленному высокоразвитыми странами Западной Европы, Северной Америки и&nbsp;Восточной Азии. <br />
+              Роль причерноморского сегмента в&nbsp;национальной системе туризма рассматриваемых стран неоднородна. <br />
+              Так, если для Болгарии, Румынии, Грузии и&nbsp;России побережье Чёрного моря выступает фокусом в&nbsp;траекториях движения туристских потоков (более 1/3 въездного потока страны), то&nbsp;в&nbsp;Турции Причерноморье до&nbsp;недавнего времени находилось в&nbsp;тени традиционных средиземноморских курортов и&nbsp;рассматривалось как район
+              отложенного рекреационного освоения. <br />
+              Тем не&nbsp;менее, наиболее высокоразвитую систему яхтинга имеет Турция, так в&nbsp;турецкие порты заходят 91,5&nbsp;тыс. иностранных яхт с&nbsp;104,2&nbsp;тыс. яхтсменами на&nbsp;борту. <br />
+              Что касается круизного туризма в&nbsp;Черноморском бассейне, то&nbsp;он&nbsp;консолидирует туристскую систему Причерноморья, но&nbsp;подлежит развитию. <br />
+              С&nbsp;целью и&nbsp;в&nbsp;стремлении расширить функциональную структуру рекреации и&nbsp;туризма и&nbsp;сгладить сезонную неравномерность туристских потоков многие страны Причерноморья развивают различные направления массового и&nbsp;специализированного туризма. <br />
+              По&nbsp;сути, это обусловлено наличием либо соответствующих ресурсов, либо желанием получить новые преимущества за&nbsp;счёт продуктовых инноваций. <br />
+              К&nbsp;группе ресурсоориентированных видов туризма относится широко представленный в&nbsp;регионе культурный туризм, опирающийся на&nbsp;уникальное культурно-историческое наследие. <br />
+              Такой туризм получил развитие во&nbsp;всех странах региона, при этом ряд дестинаций и&nbsp;отдельных объектов приобрели мировую известность (Севастополь, Ливадийский и&nbsp;Воронцовский дворцы в&nbsp;Крыму; Несебыр в&nbsp;Болгарии; Стамбул, Эфес, Троя в&nbsp;Турции; Одесса в&nbsp;Украине; Сочи в&nbsp;России, Батуми и&nbsp;Колхида
+              в&nbsp;Грузии, Варна и&nbsp;Золотые пески в&nbsp;Болгарии, Трансильвания в&nbsp;Румынии и&nbsp;др.). <br />
+              Среди специализированных видов туризма в&nbsp;Причерноморье представлены: климатическое, бальнеологическое и&nbsp;грязелечение (Россия, Украина, Болгария); горнолыжный туризм (Россия, Болгария, Грузия, Турция); трекинг, спелеотуризм (Крым, Турция). <br />
+              Экологический туризм относится к&nbsp;числу новых и&nbsp;активно продвигаемых видов туризма в&nbsp;России, Болгарии, Украине и&nbsp;Турции. <br />
+              Так, к&nbsp;примеру, в&nbsp;Болгарии популярны экомаршруты в&nbsp;Родопах. Турецкая Черноморская зона продолжается коридором Плато с&nbsp;пешеходными горными и&nbsp;экологическими маршрутами, образуя перспективный пояс экологического туризма в&nbsp;стране. <br />
+              В&nbsp;Крыму эколого-просветительские экскурсии организуются в&nbsp;Крымском, Карадагском и&nbsp;Опукском заповедниках, урочище Новом Свете (Голицынская тропа), на&nbsp;Тарханкуте. В&nbsp;Причерноморье Украины экологический туризм традиционно базируется и&nbsp;проводится в&nbsp;низовьях рек Ю.&nbsp;Буга и&nbsp;Дуная; дельта реки Дунай
+              также рассматривается как перспективный район экотуризма в&nbsp;Румынии. Инновационными направлениями туризма для Черноморского региона выступают SPA-туризм, этнографический, гастрономический, винный туризм и&nbsp;гольф-туризм. К&nbsp;самым крупнейшим курортным районам на&nbsp;Чёрном море относят: Южный берег Крыма (Ялта, Алушта,
+              Судак, Коктебель, Феодосия), Черноморское побережье Кавказа (Анапа, Геленджик, Сочи, Пицунда, Гагра, Батуми), Черноморское побережье Болгарии (Золотые пески и&nbsp;Солнечный берег), Черноморское побережье Румынии (Мамая, Эфорие), о&nbsp;которых речь пойдёт попозже и&nbsp;подробнее...
+            </p>
+          </div>
+        </div>
+
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15" role="img">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ECOECONIMICA -->
+    <div class="modal modal--preload" data-modal="organic-farming-1">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__article-wrapper">
+            <h2 class="modal__article-title">Начало ЭКОначал…</h2>
+            <p class="modal__article-subtitle">Часть 1</p>
+            <div class="modal__article-content">
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">
+                  Возникновение и&nbsp;распространение земледелия, скотоводства и&nbsp;ремесленничества, как производственной древней экономики имели место в&nbsp;Большом Причерноморье ещё в&nbsp;период раннего неолита и&nbsp;является одним из&nbsp;важнейших событий в&nbsp;древней истории этого региона, определивших её&nbsp;ход и&nbsp;направление
+                  развития на&nbsp;тысячелетия вперёд.
+                </p>
+                <p class="modal__article-content-text">Действительно, древняя производящая экономика принесла в&nbsp;Большое Причерноморье новый уклад жизни сельский, или деревенский, который господствовал здесь вплоть до&nbsp;недавнего времени и&nbsp;который существует и&nbsp;сейчас.</p>
+                <p class="modal__article-content-text">Распространение земледелия, скотоводства и&nbsp;ремесленничества и&nbsp;в&nbsp;средние века шло бок о&nbsp;бок с&nbsp;установлением более или менее прочной осёдлости.</p>
+              </div>
+              <div class="modal__article-image-gallery">
+                <img class="modal__article-image" src="img/categories/ecoeconomica/image001.jpg" width="300" height="200" alt="" />
+                <img class="modal__article-image" src="img/categories/ecoeconomica/image002.jpg" width="300" height="200" alt="" />
+              </div>
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Собственно, впервые с&nbsp;увеличением общего количества населения и&nbsp;его плотности экономика стала народной, с&nbsp;установлением преемственности населения.</p>
+                <p class="modal__article-content-text">
+                  Прочная осёдлость и&nbsp;преемственность способствовали развитию и&nbsp;передаче культурных традиций от&nbsp;поколения к&nbsp;поколению, от&nbsp;одной культуры к&nbsp;другой и&nbsp;потому рассмотренная ретроспективно народное хозяйство Большого Причерноморья с&nbsp;достаточной чёткостью доведено вглубь, именно до&nbsp;времени
+                  возникновения и&nbsp;всё большего распространения&nbsp;&mdash; экоэкономики!
+                </p>
+                <p class="modal__article-content-text">Экоэкономика (экологическая экономика)&nbsp;&mdash; это междисциплинарная область знаний, появившаяся в&nbsp;конце 1980-х годов XX&nbsp;столетия, изучающая взаимосвязи между экосистемами и&nbsp;экономическими системами в&nbsp;самом широком их&nbsp;представлении.</p>
+                <p class="modal__article-content-text">
+                  Экологическая экономика является своего рода синтезом традиционной неоклассической и&nbsp;ресурсной экономической теории в&nbsp;сочетании с&nbsp;оценкой воздействия на&nbsp;окружающую среду, с&nbsp;одной стороны и&nbsp;экономикой природопользования и&nbsp;традиционной экологией с&nbsp;другой. В&nbsp;настоящее время создано много
+                  организаций и&nbsp;обществ, способствующих развитию экоэкономики повсеместно.
+                </p>
+              </div>
+              <img class="modal__article-image modal__article-image--contain" src="img/categories/ecoeconomica/image003.png" width="300" height="200" alt="" />
+              <h3 class="modal__article-image-title">Эмблема Российского общества экологической экономики</h3>
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Люди-потребители рассматриваются в&nbsp;качестве одного из&nbsp;важных компонентов целостности экономико-экологической системы, а&nbsp;не&nbsp;как доминирующая и&nbsp;центральная сила.</p>
+                <p class="modal__article-content-text">
+                  В&nbsp;практике&nbsp;же, суть экоэкономики в&nbsp;больше части связана с&nbsp;зелёной экономикой, которая подчёркивает необходимость сокращения отрицательного воздействия экономической деятельности человека на&nbsp;среду его обитания и&nbsp;которое ставит во&nbsp;главу угла не&nbsp;экономический рост любой ценой,
+                  а&nbsp;устойчивость развития с&nbsp;минимальными рисками для окружающей среды. <br />
+                </p>
+                <p class="modal__article-content-text">Сторонники этого направления считают, что экономика является зависимым компонентом природной среды, в&nbsp;пределах которой она существует и&nbsp;частью которой является. <br /></p>
+                <p class="modal__article-content-text">Одним из&nbsp;столпов экоэконики и&nbsp;зелёной экономики, является органическое сельское хозяйство, получающее всё большее развитие в&nbsp;народном хозяйстве. <br /></p>
+                <p class="modal__article-content-text">
+                  Одним из&nbsp;столпов экоэконики и&nbsp;зелёной экономики, является органическое сельское хозяйство, получающее всё большее развитие в&nbsp;народном хозяйстве. И&nbsp;так, органическое сельское хозяйство&nbsp;&mdash; это производственная система, которая поддерживает здоровье почв, экосистем и&nbsp;людей. Зависит
+                  от&nbsp;экологических процессов, биологического разнообразия и&nbsp;природных циклов, характерных для местных условий, избегая использования неблагоприятных ресурсов.<br />
+                </p>
+                <p class="modal__article-content-text">Органическое сельское хозяйство объединяет традиции, нововведения и&nbsp;науку, чтобы улучшить состояние окружающей среды и&nbsp;развивать справедливые взаимоотношения и&nbsp;достойный уровень жизни для всего вышеуказанного. <br /></p>
+                <p class="modal__article-content-text">В&nbsp;долгосрочной перспективе, органическое сельское хозяйство предполагает поддерживать здоровье как конкретных объектов, с&nbsp;которым имеет дело (растений, животных, почвы, человека), так и&nbsp;всей нашей планеты.<br /></p>
+                <p class="modal__article-content-text">
+                  К&nbsp;основным принципам органического земледелия в&nbsp;настоящее время относится: принцип здоровья (органическое сельское хозяйство должно поддерживать и&nbsp;улучшать здоровье почвы, растений, животных, людей и&nbsp;планеты как единого и&nbsp;неделимого целого); принцип экологии (органическое сельское хозяйство должно
+                  основываться на&nbsp;принципах существования естественных экологических систем и&nbsp;циклов, работая, сосуществуя с&nbsp;ними и&nbsp;поддерживая&nbsp;их); принцип справедливости (органическое сельское хозяйство должно строиться на&nbsp;отношениях, которые гарантируют справедливость с&nbsp;учётом общей окружающей среды
+                  и&nbsp;жизненных возможностей) и&nbsp;принцип заботы (управление органическим сельским хозяйством должно носить предупредительный и&nbsp;ответственный характер для защиты здоровья и&nbsp;благополучия нынешних и&nbsp;будущих поколений и&nbsp;окружающей среды).<br />
+                </p>
+                <p class="modal__article-content-text">Маркировка органической продукции&nbsp;&mdash; важный шаг к&nbsp;повышению осведомлённости потребителей.<br /></p>
+                <p class="modal__article-content-text">Маркировка подтверждает, что органическая сертификация отвечает требованиям, предъявляемым к&nbsp;качеству на&nbsp;соответствующих рынках.<br /></p>
+              </div>
+              <img class="modal__article-image modal__article-image--fullscreen" src="img/categories/ecoeconomica/image004.jpg" width="600" height="200" alt="" />
+              <h3 class="modal__article-image-title">Маркировка органической продукции в России и Евросоюзе</h3>
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Почти в&nbsp;каждом органическом законодательстве/стандарте есть правила, определяющие маркировку для сырья, переработанных, импортируемых или произведённых в&nbsp;стране органических продуктов.<br /></p>
+                <p class="modal__article-content-text">Условия маркировки также определяют детали использования национального логотипа.<br /></p>
+                <p class="modal__article-content-text">Использование национального логотипа предполагает в первую очередь наличие официальных правил маркировки, поэтому в странах, где нормативная база отсутствует или где законодательство не применяется в полной мере, национального логотипа не существует. <br /></p>
+                <p class="modal__article-content-text">
+                  При этом в&nbsp;странах приморского региона Большого Причерноморья национальные логотипы органических производителей существуют, видимо это связано с&nbsp;тем, что органическое сельское хозяйство, хоть и&nbsp;представленное ранее в&nbsp;народном хозяйстве, было развито здесь из&nbsp;древне.<br />
+                </p>
+                <p class="modal__article-content-text">
+                  О этих странах, их производителях и порядке преобразования народных хозяйств в органические (в рамках экоэкономики) пойдёт
+                  <br />
+                  <br />
+                  <br />
+                  <a class="next-article" href="#" data-open-modal="organic-farming-2">Читать далее…</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload" data-modal="organic-farming-2">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__article-wrapper">
+            <h2 class="modal__article-title">Переход от&nbsp;народного хозяйства к&nbsp;органическому</h2>
+            <p class="modal__article-subtitle">Часть 2</p>
+            <div class="modal__article-content">
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Следует отметить, что на&nbsp;плодородных равнинах Большого Причерноморья значительные площади занимают зерновые и&nbsp;злаковые, так как в&nbsp;практике, к&nbsp;примеру, пшеницу выращивают преимущественно на&nbsp;плодородных чорноземоподобных почвах.<br /></p>
+                <p class="modal__article-content-text">Издавна одной из главных зерновых и кормовых культур является кукуруза. До сих пор в отдельных сельских районах хлеб из кукурузной муки и кукурузная каша (мамалыга) является основой питания. <br /></p>
+                <p class="modal__article-content-text">Наибольшие урожаи кукурузы собирают в Румынии, Молдове и Сербии.</p>
+              </div>
+              <img class="modal__article-image" src="img/categories/part-2/image001.jpg" width="300" height="200" alt="" />
+              <h3 class="modal__article-image-title">Мамалыга – национальное блюдо Румынии</h3>
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Повсеместно сеют ячмень. На&nbsp;пойменных территориях рек (особенно в&nbsp;Румынии) выращивают рис.<br /></p>
+                <p class="modal__article-content-text">Требовательный к&nbsp;осадкам овёс и&nbsp;рожь распространены преимущественно в&nbsp;высокогорных долинах.<br /></p>
+                <p class="modal__article-content-text">В&nbsp;южных районах Балкан в&nbsp;значительных объёмах выращивают фасоль, которая является важным продуктом местных национальных кухонь.<br /></p>
+                <p class="modal__article-content-text">Из технических культур большие площади отведены под подсолнечник, по производству которого Румыния входит в десятку мировых лидеров! Многие его выращивают в Южной России, Украине, Болгарии, Молдове и Сербии.<br /></p>
+                <p class="modal__article-content-text">Благодаря благоприятному климату в&nbsp;Большом Причерноморья широк ассортимент овощей (помидоры, лук, баклажаны, капуста, перец и&nbsp;другие).<br /></p>
+                <p class="modal__article-content-text">В&nbsp;регионе благоприятные условия для садоводства: выращивают яблоки, груши (Россия, Украина, Румыния), персики (Крым, Болгария), черешни, сливы (Сербия, Албания).<br /></p>
+                <p class="modal__article-content-text">В&nbsp;лучшие годы в&nbsp;Сербии собирают до&nbsp;50% мирового урожая сливы!<br /></p>
+                <p class="modal__article-content-text">И&nbsp;конечно большое её&nbsp;количество направляют на&nbsp;производство национальной сливовой водки&nbsp;&mdash; &laquo;ракии&raquo;, а&nbsp;чернослив является важной статьёй экспорта.<br /></p>
+              </div>
+              <img class="modal__article-image" src="img/categories/part-2/image002.jpg" width="300" height="200" alt="" />
+              <h3 class="modal__article-image-title">Сливовая водка «ракия» налита в национальный сосуд</h3>
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Климат Большого Причерноморья, в&nbsp;большей своей части, пригоден для выращивания инжира, маслин, фейхоа, мушмулы, цитрусовых, айвы, миндаля, фундука, грецких орехов (Крым, Южная Россия, Турция, Грузия, Греция).<br /></p>
+                <p class="modal__article-content-text">В&nbsp;странах Дунайского бассейна, в&nbsp;Болгарии, Греции, Молдове, Крыму и&nbsp;на&nbsp;Кавказе большие плантации винограда. Преобладают, как столовые, так и&nbsp;винные сорта. Распространено производство кишмиша (Турция).<br /></p>
+                <p class="modal__article-content-text">Умеренный и&nbsp;в&nbsp;большей части тёплый климат Большого Причерноморья способствует выращиванию в&nbsp;регионе эфиромасличных культур (лаванды, мяты, шалфея, розы и&nbsp;т.д.).<br /></p>
+                <p class="modal__article-content-text">Так, к&nbsp;примеру, в&nbsp;Болгарии в&nbsp;Карловском и&nbsp;Казанлицьком котловинах расположены плантации знаменитой &laquo;казанлицькой розы&raquo;, из&nbsp;которой делают ценнейшее розовое масло.<br /></p>
+                <p class="modal__article-content-text">Известно, что казанлыкское розовое масло содержит более семидесяти различных химических соединений, носителей аромата. Важнейшие из&nbsp;них терпены и&nbsp;ненасыщенные углеводы.></p>
+                <p class="modal__article-content-text">Самые последние исследования доказали, что терпены возникают непосредственно в&nbsp;самом цветке только во&nbsp;время цветения из&nbsp;питательных веществ, накопленных в&nbsp;бутоне.</p>
+              </div>
+              <img class="modal__article-image" src="img/categories/part-2/image003.jpg" width="300" height="200" alt="" />
+              <h3 class="modal__article-image-title">Плантации казанлицькой розы в Болгарии</h3>
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">По&nbsp;производству данного розового масла, грамм которого дороже грамма золота!, Болгария является мировым лидером!, без явных конкурентов.<br /></p>
+                <p class="modal__article-content-text">Самые последние исследования доказали, что терпены возникают непосредственно в&nbsp;самом цветке только во&nbsp;время цветения из&nbsp;питательных веществ, накопленных в&nbsp;бутоне.<br /></p>
+                <p class="modal__article-content-text">Кстати о родине народного производства эфиромасличной розы до сих пор бытуют споры – где её впервые стали возделывать в Крыму или Болгарии?</p>
+              </div>
+              <img class="modal__article-image" src="img/categories/part-2/image004.jpg" width="300" height="200" alt="" />
+              <h3 class="modal__article-image-title">Крымская масленичная роза</h3>
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Конечно&nbsp;же, болгары не&nbsp;могут не&nbsp;любить один из&nbsp;своих национальных символов, в&nbsp;связи с&nbsp;чем, с&nbsp;1903 года и&nbsp;по&nbsp;сей день (конечно&nbsp;же, с&nbsp;перерывами) в&nbsp;стране отмечается Праздник Розы, проходящий в&nbsp;первые выходные июня.<br /></p>
+                <p class="modal__article-content-text">Более того, в 1969 году в Казанлыке открывается уникальный Музей Розы, основанный в 1967 году как небольшая экспозиция.<br /></p>
+                <p class="modal__article-content-text">В&nbsp;1972&nbsp;в Версале была основана Международная Федерация органического сельскохозяйственного движения&nbsp;&mdash; IFOAM, поставившая своей целью распространение информации и&nbsp;внедрение органического сельского хозяйства во&nbsp;всех странах мира.<br /></p>
+                <p class="modal__article-content-text">Так, с&nbsp;начала 1990-х годов стали расти мировые рынки, связанные с&nbsp;органическим сельским хозяйством.<br /></p>
+                <p class="modal__article-content-text">Этот спрос привёл к&nbsp;аналогичному увеличению сельскохозяйственных угодий с&nbsp;органическим управлением, которое с&nbsp;2001 ежегодно увеличивалось приблизительно на&nbsp;8,9&nbsp;%!<br /></p>
+                <p class="modal__article-content-text">
+                  Методы органического сельского хозяйства включили в&nbsp;себя: отказ от&nbsp;использования фунгицидов, гербицидов, искусственных удобрений и&nbsp;антибиотиков, применение животных и&nbsp;растительных отходов как удобрений, использование севооборота для восстановления почвы, применение биологических способов защиты растений,
+                  использование замкнутого цикла земледелие-скотоводство (растениеводство-корм, скотоводство- удобрения).<br />
+                </p>
+                <p class="modal__article-content-text">
+                  В&nbsp;животноводстве признаком органического сельского хозяйства является &laquo;видосоответствующее содержание животных&raquo;, а&nbsp;именно отказ от&nbsp;круглогодичного стойлового содержания, обязательный выпас скота, неиспользование синтетических кормовых добавок и&nbsp;гормонов, запрет на&nbsp;превентивное использование
+                  антибиотиков.<br />
+                </p>
+                <p class="modal__article-content-text">В&nbsp;условиях новаций рыночной экономики, развитием экономики, частичное преобразование народных хозяйств в&nbsp;органические один из&nbsp;естественных путей сохранения нашей планеты.<br /></p>
+                <p class="modal__article-content-text">Желательным остаётся одно, чтобы то&nbsp;народное хозяйство, которое из&nbsp;древни было развито в&nbsp;особенностях Большого Причерноморья и&nbsp;являлось его изюминкой, нашло своё потенциальное развитие в&nbsp;органическом хозяйстве.<br /></p>
+                <p class="modal__article-content-text">
+                  С учётом указанной специфики Большого Причерноморья и временного цикла, в настоящее время, большая часть народного хозяйства, перешло в личные органические подсобные хозяйства фермеров, садоводов, животноводов и ремесленников т.е. к большей части тех специалистов, которые испокон веков чтут традиции семейного труда, хранят
+                  традиции и рецептуру предков, занимаются домашней экологической экономией и доносят до нас, до нового поколения, изысканную био-продукцию не нанося вред нашей хрупкой природе!<br />
+                </p>
+                <p class="modal__article-content-text">О&nbsp;странах Большого Причерноморья где развита экоэкономика и&nbsp;энтузиастах, которую развивают органические хозяйства в&nbsp;регионе будет идти речь <a class="next-article" href="#" data-open-modal="organic-turkey">далее...</a></p>
+              </div>
+            </div>
+          </div>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload" data-modal="organic-turkey">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__article-wrapper">
+            <h2 class="modal__article-title">Органическая Турция</h2>
+            <p class="modal__article-subtitle">Часть 3</p>
+            <div class="modal__article-content">
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Предыстория развития сектора органического сельского хозяйства в&nbsp;Турции известна тем, что данная страна является одним из&nbsp;лидеров по&nbsp;торговле орехами и&nbsp;сухофруктами в&nbsp;мире!<br /></p>
+                <p class="modal__article-content-text">Так, по&nbsp;мере расширения рынка органических продуктов в&nbsp;Европе в&nbsp;середине 1980-х годов европейские компании обратились к&nbsp;турецким экспортёрам и&nbsp;предприятиям по&nbsp;переработке с&nbsp;просьбой начать органическое производство сухофруктов.<br /></p>
+                <p class="modal__article-content-text">Первыми продуктами, сертифицированными как органические, были сушёный виноград (кишмиш), инжир и&nbsp;лесные орехи.<br /></p>
+                <p class="modal__article-content-text">Органический хлопок впервые был выращен в&nbsp;Турции в&nbsp;рамках нидерландской инициативы.<br /></p>
+                <p class="modal__article-content-text">В&nbsp;1992&nbsp;г. была создана неправительственная организация Ассоциация органического сельского хозяйства (Ekolojik Tarim Organizasyonu Derneği или ETO), ставшей зонтичной организацией, объединяющей заинтересованные стороны из&nbsp;всех областей органического сектора.<br /></p>
+                <p class="modal__article-content-text">В 1992 г. в Измире состоялась конференция AgriBioMediterraneo, которая связала турецкое органическое движение с мировыми игроками.<br /></p>
+                <p class="modal__article-content-text">Приблизительная общая площадь земель Турции, сертифицированной под производство органической продукции составила 626 884,8&nbsp;га.<br /></p>
+                <p class="modal__article-content-text">
+                  Во&nbsp;всех провинциях Турции органически производится более 240 видов сельскохозяйственной (сырьевой) продукции. Фрукты и&nbsp;овощи, бобовые, зерновые, орехи, специи и&nbsp;зелень, промышленные культуры, масличные семена и&nbsp;продукты сбора дикорастущих растений составляют большую часть органической продукции.<br />
+                </p>
+                <p class="modal__article-content-text">В тройку лидеров по количеству выращиваемых культур вошли пшеница (97 072 га), клевер (вика) (31 940 га) и маслины (58 514 га). Также много площадей занято под инжир (12 728 га) и лесной орех (8 859 га).<br /></p>
+                <p class="modal__article-content-text">По&nbsp;сравнению с&nbsp;растениеводством, предназначенным для экспортных рынков, которое было запущено гораздо раньше, органическое животноводство начало развиваться в&nbsp;последнее десятилетие и&nbsp;направлено на&nbsp;внутренний рынок.<br /></p>
+                <p class="modal__article-content-text">В&nbsp;секторе преобладает птицеводство (в&nbsp;основном, куры-несушки). В&nbsp;стране насчитывается более 1&nbsp;200&nbsp;000&nbsp;кур, сертифицированных как органические.<br /></p>
+                <p class="modal__article-content-text">
+                  Поголовье животных, расцениваемых как переходное, насчитывало 1036 голов крупного рогатого скота, 6918 коз и&nbsp;6498&nbsp;овец. Поголовье животных, сертифицированных по&nbsp;органическим стандартам, составило 5113 головы крупного рогатого скота, 10&nbsp;685 коз и&nbsp;10&nbsp;475&nbsp;овец.<br />
+                </p>
+                <p class="modal__article-content-text">Основной продукцией органического животноводства, реализуемой на&nbsp;рынке, является молоко, за&nbsp;которым следуют сыр, йогурт, айран, сливочное масло и&nbsp;сливки.<br /></p>
+                <p class="modal__article-content-text">
+                  В&nbsp;течение последних десяти лет увеличивается количество перерабатывающих предприятий и&nbsp;перерабатываемых органических продуктов. Сухофрукты и&nbsp;овощи, батончики из&nbsp;сухофруктов, законсервированные фрукты и&nbsp;овощи, замороженные фрукты и&nbsp;овощи, фруктовый и&nbsp;овощной сок, пшеничная мука, маслины
+                  и&nbsp;оливковое масло, семенное масло, томатная паста, соус, кетчуп, уксус, шоколад и&nbsp;какао-продукты, печенье, это лишь часть органических продуктов, производимых в&nbsp;Турции.<br />
+                </p>
+                <p class="modal__article-content-text">
+                  Наибольший удельный вес имеет пищевая промышленность, но&nbsp;Турция также входит в&nbsp;число стран, производящих и&nbsp;экспортирующих органический текстиль (например, нижнее белье, домашний текстиль, полотенца, готовую одежду, детскую одежду). Производство органической косметики также демонстрирует тенденцию к&nbsp;росту.<br />
+                </p>
+                <p class="modal__article-content-text">
+                  Ключевым министерством, отвечающим за органическое сельское хозяйство в Турции, является Министерство сельского и лесного хозяйства. За управление системой отвечает Департамент надлежащей сельскохозяйственной практики и органического сельского хозяйства при Генеральном управлении растениеводства. Исследовательские проекты
+                  реализуют национальные научно-исследовательские институты при Генеральном управлении по сельскохозяйственным исследованиям и политике Турции. <br />
+                </p>
+                <p class="modal__article-content-text">
+                  Законодательство Турции охватывает методы производства органических растений, дрожжей, грибов, продуктов животноводства и&nbsp;аквакультуры, правила их&nbsp;переработки, упаковки, хранения, транспортировки, маркировки, маркетинга и&nbsp;сертификации органических продуктов, а&nbsp;также положения, регулирующие деятельность
+                  уполномоченных органов по&nbsp;сертификации, комитетов и&nbsp;операторов, выдачу разрешений на&nbsp;работу, штрафные санкции, системы контроля и&nbsp;сертификации.
+                </p>
+              </div>
+              <img class="modal__article-image" src="img/categories/part-3-organic-turkey/organik.jpg" width="300" height="200" alt="" />
+              <h3 class="modal__article-image-title">Национальный логотип органической продукции в Турции</h3>
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Сегодня Оrganic food из&nbsp;Турции экспортируется в&nbsp;68&nbsp;стран, при этом основные потребители турецкой органики&nbsp;&mdash; Европа (а&nbsp;именно&nbsp;&mdash; Германия и&nbsp;Франция), а&nbsp;также США, Канада, Австралия, Ирак, Япония.<br /></p>
+                <p class="modal__article-content-text">Турция производит биопродуктов на&nbsp;$450&nbsp;млн: 75% этой продукции идёт на&nbsp;экспорт и&nbsp;25%&nbsp;&mdash; на&nbsp;местный рынок.<br /></p>
+                <p class="modal__article-content-text">В&nbsp;настоящее время в&nbsp;Турции производством Оrganic food занимается более 70&nbsp;000&nbsp;фермеров.<br /></p>
+                <p class="modal__article-content-text">Турецкие производители органики имеют право на&nbsp;низкопроцентные кредиты в&nbsp;государственном банке, если они используют при посадке сертифицированные органические семена или саженцы, а&nbsp;производителям сухофруктов и&nbsp;орехов государство выплачивает соответствующие субсидии.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload" data-modal="manufacturers-turkey">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__article-wrapper">
+            <h2 class="modal__article-title">Органические производители Турции</h2>
+            <p class="modal__article-subtitle">1 – Ersag</p>
+            <div class="modal__article-content">
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Ersag это компания производитель с&nbsp;16-ти летним опытом работы по&nbsp;производству товаров ежедневного использования, которая имеет сеть фабрик в&nbsp;Турции, каждая из&nbsp;которых производит определённую часть ассортимента и&nbsp;имеет 43&nbsp;сертификата международного качества.</p>
+              </div>
+              <img class="modal__article-image modal__article-image--manufacturers-turkey" src="img/categories/manufacturers-turkey/image001.jpg" width="300" height="200" alt="" />
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Вся продукция, производимая этой компанией органическая, не&nbsp;содержит химических и&nbsp;синтетических соединений и&nbsp;добавок, растительных жиров, отдушек, парабенов, лаурильсульфатов, фосфатов, фтора.<br /></p>
+                <p class="modal__article-content-text">К такой продукции относятся: средства для дома на основе мыльного ореха, декоративная косметика, парфюмерия без содержания спирта, серии для детей, вакуумная посуда, БАДЫ на вытяжках из растений и т.д.<br /></p>
+                <p class="modal__article-content-text">Естественно и упаковка, которую используют на фабриках Ersag, является экологически чистой и полностью разлагается, не причиняя ущерба окружающей среде.<br /></p>
+                <p class="modal__article-content-text">Ersag это новая стремительно развивающаяся компания, которая производит натуральную, органическую продукцию на основе мыльных орехов.</p>
+              </div>
+              <img class="modal__article-image modal__article-image--manufacturers-turkey" src="img/categories/manufacturers-turkey/image002.jpg" width="300" height="200" alt="" />
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Мыльные орехи это круглые, диаметром 1,5-2,5&nbsp;см, жёлто-коричневые сухие плоды сапиндуса (мыльного дерева), произрастающего в&nbsp;тропиках и&nbsp;субтропиках.<br /></p>
+                <p class="modal__article-content-text">В&nbsp;течение многих столетий в&nbsp;Америке и&nbsp;Азии плоды &laquo;Мыльного дерева&raquo; применялись как естественное моющее средство при стирке тканей и&nbsp;одежды.<br /></p>
+                <p class="modal__article-content-text">Плоды растения упоминаются в Аюрведе, они применялись в традиционной индийской медицине.</p>
+              </div>
+              <img class="modal__article-image" src="img/categories/manufacturers-turkey/image003.jpg" width="300" height="200" alt="" />
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Плоды некоторых видов, используются вместо стирального порошка при ручной и&nbsp;машинной стирке.<br /></p>
+                <p class="modal__article-content-text">В&nbsp;настоящее время растение находит применение в&nbsp;косметике и&nbsp;как экологически безопасное моющее или чистящее средство.<br /></p>
+                <p class="modal__article-content-text">Сапонины, находящиеся в&nbsp;этих орехах до&nbsp;38%&nbsp;&mdash; это поверхностно- -активные вещества растительного происхождения, обладающие ярко выраженной способностью к&nbsp;пенообразованию в&nbsp;водных растворах подобно мылу.<br /></p>
+                <p class="modal__article-content-text">Поэтому сапонины издавна применяются как моющие средства. В&nbsp;тех местах, где растёт мыльное дерево, местное население использует его плоды для мытья тела и&nbsp;волос, для стирки белья, мытья посуды и&nbsp;чистки ювелирных украшений.<br /></p>
+                <p class="modal__article-content-text">Помимо этого, семена этого плода обладают высокопрочной оболочкой, которая иногда используется для изготовления браслетов, ожерелий или чёток, а&nbsp;в&nbsp;регионах с&nbsp;тёплым климатом растение культивируется в&nbsp;декоративном садоводстве.<br /></p>
+                <p class="modal__article-content-text">
+                  Главной&nbsp;же особенностью продукции компании Ersag является&nbsp;то, что при стирке они не&nbsp;оставляют запаха, сохраняют цвет стираемых вещей и&nbsp;обладают гипоаллергенными свойствами, а&nbsp;после использования полностью разлагаются в&nbsp;окружающей среде, не&nbsp;оставляя загрязнений!, что необходимо в&nbsp;условиях
+                  когда, стремительное загрязнение воды, воздуха и&nbsp;почвы, являющейся средой обитания человека и&nbsp;других живых существ, различными синтетическими веществами и&nbsp;другими токсичными отходами параллельно с&nbsp;развитием промышленных технологий уже сделало многие части мира непригодными для жизни.<br />
+                </p>
+                <p class="modal__article-content-text">
+                  Всем понятно, что загрязнение природы, является непременным требованием для нашей здоровой жизни, при этом её&nbsp;загрязнение возрастает в&nbsp;максимально возможной степени в&nbsp;результате отсутствия контроля, неравномерной урбанизации, быстрого роста населения или безответственности, возникающей из-за недостаточного
+                  образования и&nbsp;просвещения общества в&nbsp;бессистемно индустриализирующихся странах, без принятия мер предосторожности для защиты окружающей среды.
+                </p>
+              </div>
+              <img class="modal__article-image modal__article-image--manufacturers-turkey" src="img/categories/manufacturers-turkey/image004.png" width="300" height="200" alt="" />
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">В&nbsp;таких современных условиях, пример данной компании наглядно показывает верный экологический путь органического производства, приносящий пользу здоровой жизни с&nbsp;бережным отношением к&nbsp;окружающей среде!<br /></p>
+              </div>
+            </div>
+          </div>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- REGIONAL-CUISINE -->
+    <div class="modal modal--preload" data-modal="harcho">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__article-wrapper">
+            <h2 class="modal__article-title">Харчо</h2>
+            <p class="modal__article-subtitle">«Полегче»</p>
+            <div class="modal__article-content">
+              <p class="modal__article-content-text">
+                В&nbsp;причерноморских окрестностях повара не&nbsp;ссылают орехи на&nbsp;кондитерские полки, а&nbsp;наоборот, кладут их&nbsp;везде, где получится. Одни из&nbsp;главных любителей готовить с&nbsp;орехами живут в&nbsp;Мингрелии&nbsp;&mdash; причерноморской грузинской области, откуда родом львиная доля рецептов, которые мы&nbsp;считаем
+                классикой имеретинской кухни, к&nbsp;примеру&nbsp;&mdash; Харчо. Характерным отличительным признаком этого национального грузинского блюда от&nbsp;других мясных супов является использование при приготовлении только говядины (в&nbsp;основном грудинки, или реже, рульки), сливы ткемали (тклапи) и&nbsp;тёртых грецких орехов. <br />
+                По&nbsp;&laquo;классическому&raquo; рецепту эти три компонента нельзя убрать из&nbsp;блюда или заменить другими. И&nbsp;хотя часто, при указании рецепта харчо, конкретизируют, какой местности Грузии принадлежит рецепт (есть супы-харчо по-грузински, по-мегрельски и&nbsp;т.&nbsp;д.), но&nbsp;его обязательная суть&nbsp;&mdash; это
+                острый говяжий суп с&nbsp;тклапи и&nbsp;орехами, остаётся неизменной. <br />
+                Существует даже радикальная точка зрения: &laquo;настоящий харчо&nbsp;&mdash; это не&nbsp;суп, а&nbsp;напоминающее по&nbsp;текстуре карри полноценное горячее блюдо&raquo;. Вместе с&nbsp;тем, в&nbsp;обыденной кухне допускается замена тклапи на&nbsp;свежую алычу, а&nbsp;гранатовый сок или свежие помидоры на&nbsp;томатную пасту.
+                И&nbsp;со&nbsp;взгляда диетологов, эти изменения к&nbsp;лучшему. В&nbsp;настоящее время, молодое поколение (молодые повара), особенно ведущие свою практику за&nbsp;пределами Кавказа, не&nbsp;следует обязательным традициям, что приводит к&nbsp;обновлению &laquo;омоложению&raquo; древних блюд.
+              </p>
+              <p class="modal__article-content-text">
+                Вот, к&nbsp;примеру, &laquo;классическое&raquo; Харчо возможно приготовить в&nbsp;более лёгком для пищеварения и&nbsp;диетическом исполнении. <br />
+                Данное блюдо широко распространено в&nbsp;современном Крыму и&nbsp;на&nbsp;Кубани, среди людей, следящих за&nbsp;своей фигурой. А&nbsp;одни из&nbsp;главных ингредиентов: Тклапи (высушенное пюре из&nbsp;мякоти сливы ткемали (алычи), (ввиду его ограниченной доступности) и&nbsp;свежие грунтовые помидоры (в&nbsp;межсезонье) заменяем
+                на&nbsp;всегда доступную томатную пасту, а&nbsp;лучше Краснодарский соус, (так как в&nbsp;нём по&nbsp;мимо томатов, присутствует пюре из&nbsp;яблок, (источник пектина). В&nbsp;остальных составляющих, &laquo;классический&raquo; суп Харчо остаётся неизменным. <br />
+                Получается более бюджетное, более лёгкое, менее жирное, но&nbsp;всё так&nbsp;же насыщенная вкусом и&nbsp;белком, (как животным, так и&nbsp;растительным) основа для будущего блюда.
+              </p>
+              <div class="recept">
+                <span>И так сам рецепт:</span>
+                <h3 class="recept__title">Харчо «Полегче»</h3>
+                <p class="recept__sub-title">Что нужно(на 2 порции):</p>
+                <ol class="recept__ingridient-list reset-list">
+                  <li class="recept__ingridient-item">Рис 150 г. (лучше Краснодарский или Крымский)</li>
+                  <li class="recept__ingridient-item">300 г. мякоти куриных бёдер</li>
+                  <li class="recept__ingridient-item">1 небольшая луковица</li>
+                  <li class="recept__ingridient-item">Стебель порея в палец длиной</li>
+                  <li class="recept__ingridient-item">Кинза (по вкусу)</li>
+                  <li class="recept__ingridient-item">2 зубчика чеснока</li>
+                  <li class="recept__ingridient-item">2-3 лаврового листа</li>
+                  <li class="recept__ingridient-item">1 ст. л. томатной пасты (или Краснодарского соуса</li>
+                  <li class="recept__ingridient-item">30 г. сливочного масла</li>
+                  <li class="recept__ingridient-item">30 г. зёрен граната</li>
+                  <li class="recept__ingridient-item">60 мл. растительного масла</li>
+                  <li class="recept__ingridient-item">150 мл. белого вина (по желанию)</li>
+                  <li class="recept__ingridient-item">100 г. грецких орехов</li>
+                  <li class="recept__ingridient-item">1,5 л. очищенной воды</li>
+                  <li class="recept__ingridient-item">Соль, чётный и красный острый перец (возможно стручковый) по вкусу.</li>
+                </ol>
+                <p class="recept__footer-text">Приготовленное блюдо можно заправить сметаной или катыком.</p>
+                <p class="recept__footer-advisory">Приятного аппетита!</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ART_CULTURAL -->
+    <div class="modal modal--preload" data-modal="house-arhitector">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__article-wrapper">
+            <h2 class="modal__article-title">СНОС ДОМА АРХИТЕКТОРА НИКОЛАЯ КРАСНОВА В ЯЛТЕ</h2>
+            <p class="modal__article-subtitle">(прямой вандализм или крымские реалии?)</p>
+            <div class="modal__article-content">
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Полагаем, что с&nbsp;точки зрения культурного наследия, снос дома Краснова в&nbsp;Ялте&nbsp;&mdash; акт прямого вандализма! <br /></p>
+                <p class="modal__article-content-text">
+                  Архитектор Николай Краснов спроектировал и&nbsp;построил в&nbsp;Крыму во&nbsp;времена Николая II&nbsp;многие знаменитые дворцы, церкви, особняки, виллы и&nbsp;общественные здания, включая Ливадийский дворец, дворец &laquo;Дюльбер&raquo; в&nbsp;Мисхоре, виллу &laquo;Ксения&raquo;, дворец Харакс, Юсуповский дворец в&nbsp;Кореизе,
+                  дачу &laquo;Мурад-Авур&raquo; в&nbsp;Мисхоре и&nbsp;другие.<br />
+                </p>
+                <p class="modal__article-content-text">В&nbsp;региональном перечне объектов культурного наследия значатся более 30&nbsp;строений Краснова, в&nbsp;том числе и&nbsp;дом самого архитектора в&nbsp;Ялте на&nbsp;улице Пушкинской, 19, построенный им&nbsp;в&nbsp;1888 году накануне собственной свадьбы.<br /></p>
+                <p class="modal__article-content-text">
+                  В&nbsp;другой большой трёхэтажный дом с&nbsp;чертёжной мастерской на&nbsp;улице Николаевской (теперь Коммунаров) семья Красновых переехала в&nbsp;начале&nbsp;ХХ века и&nbsp;жила в&nbsp;нём вплоть до&nbsp;самой эмиграции в&nbsp;1919&nbsp;году. Особняк прекрасно сохранился даже после разрушительного ялтинского землетрясения 1927
+                  года и&nbsp;немецких бомбёжек 1941&nbsp;года.<br />
+                </p>
+                <p class="modal__article-content-text">
+                  Так, в&nbsp;начале&nbsp;ХХ века Н.П. Краснов, уже выполнявший к&nbsp;этому времени ряд дорогостоящих заказов, получил возможность приобрести более значительную, чем раньше (до&nbsp;этого он&nbsp;проживал в&nbsp;построенном им&nbsp;небольшом доме на&nbsp;Пушкинском бульваре) собственность. Многочисленные крупные заказы принесли ему
+                  и&nbsp;материальное благополучие.&nbsp;12&nbsp;января 1902 года он&nbsp;приобрёл у&nbsp;купца Е.&nbsp;Майтопа земельный участок площадью в&nbsp;0,55&nbsp;га в&nbsp;непосредственной близости от&nbsp;императорской Ливадии. Через год там уже был построен солидный двухэтажный особняк, одноэтажный каменный жилой флигель, сараи
+                  и&nbsp;сторожка. На&nbsp;втором этаже в&nbsp;доме имелся просторный зал с&nbsp;верхним светом от&nbsp;большого стеклянного фонаря на&nbsp;крыше. Он&nbsp;служил чертёжной мастерской, где трудились сам архитектор и&nbsp;его помощники, был и&nbsp;отдельный кабинет архитектора, красивая гостиная, много личных комнат и&nbsp;комнат для
+                  гостей.<br />
+                </p>
+                <p class="modal__article-content-text">
+                  Здесь его посещали Великие князья, чаще других Великая княгиня Ксений Александровна, сестра Николая&nbsp;II, и&nbsp;князья Юсуповы, а&nbsp;также, по&nbsp;некоторой информации, и&nbsp;вдовствующая императрица Мария Фёдоровна. Здесь&nbsp;же собирались ялтинские архитекторы, обсуждавшие проблемы устройства города.
+                </p>
+              </div>
+              <img class="modal__article-image" src="img/categories/art-cultural/image002.jpg" width="300" height="200" alt="Н.П. Краснов (третий справа) с гостями у собственного дома на улице Николаевской (ныне ул.Коммунаров,7). 9 декабря 1910 года." />
+              <h3 class="modal__article-image-title">Н.П. Краснов (третий справа) с гостями у собственного дома на улице Николаевской (ныне ул.Коммунаров,7). 9 декабря 1910 года.</h3>
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">Женой Краснова была Анна Михайловна Фарбштейн из&nbsp;очень известной купеческой семьи. Поэтому дом становился и&nbsp;центром городских купеческих собраний.<br /></p>
+                <p class="modal__article-content-text">В&nbsp;гостях у&nbsp;Краснова на&nbsp;вечерах его супруги и&nbsp;дочерей бывали, по&nbsp;разным данным, ведущие деятели культуры того времени, высшие военные и&nbsp;чиновники самого высокого ранга.<br /></p>
+                <p class="modal__article-content-text">Дом был построен, и&nbsp;Краснов жил в&nbsp;нем в&nbsp;самые счастливые годы своей жизни, когда он&nbsp;был востребован и&nbsp;популярен, испытывал особый душевный подъём.<br /></p>
+                <p class="modal__article-content-text">
+                  Н.П. Краснов с&nbsp;семьёй прожил в&nbsp;доме с&nbsp;1903 по&nbsp;1917&nbsp;г. После Февральской революции архитектор Высочайшего двора впал в&nbsp;немилость у&nbsp;новых властей. Летом 1917&nbsp;г.&nbsp;он&nbsp;продал имение инженеру Б.А. Гордону, чтобы получить средства к&nbsp;существованию. В&nbsp;эмиграцию семья Красновых
+                  выехала в&nbsp;1919&nbsp;г.<br />
+                </p>
+                <p class="modal__article-content-text">
+                  Дом Краснова можно считать одним из&nbsp;первых в&nbsp;Ялте примеров эклектики модерна. Его южный фасад выполнен в&nbsp;стиле модерн, часть внутренних интерьеров&nbsp;&mdash; в&nbsp;псевдорусских традициях, юго-западный фасад&nbsp;&mdash; в&nbsp;только зарождавшемся стиле конструктивизма. Проект и&nbsp;воплощение этого здания
+                  по-своему уникальны,&nbsp;&mdash; это один из&nbsp;немногих на&nbsp;ЮБК примеров грамотного соединения столь разнородных стилей.
+                </p>
+              </div>
+              <img class="modal__article-image" src="img/categories/art-cultural/image004.jpg" width="300" height="200" alt="Восточный фасад дома Н.П. Краснова в 1930-е годы" />
+              <h3 class="modal__article-image-title">Восточный фасад дома Н.П. Краснова в 1930-е годы</h3>
+              <div class="modal__article-text-wrapper">
+                <p class="modal__article-content-text">
+                  Дом Н.П. Краснова находился на территории профсоюзного дома отдыха «Заря», где 9 мая под грохот праздничных салютов начался его снос. По иронии судьбы, в отличие от первого дома Н.П. Краснова, этот никогда не был в перечне объектов культурного наследия – ни при Украине, ни при России. Это факт, а может быть и чья-то
+                  безответственность и сыграла злую шутку с наследием Крыма!
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COSSACS -->
+    <div class="modal modal--preload" data-modal="ethnic-cossacs">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__article-wrapper">
+            <h2 class="modal__article-title">Становление этнического козачества в Крыму</h2>
+            <p class="modal__article-subtitle">Часть 1</p>
+            <div class="modal__article-content">
+              <p class="modal__article-content-text">
+                По&nbsp;случаю объeдиненения Крымского ханства с&nbsp;Российской империей Екатерина II&nbsp;издала манифест, в&nbsp;котором обещает мусульманам Крыма:
+                <span class="modal__article-content-text-italic">
+                  ...Охранять и&nbsp;защищать их&nbsp;лица, храмы и природную веру, коей свободное отправление со&nbsp;всеми законными обрядами пребудет неприкосновенно и&nbsp;дозволить напоследок каждому из&nbsp;них состоянию все те&nbsp;правости и преимущества, каковыми таковые в&nbsp;России пользуются!&raquo;.
+                </span>
+                <br />
+              </p>
+              <p class="modal__article-content-text">&laquo; Естественно, что после таких заверений для каждого мусульманина служба Императору и Отечеству составляет гордость&nbsp;&mdash; это чувство было не&nbsp;чуждо и&nbsp;коренным мусульманам Крыма.</p>
+              <p class="modal__article-content-text">
+                Так, 1&nbsp;ноября 1783 года именным указом Екатерина II&nbsp;дозволяет принимать крымско- татарских мурз и&nbsp;чиновников Крыма на&nbsp;военную службу с&nbsp;присвоением им&nbsp;соответствующих званий. Именно в&nbsp;это время, впервые на&nbsp;законодательном уровне не&nbsp;только мусульмане Крыма, но и&nbsp;всей России получили
+                права воинской службы в&nbsp;офицерских чинах.
+              </p>
+              <p class="modal__article-content-text">Указ от&nbsp;22&nbsp;февраля 1784 года вообще уравнял крымско-татарских мурз и&nbsp;князей в&nbsp;правах с российским дворянством.</p>
+              <p class="modal__article-content-text">
+                Во&nbsp;времена правления Екатерины II&nbsp;потомок Юсуфа-мурзы князь Николай Борисович Юсупов, будучи крымцем, являлся главноуправляющим Оружейной палаты и&nbsp;Экспедиции кремлёвского строения, сенатором (с&nbsp;1788), директором Императорских театров (1791&ndash;1796). Он возглавлял дворцовые стекольные, фарфоровые
+                и&nbsp;шпалерные заводы (c&nbsp;1792), был действительным тайным советником (1796), директором Эрмитажа, министром Департамента уделов (1800&ndash;1816) и&nbsp;членом Государственного совета (с&nbsp;1823). Один из&nbsp;последних и&nbsp;известных потомков Юсуфа-мурзы, князь Феликс Феликсович Юсупов, с&nbsp;согласия императора России
+                Николая II, 22&nbsp;февраля 1914 года сочетался браком с&nbsp;княжной императорской крови Ириной Александровной и&nbsp;являлся мировым меценатом, самым богатым и&nbsp;одним из&nbsp;самых влиятельных людей России. В&nbsp;1909&ndash;1912&nbsp;годах, учась в&nbsp;Оксфордском университете, он&nbsp;основал Русское общество
+                в&nbsp;Великобритании, а&nbsp;в&nbsp;1910-е годы возглавлял Первый русский автомобильный клуб, размещавшийся в&nbsp;доме первого Российского страхового общества.
+              </p>
+              <p class="modal__article-content-text">Единственная дочь князя была замужем за&nbsp;графом Н.Д. Шереметевым.</p>
+              <p class="modal__article-content-text">Кстати, дворянство пророчило Юсупову Ф.Ф. престол императора России.</p>
+              <p class="modal__article-content-text">Быть может поэтому, в&nbsp;том&nbsp;же году из&nbsp;крымских татар формируется особое войско &mdash; Таврические национальные дивизионы, где все офицеры были назначены из&nbsp;молодых мурз.</p>
+              <p class="modal__article-content-text">
+                Затем на&nbsp;основании указа, изданного Президентом Военной коллегии Российской Империи Князем Потёмкиным от&nbsp;1&nbsp;марта 1784 года за &#8470;&nbsp;15936 &laquo;О&nbsp;составлении национального войска из новых подданных в&nbsp;Таврической области обитающих&raquo; в&nbsp;составе пяти дивизионов на&nbsp;первых порах, было
+                сформировано только три дивизиона.
+              </p>
+              <p class="modal__article-content-text">
+                По&nbsp;штату положено было в&nbsp;каждом дивизионе по&nbsp;1-му майору, по&nbsp;2&nbsp;ротмистра, 2&nbsp;поручика, 2&nbsp;прапорщика, 10&nbsp;наказных и&nbsp;195 рядовых с&nbsp;жалованием в&nbsp;год: майору&nbsp;&mdash; 300&nbsp;р., ротмистру&nbsp;&mdash; 200&nbsp;р., поручику&nbsp;&mdash; 150&nbsp;р., прапорщику&nbsp;&mdash;
+                120&nbsp;р., наказному&nbsp;&mdash; 40&nbsp;р.&nbsp;и&nbsp;рядовому&nbsp;&mdash; 35&nbsp;р. ассигнациями.
+              </p>
+              <p class="modal__article-content-text">
+                Все офицеры и&nbsp;большинство наказных были назначены из&nbsp;молодых мурз выдающихся фамилий Крыма. <br />
+                Из отчётов о содержании этих дивизионов видно, что командовал:
+              </p>
+              <ul class="modal__article-description-list">
+                <li class="modal__article-description-item">1-м дивизионом&nbsp;&mdash; ротмистр Мустафа мурза Киятов;</li>
+                <li class="modal__article-description-item">2-м дивизионом&nbsp;&mdash; майор Абдулла Величь;</li>
+                <li class="modal__article-description-item">3-м дивизионом&nbsp;&mdash; майор Батыр ага Тамагул Крымтайский, позже назначенный советником Таврической палаты уголовного суда.</li>
+              </ul>
+              <img class="modal__article-image" src="img/categories/ethnic-cossaks/image001.png" width="300" height="200" alt="Первоначальный флаг Крымско-татарского полка" />
+              <h3 class="modal__article-image-title">Первоначальный флаг Крымско-татарского полка</h3>
+              <img class="modal__article-image modal__article-image--cossaks" src="img/categories/ethnic-cossaks/image003.jpg" width="300" height="200" alt="Конвой со стягом полка" />
+              <h3 class="modal__article-image-title">Конвой со стягом полка</h3>
+              <p class="modal__article-content-text">
+                Так, в&nbsp;конце 1784 года мурзы, собравшись в&nbsp;Бахчисарае для обсуждения вопросов, связанных с&nbsp;предстоящим Высочайшим приездом и&nbsp;назначения для этого лошадей, решили представить через правителя области Василия Васильевича Каховского князю Потёмкину выражения радостных чувств своих и&nbsp;всего татарского населения
+                Тавриды по&nbsp;случаю прибытия Императрицы в&nbsp;Крым. Тут&nbsp;же знатнейшие представители татарского населения Крыма выразили обязательство приготовить 3000 лошадей из&nbsp;городов и&nbsp;деревень для Высочайшего шествия, а также принять участие людьми в&nbsp;исправлении дорог.
+              </p>
+              <p class="modal__article-content-text">В&nbsp;конце декабря 1786 года князь Потемкин прибыл в&nbsp;Тавриду. Его встретили в Херсоне секунд-майоры Велиша мурза Киятов и&nbsp;Азамат ага, а&nbsp;в&nbsp;Перекопе&nbsp;&mdash; коллежские советники Темир ага, Мегмет ага, Мегмет-ша Ширинский, Атай мурза Ширинский.</p>
+              <p class="modal__article-content-text">
+                Все они вместе с&nbsp;князем проехали по&nbsp;всему пути, предназначенному для Высочайшего шествия. В&nbsp;конце января 1787 года князь Потёмкин выехал из&nbsp;Крыма в&nbsp;Кременчуг, а&nbsp;9&nbsp;марта выехали из&nbsp;Карасубазара в&nbsp;Киев выбранные от&nbsp;дворянства депутаты: Темир ага, Абдувели ага (предводитель дворянства
+                Симферопольского уезда), Меметша мурза Аргинский, коллежский асессор Юсуф Ибраимович (переводчик) и&nbsp;дворянский секретарь Гусеин мурза Ширинский - для приветствия Её&nbsp;Величества с&nbsp;приездом на&nbsp;юг.
+              </p>
+              <p class="modal__article-content-text">
+                По&nbsp;результатам указанных встреч (и&nbsp;для встречи Императрицы), в&nbsp;январе 1787 года были произведены в&nbsp;Крыму первые дворянские выборы, на&nbsp;которые съехалось со&nbsp;всего Крыма до&nbsp;ста мурз и&nbsp;закрытыми шарами были избраны уездные предводители дворянства, судей и&nbsp;исправников. Все места депутатов,
+                заседателей как дворянских опек, так и&nbsp;верхних и&nbsp;нижних земских судов, были замещены молодыми мурзами из&nbsp;числа крымцев с&nbsp;чинами.
+              </p>
+              <p class="modal__article-content-text">
+                Во&nbsp;время&nbsp;же приезда в&nbsp;Крым в&nbsp;мае 1787 года императрицы Екатерины II&nbsp;все три дивизиона участвовали в&nbsp;торжественном шествии Её&nbsp;Величества по&nbsp;Крыму, вновь обмундированные перед самым приездом в&nbsp;чекмени и&nbsp;шаровары из&nbsp;черного сукна и&nbsp;с&nbsp;новой амуницией.
+              </p>
+              <p class="modal__article-content-text">
+                Известно, что в&nbsp;15&nbsp;вёрстах от&nbsp;Бахчисарая встретили императорский кортеж в&nbsp;богатых расшитых национальных костюмах верхами молодые мурзы и&nbsp;беи Крыма, о&nbsp;чём Императрица в своем письме к&nbsp;учёному Гримму пишет:
+                <span class="modal__article-content-text-italic">
+                  &laquo;Всю дорогу нас конвоировали татары, а&nbsp;в&nbsp;нескольких вёрстах от&nbsp;Бахчисарая Мы&nbsp;нашли всё, что есть лучшего в&nbsp;Крыму, на&nbsp;коне. Картина была великолепная. Предшествуемые таким образом, в&nbsp;открытой коляске, в&nbsp;которой сидело 8&nbsp;персон, Мы&nbsp;въехали в&nbsp;Бахчисарай в&nbsp;6&nbsp;ч.
+                  Вечера&raquo;.
+                </span>
+              </p>
+              <p class="modal__article-content-text">
+                В&nbsp;конце 1787 года ввиду перестановок в&nbsp;Армии командиром 1-го дивизиона был назначен, майор Мегметша-бей Кантакузин, кавалер ордена Святого Владимира 3-ей степени, (получивший эту редкостную для майора награду, при взятии крепости Очаков в&nbsp;звании адъютанта князя Потёмкина!), позже был первым смотрителем
+                Симферопольского конского завода.
+              </p>
+              <p class="modal__article-content-text">
+                До&nbsp;1790 года эти два дивизиона отправляли службу внутри Крыма, сопровождали почту, представителей властей, охраняли леса, соляные озера, преследовали беглых, разбойников и развозили эстафеты между городами и&nbsp;сёлами Крыма. <br />
+                Ввиду большого объёма работы и&nbsp;фактической службы крымцев, как в&nbsp;вооружённых силах, так и&nbsp;по&nbsp;внутренних делах, в&nbsp;1790&nbsp;году, сформировано было из&nbsp;крымских татар ещё 4 дивизиона, и&nbsp;все эти 7&nbsp;дивизионов под общей командой полковника Мегметша-бея князя Кантакузина были отправлены
+                к&nbsp;польской границе с&nbsp;выдачей им&nbsp;от&nbsp;казны амуниции и&nbsp;лошадей.
+              </p>
+              <p class="modal__article-content-text">В&nbsp;Черниговском наместничестве, они были остановлены и&nbsp;поступили в&nbsp;корпус генерал- аншефа Кречетникова.</p>
+              <p class="modal__article-content-text">
+                Пробыв там более двух лет, в&nbsp;1792 году они были возвращены обратно в&nbsp;Крым. Службой их&nbsp;начальство оставалось довольно и&nbsp;находило полезной для края, но&nbsp;всё-таки со смертью Екатерины Великой в&nbsp;1796 году часть дивизионов была расформирована. <br />
+                С&nbsp;началом войны с&nbsp;французами в&nbsp;конце 1806 года все мусульманское население Крыма во главе со&nbsp;своим муфтием Муртаза Челеби и&nbsp;мурзами, прошением на&nbsp;Высочайшее Имя Императора заявило о&nbsp;желании выставить нужное число конных полков на&nbsp;всем своём иждивении для защиты Отечества.
+              </p>
+              <img class="modal__article-image modal__article-image--contain" src="img/categories/ethnic-cossaks/image005.jpg" width="300" height="200" alt="" />
+              <h3 class="modal__article-image-title">Группа чинов Крымско-татарского эскадрона. Картина работы А.И. Гебенса</h3>
+              <p class="modal__article-content-text">
+                Император Александр&nbsp;I, милостиво приняв такую просьбу, Высочайше повелел разработать этот проект и&nbsp;сформировать четыре конных полка из&nbsp;крымских татар по&nbsp;образцу казачьих полков, но&nbsp;проекте было предположено о&nbsp;назначении командиров Высочайшей властью из&nbsp;числа русских. Но&nbsp;хорошо знакомый
+                с&nbsp;населением края Таврический губернатор Дмитрий Борисович Мертваго в&nbsp;своём мнении указал на&nbsp;неудобство во&nbsp;время войны незнание командиром языка вверенных ему людей и&nbsp;на&nbsp;то&nbsp;недоверие, с&nbsp;которым отнесутся люди к&nbsp;неизвестному лицу, справедливо полагая, что при их&nbsp;жертвовании людьми
+                и&nbsp;лошадьми, уходящим далеко от&nbsp;Родины, необходимы свои начальники, тем более что в&nbsp;настоящее время из&nbsp;мурз Крыма есть много воспитанных и&nbsp;достойных офицеров занять эти места. Он&nbsp;возбудил особое ходатайство для пользы дела назначить всех командиров и&nbsp;офицеров&nbsp;&mdash; непременно из&nbsp;мурз
+                крымских татар. <br />
+              </p>
+              <p class="modal__article-content-text">
+                Такое ходатайство Д.Б. Мертваго отправил в&nbsp;Одессу исполняющему должность Херсонского военного губернатора маркизу де&nbsp;Траверсе с&nbsp;молодым поручиком Мустафа Мурзой, которого, в&nbsp;свою очередь, маркиз де&nbsp;Траверсе с&nbsp;теми&nbsp;же бумагами отправил в&nbsp;С.-Петербург к министру военно-сухопутных сил
+                генерал-адъютанту Феншау. <br />
+              </p>
+              <p class="modal__article-content-text">
+                Министр внимательно отнёсся к&nbsp;делу, а&nbsp;молодого офицера лично представил Государю. Его Величество, милостиво расспросив его о&nbsp;Крыме, говорил о&nbsp;проектируемых полках и при прощании высказал, что он&nbsp;рассчитывает на&nbsp;их&nbsp;полезную службу отечеству. С&nbsp;утверждённым проектом Мустафа Мурза прискакал
+                в&nbsp;Одессу и&nbsp;оттуда в&nbsp;Крым. Мурзы и все население Крыма под наблюдением Д.&nbsp;Б.&nbsp;Мертваго и&nbsp;Херсонского губернатора Дюка де Ришелье усиленно принялись за&nbsp;формирование и&nbsp;снаряжение четырёх конных татарских полков по&nbsp;казачьему образцу, так что в&nbsp;мае 1807 года эти полки были совершенно
+                готовы к&nbsp;выступлению &mdash;&nbsp;все люди были одеты в&nbsp;чёрные суконные чекмени и&nbsp;шаровары по&nbsp;казачьему образцу и&nbsp;в татарских национальных шапках, вооружены были частью вполне, то&nbsp;есть имели пики, пистолеты, ружья и&nbsp;сабли, а&nbsp;частью имели только кулюки и&nbsp;татарские ножи. <br />
+              </p>
+              <p class="modal__article-content-text">
+                Херсонский генерал-губернатор в&nbsp;своих рапортах к&nbsp;министру военно-сухопутных сил от 12&nbsp;и&nbsp;31&nbsp;августа 1807 года доносил, что, &laquo;находясь по&nbsp;июнь месяц в&nbsp;Крыму&raquo;, он&nbsp;&laquo;усиленно был занят, как&nbsp;бы лучше устроить татарское сие войско магометанского закона, обывателями Крыма
+                добровольно представленное&raquo;. Побуждаемый желаниями татар, &laquo;людьми из&nbsp;себя и&nbsp;лошадьми жертвовавших&raquo;, он&nbsp;находил нужным согласиться и&nbsp;в&nbsp;том, &laquo;чтобы и&nbsp;из&nbsp;их&nbsp;имянитейших фамилий назначены были в&nbsp;полки сии офицеры&raquo;. <br />
+                <span class="modal__article-end-title">Продолжение следует...</span>
+              </p>
+            </div>
+          </div>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
