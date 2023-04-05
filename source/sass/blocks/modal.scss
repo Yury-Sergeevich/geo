@@ -39,7 +39,7 @@
     padding: 0;
 
     @include vp-767 {
-      padding: 60px 16px;
+      padding: 20px 0;
     }
   }
 
@@ -133,13 +133,22 @@
   width: 600px;
   margin: 0 auto;
   margin-bottom: 10px;
+
+  @include vp-767 {
+    @include font(22px, 36px, 600, $second-color);
+    width: 100%;
+  }
 }
 
 .modal__article-subtitle {
-  @include font(22px, 30px, 400, $second-color);
+  @include font(18px, 26px, 400, $second-color);
 
   margin: 0;
   margin-bottom: 30px;
+
+  @include vp-767 {
+    @include font(16px, 20px, 400, $second-color);
+  }
 }
 
 .modal__article-content {
@@ -155,9 +164,11 @@
   color: $second-color;
   text-align: justify;
   text-indent: 50px;
+  letter-spacing: 0.03em;
   margin: 0;
 
   @include vp-767 {
+    @include font(16px, 22px, 400, $second-color);
     text-indent: 20px;
   }
 }
@@ -168,6 +179,10 @@
   text-align: justify;
   margin: 0;
   font-style: italic;
+
+  @include vp-767 {
+    @include font(16px, 22px, 400, $second-color);
+  }
 }
 
 .modal__article-image-gallery {
