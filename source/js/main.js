@@ -8,6 +8,7 @@ import { initSwiperTopNews } from './modules/swiper-top-news/swiper-top-news';
 import { initSwiperGeoEco } from './modules/categories/SwiperGeoEco';
 import { initSwiperEcoEconomica } from './modules/categories/SwiperEcoEconomica';
 import { initSwiperEthinicCossaks } from './modules/categories/SwiperEthinicCossaks';
+import { initSwiperArtCultural } from './modules/categories/ArtCultural';
 import { initAnimScroll } from './utils/animate-scroll';
 
 // ---------------------------------
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initSwiperGeoEco(swiper);
   initSwiperEcoEconomica(swiper);
   initSwiperEthinicCossaks(swiper);
+  initSwiperArtCultural(swiper);
   initAnimScroll();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

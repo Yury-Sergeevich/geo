@@ -1,8 +1,12 @@
 .categories__title {
-  @include font(26px, 42px, 400, $first-color);
+  @include font(26px, 42px, 500, $first-color);
   font-family: "Rubik Dirt", "Arial", sans-serif;
 
   text-transform: uppercase;
+
+  @include vp-767 {
+    @include font(16px, 22px, 500, $first-color);
+  }
 }
 
 .categories__card {
@@ -60,7 +64,8 @@
 
   &--ecoeconomica-prev,
   &--cossaks-prev,
-  &--geo-eco-prev {
+  &--geo-eco-prev,
+  &--art-prev {
     left: -40px;
 
     @include vp-767 {
@@ -73,10 +78,16 @@
 
   &--ecoeconomica-next,
   &--cossaks-next,
-  &--geo-eco-next {
+  &--geo-eco-next,
+  &--art-next {
     right: -65px;
+
     &::after {
       content: "next";
+    }
+
+    @include vp-1023 {
+      right: 10px;
     }
 
     @include vp-767 {

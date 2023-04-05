@@ -1664,6 +1664,14 @@ button,
   margin-bottom: 30px;
 }
 
+.modal__article-content {
+  margin-bottom: 30px;
+}
+
+.modal__article-text-wrapper {
+  margin-bottom: 30px;
+}
+
 .modal__article-content-text {
   font-size: 22px;
   line-height: 30px;
@@ -1671,8 +1679,8 @@ button,
   color: #ffffff;
   color: #ffffff;
   text-align: justify;
+  text-indent: 50px;
   margin: 0;
-  margin-bottom: 30px;
 }
 
 .modal__article-content-text-italic {
@@ -1700,7 +1708,7 @@ button,
   object-fit: cover;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .modal__article-image--contain {
@@ -1746,9 +1754,14 @@ button,
   text-align: start;
 }
 
-.modal__article-end-title {
+.modal__article-end-title,
+.next-article {
   display: block;
   text-align: end;
+}
+
+.next-article {
+  color: #ffffff;
 }
 
 .custom-input,
@@ -2988,7 +3001,7 @@ button,
 .categories__title {
   font-size: 26px;
   line-height: 42px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
   font-family: "Rubik Dirt", "Arial", sans-serif;
   text-transform: uppercase;
@@ -3066,25 +3079,29 @@ button,
 
 .categories__button--ecoeconomica-prev,
 .categories__button--cossaks-prev,
-.categories__button--geo-eco-prev {
+.categories__button--geo-eco-prev,
+.categories__button--art-prev {
   left: -40px;
 }
 
 .categories__button--ecoeconomica-prev::after,
 .categories__button--cossaks-prev::after,
-.categories__button--geo-eco-prev::after {
+.categories__button--geo-eco-prev::after,
+.categories__button--art-prev::after {
   content: "prev";
 }
 
 .categories__button--ecoeconomica-next,
 .categories__button--cossaks-next,
-.categories__button--geo-eco-next {
+.categories__button--geo-eco-next,
+.categories__button--art-next {
   right: -65px;
 }
 
 .categories__button--ecoeconomica-next::after,
 .categories__button--cossaks-next::after,
-.categories__button--geo-eco-next::after {
+.categories__button--geo-eco-next::after,
+.categories__button--art-next::after {
   content: "next";
 }
 
@@ -3258,6 +3275,13 @@ button,
   .top-news__image {
     height: 47vw;
   }
+
+  .categories__button--ecoeconomica-next,
+  .categories__button--cossaks-next,
+  .categories__button--geo-eco-next,
+  .categories__button--art-next {
+    right: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3424,15 +3448,24 @@ button,
     height: auto;
   }
 
+  .categories__title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000000;
+  }
+
   .categories__button--ecoeconomica-prev,
   .categories__button--cossaks-prev,
-  .categories__button--geo-eco-prev {
+  .categories__button--geo-eco-prev,
+  .categories__button--art-prev {
     left: 40px;
   }
 
   .categories__button--ecoeconomica-next,
   .categories__button--cossaks-next,
-  .categories__button--geo-eco-next {
+  .categories__button--geo-eco-next,
+  .categories__button--art-next {
     left: 65px;
   }
 }
