@@ -3302,6 +3302,17 @@ button,
     width: 100%;
   }
 
+  .modal__article-content-text {
+    text-indent: 20px;
+  }
+
+  .modal__article-image-gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .menu-toggle {
     display: block;
     position: absolute;
