@@ -1678,7 +1678,6 @@ button,
   font-weight: 400;
   color: #ffffff;
   color: #ffffff;
-  text-align: justify;
   text-indent: 50px;
   letter-spacing: 0.03em;
   margin: 0;
@@ -3296,7 +3295,7 @@ button,
 
   .modal__content {
     width: 100%;
-    padding: 20px;
+    padding: 15px;
   }
 
   .modal--fit-content .modal__content {
