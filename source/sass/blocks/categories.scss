@@ -30,10 +30,14 @@
 .categories__image {
   border-radius: 20px;
   width: 100%;
-  height: auto;
-  min-height: 260px;
+  height: 29vw;
+  min-height: 310px;
   margin-bottom: 15px;
   object-fit: cover;
+
+  @include vp-767 {
+    min-height: 350px;
+  }
 }
 
 .categories__wrapper-swiper {
