@@ -1642,7 +1642,6 @@ button,
 .modal__article-wrapper {
   width: 800px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .modal__article-title {
@@ -1673,7 +1672,7 @@ button,
 }
 
 .modal__article-content-text {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: #ffffff;
@@ -1730,6 +1729,17 @@ button,
 
 .modal__article-image--cossaks {
   height: auto;
+}
+
+.modal__article-image--adventurer {
+  height: auto;
+  width: 500px;
+}
+
+.modal__article-image--adventurer-cossaks {
+  height: auto;
+  min-height: 44vw;
+  width: 500px;
 }
 
 .modal__article-image-title {
@@ -3035,8 +3045,8 @@ button,
 .categories__image {
   border-radius: 20px;
   width: 100%;
-  height: auto;
-  min-height: 260px;
+  height: 29vw;
+  min-height: 310px;
   margin-bottom: 15px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -3490,6 +3500,10 @@ button,
     line-height: 22px;
     font-weight: 500;
     color: #000000;
+  }
+
+  .categories__image {
+    min-height: 350px;
   }
 
   .categories__button--ecoeconomica-prev,
