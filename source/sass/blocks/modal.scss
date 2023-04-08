@@ -125,21 +125,46 @@
   }
 }
 
+.modal__article-title-start,
+.modal__article-title-autor {
+  @include font(18px, 30px, 400, $second-color);
+  color: $second-color;
+  width: 500px;
+  margin-left: auto;
+
+  @include vp-767 {
+    @include font(14px, 30px, 400, $second-color);
+    width: 90%;
+  }
+}
+
+.modal__article-title-autor {
+  font-weight: 600;
+  display: flex;
+  justify-content: end;
+
+  @include vp-767 {
+    font-weight: 600;
+  }
+}
+
 .modal__article-title {
   @include font(36px, 44px, 600, $second-color);
+  text-align: center;
 
   width: 600px;
   margin: 0 auto;
   margin-bottom: 10px;
 
   @include vp-767 {
-    @include font(22px, 36px, 600, $second-color);
+    @include font(22px, 28px, 600, $second-color);
     width: 100%;
   }
 }
 
 .modal__article-subtitle {
   @include font(18px, 26px, 400, $second-color);
+  text-align: center;
 
   margin: 0;
   margin-bottom: 30px;
@@ -168,6 +193,18 @@
   @include vp-767 {
     @include font(16px, 22px, 400, $second-color);
     text-indent: 20px;
+  }
+}
+
+.modal__article-text-decription {
+  @include font(18px, 30px, 400, $second-color);
+  text-align: center;
+  color: $second-color;
+  letter-spacing: 0.03em;
+  margin: 0;
+
+  @include vp-767 {
+    @include font(16px, 22px, 400, $second-color);
   }
 }
 
@@ -229,6 +266,15 @@
     height: auto;
     min-height: 44vw;
     width: 500px;
+  }
+
+  &--bignational-cossaks {
+    height: 380px;
+  }
+
+  &--sudak {
+    width: 560px;
+    height: 360px;
   }
 }
 

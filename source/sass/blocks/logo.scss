@@ -1,5 +1,10 @@
 .logo {
   margin-right: 74px;
+
+  @include vp-767 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .logo p {
   @include font(14px, 26px, 400, $first-color);

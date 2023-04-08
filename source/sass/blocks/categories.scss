@@ -25,6 +25,10 @@
 
   margin-top: auto;
   margin: 0;
+
+  @include vp-767 {
+    @include font(16px, 22px, 400, $first-color);
+  }
 }
 
 .categories__image {
