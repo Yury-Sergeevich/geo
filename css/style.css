@@ -1644,11 +1644,33 @@ button,
   margin: 0 auto;
 }
 
+.modal__article-title-start,
+.modal__article-title-autor {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  color: #ffffff;
+  width: 500px;
+  margin-left: auto;
+}
+
+.modal__article-title-autor {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
 .modal__article-title {
   font-size: 36px;
   line-height: 44px;
   font-weight: 600;
   color: #ffffff;
+  text-align: center;
   width: 600px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -1659,6 +1681,7 @@ button,
   line-height: 26px;
   font-weight: 400;
   color: #ffffff;
+  text-align: center;
   margin: 0;
   margin-bottom: 30px;
 }
@@ -1678,6 +1701,17 @@ button,
   color: #ffffff;
   color: #ffffff;
   text-indent: 50px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.modal__article-text-decription {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  color: #ffffff;
   letter-spacing: 0.03em;
   margin: 0;
 }
@@ -1740,6 +1774,15 @@ button,
   height: auto;
   min-height: 44vw;
   width: 500px;
+}
+
+.modal__article-image--bignational-cossaks {
+  height: 380px;
+}
+
+.modal__article-image--sudak {
+  width: 560px;
+  height: 360px;
 }
 
 .modal__article-image-title {
@@ -3312,9 +3355,22 @@ button,
     width: 100%;
   }
 
+  .modal__article-title-start,
+  .modal__article-title-autor {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 90%;
+  }
+
+  .modal__article-title-autor {
+    font-weight: 600;
+  }
+
   .modal__article-title {
     font-size: 22px;
-    line-height: 36px;
+    line-height: 28px;
     font-weight: 600;
     color: #ffffff;
     width: 100%;
@@ -3333,6 +3389,13 @@ button,
     font-weight: 400;
     color: #ffffff;
     text-indent: 20px;
+  }
+
+  .modal__article-text-decription {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ffffff;
   }
 
   .modal__article-content-text-italic {
@@ -3499,6 +3562,13 @@ button,
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
+    color: #000000;
+  }
+
+  .categories__card-title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
     color: #000000;
   }
 
