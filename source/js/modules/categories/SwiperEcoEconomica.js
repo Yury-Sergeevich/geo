@@ -19,6 +19,20 @@ const initSwiperEcoEconomica = (swiper) => {
           initialSlide: 2,
         },
 
+        400: {
+          slidesPerView: 2,
+          slidesPerGroup: 1,
+          spaceBetween: 22,
+          initialSlide: 1,
+        },
+
+        500: {
+          slidesPerView: 2,
+          slidesPerGroup: 1,
+          spaceBetween: 22,
+          initialSlide: 1,
+        },
+
         768: {
           slidesPerView: 2,
           slidesPerGroup: 1,

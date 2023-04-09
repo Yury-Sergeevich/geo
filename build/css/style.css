@@ -2339,6 +2339,38 @@ button,
   margin-right: auto;
 }
 
+.logo {
+  margin-right: 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.logo p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.logo__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #7db142;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .menu-toggle {
   display: none;
 }
@@ -2606,10 +2638,12 @@ button,
 }
 
 .promo-slider__slides-link h3 {
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: 400;
+  color: #ffffff;
   width: 100%;
   letter-spacing: 0.05em;
-  font-size: 26px;
-  line-height: 38px;
   margin: 0;
   position: absolute;
   bottom: 45px;
@@ -2937,12 +2971,22 @@ button,
   top: 58%;
 }
 
+.footer {
+  background-color: #f0f0f0;
+}
+
 .footer__container {
   padding-top: 72px;
   padding-bottom: 57px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-bottom: 1px solid #d9d9d9;
   -webkit-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
@@ -2950,11 +2994,10 @@ button,
 }
 
 .footer__list-nav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  width: 426px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
 }
 
 .footer__link-nav {
@@ -3051,12 +3094,18 @@ button,
   text-transform: uppercase;
 }
 
+.footer__advisory {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+}
+
 .categories__title {
   font-size: 26px;
   line-height: 42px;
   font-weight: 500;
-  color: #000000;
-  font-family: "Rubik Dirt", "Arial", sans-serif;
+  color: #3d3e67;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
 }
 
@@ -3080,7 +3129,7 @@ button,
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: #000000;
+  color: #141414;
   margin-top: auto;
   margin: 0;
 }
@@ -3088,8 +3137,7 @@ button,
 .categories__image {
   border-radius: 20px;
   width: 100%;
-  height: 29vw;
-  min-height: 310px;
+  height: 300px;
   margin-bottom: 15px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -3263,6 +3311,17 @@ button,
   }
 }
 
+@media (max-width: 1200px) {
+  .footer__list-nav {
+    width: 70%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
@@ -3327,6 +3386,16 @@ button,
 
   .top-news__image {
     height: 47vw;
+  }
+
+  .footer__container {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  .categories__image {
+    min-height: 260px;
+    height: 32vw;
   }
 
   .categories__button--ecoeconomica-next,
@@ -3410,6 +3479,21 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .logo {
+    width: 100px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .menu-toggle {
@@ -3502,6 +3586,15 @@ button,
     right: 0;
   }
 
+  .promo-slider__slides-link h3 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    bottom: 20px;
+  }
+
   .promo-gym__container {
     padding: 64px 0 30px 0;
   }
@@ -3558,6 +3651,19 @@ button,
     height: auto;
   }
 
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .footer__logo {
+    margin-bottom: 50px;
+  }
+
   .categories__title {
     font-size: 16px;
     line-height: 22px;
@@ -3573,7 +3679,7 @@ button,
   }
 
   .categories__image {
-    min-height: 350px;
+    min-height: 285px;
   }
 
   .categories__button--ecoeconomica-prev,
@@ -3651,6 +3757,28 @@ button,
     -webkit-transform: translateY(calc(-50% - 5px));
     -ms-transform: translateY(calc(-50% - 5px));
     transform: translateY(calc(-50% - 5px));
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__list-nav {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__list-nav {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 85px;
   }
 }
 

@@ -1,6 +1,6 @@
 .categories__title {
-  @include font(26px, 42px, 500, $first-color);
-  font-family: "Rubik Dirt", "Arial", sans-serif;
+  @include font(26px, 42px, 500, #3d3e67);
+  font-family: Georgia, "Times New Roman", Times, serif;
 
   text-transform: uppercase;
 
@@ -21,7 +21,7 @@
 }
 
 .categories__card-title {
-  @include font(14px, 18px, 400, $first-color);
+  @include font(14px, 18px, 400, #141414);
 
   margin-top: auto;
   margin: 0;
@@ -34,13 +34,22 @@
 .categories__image {
   border-radius: 20px;
   width: 100%;
-  height: 29vw;
-  min-height: 310px;
+  height: 300px;
   margin-bottom: 15px;
   object-fit: cover;
 
+  @mixin vp-1279 {
+    height: 20vw;
+    min-height: 300px;
+  }
+
+  @include vp-1023 {
+    min-height: 260px;
+    height: 32vw;
+  }
+
   @include vp-767 {
-    min-height: 350px;
+    min-height: 285px;
   }
 }
 

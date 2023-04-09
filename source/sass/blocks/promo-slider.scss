@@ -87,10 +87,9 @@
 }
 
 .promo-slider__slides-link h3 {
+  @include font(26px, 31px, 400, $second-color);
   width: 100%;
   letter-spacing: 0.05em;
-  font-size: 26px;
-  line-height: 38px;
   margin: 0;
   position: absolute;
   bottom: 45px;
@@ -98,4 +97,10 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
+
+  @include vp-767 {
+    @include font(18px, 21px, 400, $second-color);
+    letter-spacing: 0.03em;
+    bottom: 20px;
+  }
 }
