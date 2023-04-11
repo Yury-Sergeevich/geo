@@ -17,9 +17,13 @@
             <nav class="header__nav nav">
               <div class="nav__top-nav">
                 <a class="logo" href="#">
-                  <img src="img/logo/Кравченко Юрий_Логотип_CMYK_1.svg" alt="Логотип сайта Dragoman Geo" />
-                  <span>jkfsbkjfb</span>
+                  <p>Dragoman-geo</p>
+                  <span class="logo__text">eco group Tethis</span>
                 </a>
+                <div class="header__promo-wrapper">
+                  <span>*1883*-*2023*</span>
+                  <p class="header__promo-title">&nbsp;к 140-летнему юбилею начала печати международной газеты И.&nbsp;Гаспринского &laquo;Терджиман-Переводчикъ&raquo;</p>
+                </div>
                 <a class="btn" href="#" data-open-modal="live">
                   <span class="btn__text">Live</span>
                 </a>
@@ -157,7 +161,7 @@
                 <div class="about__image">
                   <img src="img/about/photo-img@1x.jpg" width="251" height="124" alt="" />
                 </div>
-                <p class="anim-items">-----*1883* к 140-летнему юбилею начала печати международной газеты И. Гаспринского «Терджиман-Переводчикъ» *2023* -----</p>
+                <!-- <p class="anim-items">-----*1883* к 140-летнему юбилею начала печати международной газеты И. Гаспринского «Терджиман-Переводчикъ» *2023* -----</p> -->
               </div>
               <div class="about__description active">
                 <p class="anim-items">Свободное Интернет издание, освещающее экологические, экономические, этнографические, правовые, культурно-просветительские и&nbsp;повседневные вопросы Крыма с&nbsp;Фэнзин приложением Альманахом этернализма &laquo;Крымские гипотезы&raquo;</p>
@@ -290,11 +294,14 @@
                 <div class="swiper" id="SwiperGeoEco">
                   <ul class="categories__list swiper-wrapper reset-list">
                     <li class="categories__card swiper-slide">
-                      <a class="categories__card-link" href="#" data-open-modal="harcho" id="harcho">
+                      <a class="categories__card-link" href="#" data-open-modal="harcho">
                         <div class="categories__image-wrapper">
                           <img class="categories__image" src="./img/categories/cusine/harcho-light.jpg" width="370" height="369" alt="" />
                         </div>
-                        <h2 class="categories__card-title">Харчо</h2>
+                        <div class="categories__footer-content">
+                          <h2 class="categories__card-title">Харчо</h2>
+                          <span class="view-count">0</span>
+                        </div>
                       </a>
                     </li>
                     <li class="categories__card swiper-slide">
@@ -310,7 +317,15 @@
                         <div class="categories__image-wrapper">
                           <img class="categories__image" src="./img/categories/cusine/error-plov/image-2.jpg" width="370" height="369" alt="" />
                         </div>
-                        <h2 class="categories__card-title">Лже-Плов, как лжеплод Миротона!</h2>
+                        <div class="categories__footer-content">
+                          <h2 class="categories__card-title">Лже-Плов, как лжеплод Миротона!</h2>
+                          <span class="view-count">
+                            <svg width="15" height="15" role="img">
+                              <use xlink:href="img/sprite.svg#ice"></use>
+                            </svg>
+                            0
+                          </span>
+                        </div>
                       </a>
                     </li>
                     <li class="categories__card swiper-slide">
@@ -514,7 +529,7 @@
           </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1586,7 +1601,7 @@
           </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg class="modal__close-btn-icon" width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>

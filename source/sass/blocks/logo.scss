@@ -1,25 +1,24 @@
 .logo {
-  margin-right: 74px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include vp-767 {
-    width: 100px;
+    width: 155px;
     height: 80px;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
   }
 }
 .logo p {
-  @include font(14px, 26px, 400, $first-color);
+  @include font(18px, 26px, 400, $first-color);
   text-transform: uppercase;
 
   margin: 0;
-  margin-bottom: 5px;
 }
 
 .logo__text {

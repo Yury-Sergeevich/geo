@@ -5,3 +5,28 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.header__promo-wrapper {
+  text-align: center;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.header__promo-wrapper span {
+  @include font(14px, 18px, 500);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header__promo-title {
+  @include font(15px, 22px, 500);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #949494;
+  margin: 0 auto;
+  width: 50%;
+
+  @include vp-1023 {
+    width: 80%;
+  }
+}

@@ -70,8 +70,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: -20px;
+    right: 0;
     z-index: 1;
 
     width: 40px;
@@ -81,6 +81,10 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+  }
+
+  &__modal__close-btn-icon {
+    fill: red;
   }
 
   &--responsive {
@@ -185,7 +189,7 @@
 .modal__article-content-text {
   @include font(18px, 30px, 400, $second-color);
   color: $second-color;
-  // text-align: justify;
+  text-align: center;
   text-indent: 50px;
   letter-spacing: 0.03em;
   margin: 0;
@@ -211,7 +215,7 @@
 .modal__article-content-text-italic {
   @include font(22px, 30px, 400, $second-color);
   color: $second-color;
-  text-align: justify;
+  text-align: center;
   margin: 0;
   font-style: italic;
 

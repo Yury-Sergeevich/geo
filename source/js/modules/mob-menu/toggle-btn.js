@@ -1,12 +1,12 @@
-const menuWrapper = document.querySelector('.header__overlay');
+const menuWrapper = document.querySelector('.wrapper');
 const menuButton = document.querySelector('.menu-toggle');
 
 function initMobMenu() {
   menuButton.addEventListener('click', () => {
-    if (menuWrapper.classList.contains('header__overlay-open')) {
-      menuWrapper.classList.remove('header__overlay-open');
+    if (menuWrapper.classList.contains('wrapper--open-mobmenu')) {
+      menuWrapper.classList.remove('wrapper--open-mobmenu');
     } else {
-      menuWrapper.classList.add('header__overlay-open');
+      menuWrapper.classList.add('wrapper--open-mobmenu');
     }
   });
 }
