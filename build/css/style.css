@@ -1527,7 +1527,7 @@ button,
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
-  color: #515151;
+  color: #dadada;
 }
 
 .modal {
@@ -2362,7 +2362,7 @@ button,
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
-  color: #000000;
+  color: #dadada;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -2370,9 +2370,8 @@ button,
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
-  color: #000000;
+  color: #dadada;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #949494;
   margin: 0 auto;
   width: 86%;
 }
@@ -2579,7 +2578,7 @@ button,
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
-  color: #515151;
+  color: #dadada;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -2595,6 +2594,7 @@ button,
 }
 
 .promo-slider__container {
+  margin-bottom: 30px;
   padding-top: 15px;
   position: relative;
 }
@@ -2741,51 +2741,12 @@ button,
   height: 29.3vw;
 }
 
-.important__container {
-  min-height: 104px;
-}
-
-.important__content {
-  background: -o-linear-gradient(359.62deg, #f4f4f4 33.6%, rgba(244, 244, 244, 0.67) 90.03%);
-  background: linear-gradient(90.38deg, #f4f4f4 33.6%, rgba(244, 244, 244, 0.67) 90.03%);
-  padding: 20px 0;
-  width: 100%;
-  overflow: hidden;
-}
-
-.important__content p {
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: 400;
-  color: #000000;
-  letter-spacing: 0.02em;
-  text-align: center;
-  width: 90%;
-  margin: 0 auto;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  opacity: 0;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-}
-
-.important__content p.active {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
 .about__container {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.about__top-background-wrapper {
-  min-height: 141px;
-  background-image: url("../img/about/image 3@1x.jpg");
+.about__content {
   margin-bottom: 30px;
 }
 
@@ -2815,13 +2776,6 @@ button,
   margin-bottom: 20px;
 }
 
-.about__title h2.active {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
 .about__image {
   width: 251px;
   margin: 0 auto 30px;
@@ -2840,26 +2794,17 @@ button,
   letter-spacing: 0.03em;
   text-align: center;
   margin: 0;
-  -webkit-transform: translate(0px, 120%);
-  -ms-transform: translate(0px, 120%);
-  transform: translate(0px, 120%);
-  opacity: 0;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-}
-
-.about__image-wrapper p.active {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-  opacity: 1;
 }
 
 .about__description {
-  width: 80%;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #dadada;
+  width: 50%;
   max-width: 1023px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .about__description p {
@@ -3178,6 +3123,10 @@ button,
   margin: 0;
 }
 
+.categories__title span {
+  color: #be38bd;
+}
+
 .categories__image {
   border-radius: 20px;
   width: 100%;
@@ -3193,6 +3142,7 @@ button,
 }
 
 .categories__button {
+  z-index: 1;
   position: absolute;
   top: 50%;
   border: none;
@@ -3350,8 +3300,8 @@ button,
   }
 
   .footer__container {
-    padding-top: 50px;
-    padding-bottom: 45px;
+    padding-top: 20px;
+    padding-bottom: 25px;
   }
 }
 
@@ -3429,17 +3379,6 @@ button,
     height: 44.8vw;
   }
 
-  .important__content {
-    padding: 22px 0;
-  }
-
-  .important__content p {
-    font-size: 26px;
-    line-height: 36px;
-    font-weight: 400;
-    color: #000000;
-  }
-
   .top-news__image {
     height: 47vw;
   }
@@ -3452,6 +3391,10 @@ button,
   .categories__image {
     min-height: 260px;
     height: 32vw;
+  }
+
+  .categories__wrapper-swiper {
+    margin-bottom: 25px;
   }
 
   .categories__button--ecoeconomica-next,
@@ -3722,15 +3665,11 @@ button,
     margin-bottom: 40px;
   }
 
-  .important__container {
-    padding: 0;
-  }
-
-  .important__content p {
-    font-size: 21px;
+  .about__title {
+    font-size: 20px;
     line-height: 26px;
     font-weight: 400;
-    color: #000000;
+    color: #dadada;
   }
 
   .about__description {
@@ -3783,18 +3722,22 @@ button,
     min-height: 285px;
   }
 
+  .categories__wrapper-swiper {
+    margin-bottom: 15px;
+  }
+
   .categories__button--ecoeconomica-prev,
   .categories__button--cossaks-prev,
   .categories__button--geo-eco-prev,
   .categories__button--art-prev {
-    left: 40px;
+    left: 0;
   }
 
   .categories__button--ecoeconomica-next,
   .categories__button--cossaks-next,
   .categories__button--geo-eco-next,
   .categories__button--art-next {
-    left: 65px;
+    right: 0;
   }
 }
 

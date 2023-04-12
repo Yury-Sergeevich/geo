@@ -12,8 +12,8 @@
   transition: 0.4s ease-in-out;
 
   @media (max-width: 1279px) {
-    padding-top: 50px;
-    padding-bottom: 45px;
+    padding-top: 20px;
+    padding-bottom: 25px;
   }
 
   @include vp-1023 {

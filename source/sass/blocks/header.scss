@@ -25,14 +25,13 @@
 }
 
 .header__promo-wrapper span {
-  @include font(14px, 18px, 500);
+  @include font(14px, 18px, 500, #dadada);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header__promo-title {
-  @include font(14px, 18px, 500);
+  @include font(14px, 18px, 500, #dadada);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #949494;
   margin: 0 auto;
   width: 86%;
 
