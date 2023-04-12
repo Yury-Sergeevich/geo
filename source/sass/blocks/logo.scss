@@ -24,7 +24,7 @@
   display: none;
   @include vp-767 {
     display: block;
-    @include font(18px, 26px, 400, $first-color);
+    @include font(18px, 26px, 400, #dadada);
     text-transform: uppercase;
     margin: 0;
   }

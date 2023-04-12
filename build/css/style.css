@@ -3136,6 +3136,8 @@ button,
   font-weight: 500;
   color: #dadada;
   font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -3165,10 +3167,6 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.view-count {
-  margin-right: 20px;
 }
 
 .categories__card-title {
@@ -3602,7 +3600,7 @@ button,
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
-    color: #000000;
+    color: #dadada;
     text-transform: uppercase;
     margin: 0;
   }
@@ -3771,14 +3769,14 @@ button,
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
-    color: #000000;
+    color: #dadada;
   }
 
   .categories__card-title {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
-    color: #000000;
+    color: #dadada;
   }
 
   .categories__image {
