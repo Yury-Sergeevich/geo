@@ -14,14 +14,25 @@
     justify-content: center;
   }
 }
-.logo p {
-  @include font(18px, 26px, 400, $first-color);
-  text-transform: uppercase;
 
-  margin: 0;
+.logo__icon {
+  @include vp-767 {
+    display: none;
+  }
 }
 
-.logo__text {
+.logo__title {
+  display: none;
+  @include vp-767 {
+    display: block;
+    @include font(18px, 26px, 400, $first-color);
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.logo__subtitle {
   @include font(14px, 18px, 400, #7db142);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }

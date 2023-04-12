@@ -2380,21 +2380,17 @@ button,
   align-items: center;
 }
 
-.logo p {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
-  margin: 0;
+.logo__title {
+  display: none;
 }
 
-.logo__text {
+.logo__subtitle {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #7db142;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 .menu-toggle {
@@ -3551,6 +3547,20 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .logo__icon {
+    display: none;
+  }
+
+  .logo__title {
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
   }
 
   .menu-toggle {
