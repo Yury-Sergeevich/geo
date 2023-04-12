@@ -9,16 +9,24 @@
   margin-bottom: 30px;
 }
 
-.about__title h2 {
-  @include font(36px, 46px, 400, $first-color);
+.about__title {
+  @include font(36px, 46px, 400, #dadada);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 
   margin: 0;
-  margin-bottom: 30px;
-
-  transform: translate(0px, 120%);
-  opacity: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
   transition: all 0.8s ease 0s;
+}
+
+.about__subtitle {
+  @include font(22px, 28px, 400, #7db142);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .about__title h2.active {
