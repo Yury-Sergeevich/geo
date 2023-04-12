@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта" />
-    <title>ProjectName</title>
+    <title>dragoman-geo</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -13,63 +13,67 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container container">
-          <div class="header__overlay">
-            <nav class="header__nav nav">
-              <div class="nav__top-nav">
-                <a class="logo" href="#"><img src="img/logo/Кравченко Юрий_Логотип_CMYK_1.svg" alt="" /></a>
-                <a class="btn" href="#" data-open-modal="live">
-                  <span class="btn__text">Live</span>
-                </a>
-              </div>
-              <div class="nav__bottom-nav">
-                <ul class="nav__main-list reset-list">
-                  <li class="nav__main-item rubrick-menu">
-                    <a class="nav__main-link" href="#categories">рубрики</a>
-                    <ul class="rubrick-menu__list reset-list">
-                      <li class="rubrick-menu__item">
-                        <h2 class="rubrick-menu__item-title">Большое Причерноморье</h2>
-                      </li>
-                      <li class="rubrick-menu__item">
-                        <a class="rubrick-menu__link" href="#geo-eco">Географические и экологические особенности</a>
-                      </li>
-                      <li class="rubrick-menu__item">
-                        <a class="rubrick-menu__link" href="#eco-economica">экоэкономика и органическое хозяйство</a>
-                      </li>
-                      <li class="rubrick-menu__item">
-                        <a class="rubrick-menu__link" href="#">Этиотуризм и региональная кухня</a>
-                      </li>
-                      <li class="rubrick-menu__item">
-                        <a class="rubrick-menu__link" href="#art-cultural">Исскуство и культурное наследие</a>
-                      </li>
-                      <li class="rubrick-menu__item">
-                        <a class="rubrick-menu__link" href="#ethnic-cossacs">Аборигенное казачество и интересные люди</a>
-                      </li>
-                    </ul>
+          <div class="header__nav">
+            <a class="logo" href="#">
+              <img class="logo__icon" src="img/logo/Кравченко Юрий_Логотип_CMYK_2.svg" width="100" height="80" alt="" />
+              <p class="logo__title">Dragoman-geo</p>
+              <span class="logo__subtitle">eco group Tethis</span>
+            </a>
+            <div class="header__promo-wrapper">
+              <span>*1883*-*2023*</span>
+              <p class="header__promo-title">&nbsp;к 140-летнему юбилею начала печати международной газеты И.&nbsp;Гаспринского &laquo;Терджиман-Переводчикъ&raquo;</p>
+            </div>
+            <a class="btn" href="#" data-open-modal="live">
+              <span class="btn__text">Live</span>
+            </a>
+          </div>
+          <nav class="header__nav-categories nav">
+            <ul class="nav__categories-list reset-list">
+              <li class="nav__categories-item rubric-menu">
+                <a class="nav__categories-link" href="#categories">рубрики</a>
+                <ul class="rubric-menu__list reset-list">
+                  <li class="rubric-menu__item">
+                    <h2 class="rubric-menu__item-title">Большое Причерноморье</h2>
                   </li>
-                  <li class="nav__main-item">
-                    <a class="nav__main-link" href="#">срочно</a>
+                  <li class="rubric-menu__item">
+                    <a class="rubric-menu__link" href="#geo-eco">Географические и экологические особенности</a>
                   </li>
-                  <li class="nav__main-item">
-                    <a class="nav__main-link" href="#">афиша</a>
+                  <li class="rubric-menu__item">
+                    <a class="rubric-menu__link" href="#eco-economica">экоэкономика и органическое хозяйство</a>
                   </li>
-                  <li class="nav__main-item">
-                    <a class="nav__main-link" href="#">La patrimoine</a>
+                  <li class="rubric-menu__item">
+                    <a class="rubric-menu__link" href="#regional-cuisine">Этиотуризм и региональная кухня</a>
                   </li>
-                  <li class="nav__main-item">
-                    <a class="nav__main-link" href="#">
-                      <p class="nav__main-link-title">крымские гипотезы</p>
-                      <p class="nav__main-link-sub-title">альманах этернализма</p>
-                    </a>
+                  <li class="rubric-menu__item">
+                    <a class="rubric-menu__link" href="#art-cultural">Исскуство и культурное наследие</a>
+                  </li>
+                  <li class="rubric-menu__item">
+                    <a class="rubric-menu__link" href="#ethnic-cossacs">Аборигенное казачество и интересные люди</a>
                   </li>
                 </ul>
-              </div>
-            </nav>
-          </div>
+              </li>
+              <li class="nav__categories-item">
+                <a class="nav__categories-link" href="#">срочно</a>
+              </li>
+              <li class="nav__categories-item">
+                <a class="nav__categories-link" href="#">афиша</a>
+              </li>
+              <li class="nav__categories-item">
+                <a class="nav__categories-link" href="#">La patrimoine</a>
+              </li>
+              <li class="nav__categories-item">
+                <a class="nav__categories-link" href="#">
+                  <p class="nav__categories-title">крымские гипотезы</p>
+                  <p class="nav__categories-subtitle">альманах этернализма</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__menu-toggle menu-toggle" type="button">
+            <span class="menu-toggle__line"></span>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
-        <button class="header__menu-toggle menu-toggle" type="button">
-          <span class="menu-toggle__line"></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </header>
       <main>
         <section class="promo-slider">
@@ -147,14 +151,14 @@
           <div class="about__container container">
             <div class="about__top-background-wrapper"></div>
             <div class="about__content">
-              <div class="about__title active">
-                <h2 class="anim-items">КРЫМСКИЙ КАЛЕЙДОСКОП</h2>
+              <div class="about__title-wrapper">
+                <h2 class="about__title">dragoman-geo</h2>
+                <p class="about__subtitle">eco group Tethis</p>
               </div>
               <div class="about__image-wrapper">
                 <div class="about__image">
                   <img src="img/about/photo-img@1x.jpg" width="251" height="124" alt="" />
                 </div>
-                <p class="anim-items">-----*1883* к 140-летнему юбилею начала печати международной газеты И. Гаспринского «Терджиман-Переводчикъ» *2023* -----</p>
               </div>
               <div class="about__description active">
                 <p class="anim-items">Свободное Интернет издание, освещающее экологические, экономические, этнографические, правовые, культурно-просветительские и&nbsp;повседневные вопросы Крыма с&nbsp;Фэнзин приложением Альманахом этернализма &laquo;Крымские гипотезы&raquo;</p>
@@ -204,7 +208,7 @@
         <section class="categories" id="categories">
           <div class="container">
             <div class="categories__geo-eco" id="geo-eco">
-              <h2 class="categories__title">Географические и экологические особенности</h2>
+              <h2 class="categories__title">#Географические и экологические особенности</h2>
               <div class="categories__wrapper-swiper">
                 <div class="swiper" id="SwiperGeoEco">
                   <ul class="categories__list swiper-wrapper reset-list">
@@ -239,7 +243,7 @@
               </div>
             </div>
             <div class="categories__ecoeconomica" id="eco-economica">
-              <h2 class="categories__title">экоэкономика и органическое хозяйство</h2>
+              <h2 class="categories__title">#экоэкономика и органическое хозяйство</h2>
               <div class="categories__wrapper-swiper">
                 <div class="swiper" id="SwiperEcoEconomica">
                   <ul class="categories__list swiper-wrapper reset-list">
@@ -281,17 +285,20 @@
                 <button class="categories__button categories__button--ecoeconomica-next" type="button"></button>
               </div>
             </div>
-            <div class="categories__regional-cuisine">
-              <h2 class="categories__title">Этиотуризм и региональная кухня</h2>
+            <div class="categories__regional-cuisine" id="regional-cuisine">
+              <h2 class="categories__title">#Этиотуризм и региональная кухня</h2>
               <div class="categories__wrapper-swiper">
                 <div class="swiper" id="SwiperGeoEco">
                   <ul class="categories__list swiper-wrapper reset-list">
                     <li class="categories__card swiper-slide">
-                      <a class="categories__card-link" href="#" data-open-modal="harcho" id="harcho">
+                      <a class="categories__card-link" href="#" data-open-modal="harcho">
                         <div class="categories__image-wrapper">
                           <img class="categories__image" src="./img/categories/cusine/harcho-light.jpg" width="370" height="369" alt="" />
                         </div>
-                        <h2 class="categories__card-title">Харчо</h2>
+                        <div class="categories__footer-content">
+                          <h2 class="categories__card-title">Харчо</h2>
+                          <span class="view-count">0</span>
+                        </div>
                       </a>
                     </li>
                     <li class="categories__card swiper-slide">
@@ -307,7 +314,15 @@
                         <div class="categories__image-wrapper">
                           <img class="categories__image" src="./img/categories/cusine/error-plov/image-2.jpg" width="370" height="369" alt="" />
                         </div>
-                        <h2 class="categories__card-title">Лже-Плов, как лжеплод Миротона!</h2>
+                        <div class="categories__footer-content">
+                          <h2 class="categories__card-title">Лже-Плов, как лжеплод Миротона!</h2>
+                          <span class="view-count">
+                            <svg width="15" height="15" role="img">
+                              <use xlink:href="img/sprite.svg#ice"></use>
+                            </svg>
+                            0
+                          </span>
+                        </div>
                       </a>
                     </li>
                     <li class="categories__card swiper-slide">
@@ -333,7 +348,7 @@
               </div>
             </div>
             <div class="categories__art-cultural" id="art-cultural">
-              <h2 class="categories__title">Исскуство и культурное наследие</h2>
+              <h2 class="categories__title">#Исскуство и культурное наследие</h2>
               <div class="categories__wrapper-swiper">
                 <div class="swiper" id="ArtCultural">
                   <ul class="categories__list swiper-wrapper reset-list">
@@ -360,7 +375,7 @@
               </div>
             </div>
             <div class="categories__cossaks" id="ethnic-cossacs">
-              <h2 class="categories__title">Аборигенное казачество и&nbsp;интересные люди</h2>
+              <h2 class="categories__title">#Аборигенное казачество и&nbsp;интересные люди</h2>
               <div class="categories__wrapper-swiper">
                 <div class="swiper" id="SwiperEthinicCossaks">
                   <ul class="categories__list swiper-wrapper reset-list">
@@ -405,61 +420,48 @@
           </div>
         </section>
       </main>
-      <!-- <footer class="footer">
+      <footer class="footer">
         <div class="footer__container container">
           <div class="footer__logo">
             <a class="logo" href="#">
-              <p>Крымский калейдоскоп</p>
-              <span>Свободное Интернет издание</span>
+              <img class="logo__image" src="img/logo/Кравченко Юрий_Логотип_CMYK_2.svg" width="100" height="100" alt="" />
+              <span class="logo__subtitle">eco group Tethis</span>
             </a>
           </div>
           <ul class="footer__list-nav reset-list">
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="categories.html">Рубрики</a>
+              <a class="footer__link-nav" href="#categories">Рубрики</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">СРОЧНО</a>
+              <a class="footer__link-nav" href="#">популярное</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">ОТЗЫВЫ</a>
+              <a class="footer__link-nav" href="#">партнеры</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">РЕКЛАМОДАТЕЛЯМ</a>
+              <a class="footer__link-nav" href="#">реклама</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">АРХИВ</a>
+              <a class="footer__link-nav" href="#">сотрудничество</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">La patrimoine</a>
+              <a class="footer__link-nav" href="#">отзывы</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">АЛЬМАНАХ ЭТЕРНАЛИЗМА</a>
+              <a class="footer__link-nav" href="#">акции</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">Flipbook</a>
+              <a class="footer__link-nav" href="#">архив</a>
+            </li>
+            <li class="footer__item-nav">
+              <a class="footer__link-nav" href="#">контакты</a>
             </li>
           </ul>
-          <ul class="footer__contacts-list reset-list">
-            <li class="footer__contacts-item">
-              <a class="footer__contacts-link" href="tel:+79999999999">+7(999)999-99-99</a>
-            </li>
-            <li class="footer__contacts-item">
-              <a class="footer__contacts-link" href="mailto:mail@mail.ru">mail@mail.ru</a>
-            </li>
-          </ul>
-          <div class="footer__subscripe">
-            <button class="footer__button-subscripe" type="button" title="оформить подписку">
-              <svg class="footer__button-subscripe-icon" role="img" width="30" height="30">
-                <use xlink:href="img/sprite.svg#footer-subscribe"></use>
-              </svg>
-            </button>
-            <span class="footer__button-subscripe-title">подписаться</span>
-          </div>
         </div>
         <div class="container">
-          <p>©2023 Крымский калейдоскоп. Все права защищены.</p>
+          <p class="footer__advisory">©2023 Крымский калейдоскоп. Все права защищены.</p>
         </div>
-      </footer> -->
+      </footer>
     </div>
 
     <!-- Модалки -->
@@ -478,7 +480,7 @@
           </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -524,7 +526,7 @@
           </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -588,9 +590,8 @@
               </p>
             </div>
           </div>
-
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -649,7 +650,7 @@
         </div>
 
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15" role="img">
+          <svg width="20" height="20" role="img">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
@@ -734,7 +735,7 @@
           </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -812,7 +813,7 @@
           </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -874,7 +875,7 @@
           </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -930,7 +931,7 @@
           </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -985,11 +986,15 @@
                 <p class="recept__footer-text">Приготовленное блюдо можно заправить сметаной или катыком.</p>
                 <p class="recept__footer-advisory">Приятного аппетита!</p>
               </div>
+              <p class="modal__article-title-start">
+                <em> Приятного всем аппетита!<br /> </em><br />
+                <strong class="modal__article-title-autor">&laquo;DRAGOMAN GEO&raquo;</strong>
+              </p>
             </div>
           </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1077,7 +1082,7 @@
             </div>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1164,7 +1169,7 @@
             </div>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1248,7 +1253,7 @@
             </div>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1405,7 +1410,7 @@
             </p>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1469,7 +1474,7 @@
             </div>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1592,7 +1597,7 @@
           </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg class="modal__close-btn-icon" width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1677,7 +1682,7 @@
             </div>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1736,7 +1741,7 @@
             </div>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1818,7 +1823,7 @@
             </div>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1868,7 +1873,7 @@
             </div>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" role="img">
+            <svg width="20" height="20" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
