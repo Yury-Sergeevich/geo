@@ -3083,6 +3083,10 @@ button,
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;
   margin-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-transform: uppercase;
 }
 
@@ -3142,7 +3146,6 @@ button,
 }
 
 .categories__button {
-  z-index: 1;
   position: absolute;
   top: 50%;
   border: none;
@@ -3723,14 +3726,14 @@ button,
   }
 
   .categories__wrapper-swiper {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
   }
 
   .categories__button--ecoeconomica-prev,
   .categories__button--cossaks-prev,
   .categories__button--geo-eco-prev,
   .categories__button--art-prev {
-    left: 0;
+    left: 40px;
   }
 
   .categories__button--ecoeconomica-next,
