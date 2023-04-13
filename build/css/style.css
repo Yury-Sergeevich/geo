@@ -2341,6 +2341,16 @@ button,
   color: #15ab07;
 }
 
+.header {
+  position: relative;
+}
+
+.header__image-moon {
+  position: absolute;
+  top: 146px;
+  right: -40px;
+}
+
 .header__promo-wrapper {
   text-align: center;
 }
@@ -2356,6 +2366,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 20px 40.5px;
+  overflow: hidden;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -2561,6 +2572,12 @@ button,
   display: inline-block;
   vertical-align: middle;
   padding: 15px 20px;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .rubric-menu__link:hover {
@@ -2568,6 +2585,22 @@ button,
   background: -o-linear-gradient(left, #332d2d, #182626, #281b1b);
   background: linear-gradient(90deg, #332d2d, #182626, #281b1b);
   color: #ff8181;
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.rubric-menu__link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 10px;
+  height: 50%;
+  width: 1px;
+  background-color: #ff8181;
 }
 
 .nav__categories-list {
@@ -2590,6 +2623,13 @@ button,
   color: #dadada;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.nav__categories-link:hover {
+  color: #ff8181;
 }
 
 .nav__categories-title {
@@ -2810,7 +2850,7 @@ button,
   line-height: 28px;
   font-weight: 400;
   color: #dadada;
-  width: 50%;
+  width: 56%;
   max-width: 1023px;
   margin: 0 auto;
   text-align: center;
@@ -3492,6 +3532,10 @@ button,
     flex-direction: column;
   }
 
+  .header__image-moon {
+    display: none;
+  }
+
   .header__promo-wrapper {
     display: none;
   }
@@ -3579,14 +3623,6 @@ button,
 
   .rubric-menu__item {
     position: relative;
-  }
-
-  .rubric-menu__link::after {
-    content: "#";
-    color: red;
-    position: absolute;
-    top: 15px;
-    left: 10px;
   }
 
   .nav__categories-list {

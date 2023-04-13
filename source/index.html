@@ -7,6 +7,7 @@
     <meta name="description" content="Описание проекта" />
     <title>dragoman-geo</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   </head>
 
   <body>
@@ -20,8 +21,8 @@
               <span class="logo__subtitle">eco group Tethis</span>
             </a>
             <div class="header__promo-wrapper">
-              <span>*1883*-*2023*</span>
               <p class="header__promo-title">&nbsp;к 140-летнему юбилею начала печати международной газеты И.&nbsp;Гаспринского &laquo;Терджиман-Переводчикъ&raquo;</p>
+              <span class="header__promo-subtitle">*1883*-*2023*</span>
             </div>
             <a class="btn" href="#" data-open-modal="live">
               <span class="btn__text">Live</span>
@@ -74,6 +75,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
+        <img class="header__image-moon" src="img/anim-background/moon-1.png" width="150" height="150" alt="" />
       </header>
       <main>
         <section class="promo-slider">
@@ -91,7 +93,7 @@
                   <li class="promo-slider__slides-item swiper-slide">
                     <a href="#" class="promo-slider__slides-link" data-open-modal="house-arhitector">
                       <img class="promo-slider__slides-image" src="img/promo-slider/slide-2@1x.jpg" width="800" height="682" alt="" />
-                      <h3>Снос дома архитектора Николая Краснова в Ялте</h3>
+                      <h3 class="promo-slider__slides-title">Снос дома архитектора Николая Краснова в Ялте</h3>
                     </a>
                   </li>
                 </ul>
@@ -288,7 +290,6 @@
                         </div>
                         <div class="categories__footer-content">
                           <h2 class="categories__card-title">Харчо</h2>
-                          <span class="view-count">0</span>
                         </div>
                       </a>
                     </li>
@@ -307,12 +308,6 @@
                         </div>
                         <div class="categories__footer-content">
                           <h2 class="categories__card-title">Лже-Плов, как лжеплод Миротона!</h2>
-                          <span class="view-count">
-                            <svg width="15" height="15" role="img">
-                              <use xlink:href="img/sprite.svg#ice"></use>
-                            </svg>
-                            0
-                          </span>
                         </div>
                       </a>
                     </li>
@@ -1872,6 +1867,68 @@
       </div>
     </div>
 
+    <script>
+      const tl = gsap.timeline();
+      tl.fromTo(
+        '.header__promo-title',
+        {
+          y: 50,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+        }
+      );
+      tl.fromTo(
+        '.header__promo-subtitle',
+        {
+          y: 50,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.9,
+        }
+      );
+      tl.fromTo(
+        '.logo',
+        {
+          scale: 0,
+        },
+        {
+          scale: 1,
+          duration: 0.9,
+        },
+        0.5
+      );
+      tl.fromTo(
+        '.logo__subtitle',
+        {
+          y: -50,
+        },
+        {
+          y: 0,
+          duration: 0.9,
+        },
+        0.6
+      );
+      tl.fromTo(
+        '.header__image-moon',
+        {
+          x: 120,
+          y: 40,
+        },
+        {
+          y: 0,
+          x: 0,
+          duration: 1,
+        },
+        1
+      );
+    </script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
