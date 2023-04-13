@@ -20,6 +20,10 @@
       margin-bottom: 20px;
     }
   }
+
+  @include vp-767 {
+    width: fit-content;
+  }
 }
 
 .nav__categories-link {

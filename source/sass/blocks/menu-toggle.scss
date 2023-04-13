@@ -24,7 +24,7 @@
 .menu-toggle__line {
   height: 2px;
   width: 24px;
-  background: $first-color;
+  background: #d9d9d9;
   position: absolute;
   left: 11px;
   transition-duration: 0.25s;
@@ -37,7 +37,7 @@
     top: -6px;
     height: 2px;
     width: 24px;
-    background: $first-color;
+    background: #d9d9d9;
     transition: transform 0.25s, top 0.25s 0.25s;
   }
 
@@ -48,7 +48,7 @@
     top: 6px;
     height: 2px;
     width: 24px;
-    background: $first-color;
+    background: #d9d9d9;
     transition: transform 0.25s, top 0.25s 0.25s;
   }
 }

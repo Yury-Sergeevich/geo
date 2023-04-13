@@ -43,15 +43,16 @@
   }
 }
 
-.categories__title span {
-  color: #be38bd;
+.categories__image-wrapper {
+  margin-bottom: 15px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .categories__image {
-  border-radius: 20px;
   width: 100%;
   height: 300px;
-  margin-bottom: 15px;
+
   object-fit: cover;
 
   @mixin vp-1279 {

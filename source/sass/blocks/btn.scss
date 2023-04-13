@@ -9,6 +9,7 @@
   vertical-align: text-bottom;
   padding: 15px 0;
   transition: opacity $trans-default;
+  outline: none;
 
   &:disabled {
     opacity: 0.5;

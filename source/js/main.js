@@ -3,7 +3,7 @@ import { iosVhFix } from './utils/ios-vh-fix';
 import { initModals } from './modules/modals/init-modals';
 import { Form } from './modules/form-validate/form';
 import { initSwiperArticles } from './modules/swiper-articles/swiper-articles';
-import { initMobMenu } from './modules/mob-menu/toggle-btn';
+import { initMobMenu, closeMobMenu } from './modules/mob-menu/toggle-btn';
 import { initSwiperTopNews } from './modules/swiper-top-news/swiper-top-news';
 import { initSwiperGeoEco } from './modules/categories/SwiperGeoEco';
 import { initSwiperEcoEconomica } from './modules/categories/SwiperEcoEconomica';
@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   initMobMenu();
+  closeMobMenu();
   initSwiperArticles(swiper);
   initSwiperTopNews(swiper);
   initSwiperGeoEco(swiper);
