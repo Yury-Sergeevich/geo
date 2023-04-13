@@ -2,16 +2,6 @@
   position: relative;
 }
 
-.header__image-moon {
-  position: absolute;
-  top: 146px;
-  right: -40px;
-
-  @include vp-767 {
-    display: none;
-  }
-}
-
 .header__promo-wrapper {
   text-align: center;
 
