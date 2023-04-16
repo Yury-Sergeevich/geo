@@ -1,3 +1,7 @@
+.about {
+  position: relative;
+}
+
 .about__container {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -5,6 +9,10 @@
 
 .about__content {
   margin-bottom: 30px;
+}
+
+.about__title-wrapper {
+  overflow: hidden;
 }
 
 .about__title {
