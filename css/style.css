@@ -1794,6 +1794,23 @@ button,
   height: 360px;
 }
 
+.modal__article-image--triumf-arca {
+  width: 560px;
+  height: 360px;
+}
+
+.modal__article-image--big-black4 {
+  width: 560px;
+  height: 460px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.modal__article-image--big-black4-3 {
+  width: 460px;
+  height: 330px;
+}
+
 .modal__article-image-title {
   width: 300px;
   font-size: 16px;
@@ -2883,121 +2900,6 @@ button,
   opacity: 1;
 }
 
-.top-news__wrapper-title h2 {
-  font-size: 36px;
-  line-height: 48px;
-  font-weight: 400;
-  color: #000000;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  -webkit-transform: translate(0px, 80%);
-  -ms-transform: translate(0px, 80%);
-  transform: translate(0px, 80%);
-  opacity: 0;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-}
-
-.top-news__wrapper-title h2.active {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
-.top-news__wrapper-swiper {
-  position: relative;
-  margin-bottom: 80px;
-}
-
-.top-news__item {
-  position: relative;
-  -webkit-box-shadow: 5px 5px 10px 5px #f4f4f4;
-  box-shadow: 5px 5px 10px 5px #f4f4f4;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.top-news__item--still {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #413f52;
-  text-align: center;
-}
-
-.top-news__link--still {
-  padding: 70px;
-  color: #ffffff;
-}
-
-.top-news__image {
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.top-news__item:hover .top-news__back-content {
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-  opacity: 1;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.top-news__back-content {
-  padding: 20px;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  background-color: #000000;
-  text-align: center;
-  width: 100%;
-  opacity: 0;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-}
-
-.top-news__autor {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.top-news__button-wrapper {
-  z-index: 10;
-}
-
-.top-news__button {
-  border: none;
-  background: transparent;
-  top: 58%;
-}
-
 .footer {
   background-color: #f0f0f0;
 }
@@ -3229,28 +3131,32 @@ button,
 .categories__button--ecoeconomica-prev,
 .categories__button--cossaks-prev,
 .categories__button--geo-eco-prev,
-.categories__button--art-prev {
+.categories__button--art-prev,
+.categories__button--topnews-prev {
   left: -40px;
 }
 
 .categories__button--ecoeconomica-prev::after,
 .categories__button--cossaks-prev::after,
 .categories__button--geo-eco-prev::after,
-.categories__button--art-prev::after {
+.categories__button--art-prev::after,
+.categories__button--topnews-prev::after {
   content: "prev";
 }
 
 .categories__button--ecoeconomica-next,
 .categories__button--cossaks-next,
 .categories__button--geo-eco-next,
-.categories__button--art-next {
+.categories__button--art-next,
+.categories__button--topnews-next {
   right: -65px;
 }
 
 .categories__button--ecoeconomica-next::after,
 .categories__button--cossaks-next::after,
 .categories__button--geo-eco-next::after,
-.categories__button--art-next::after {
+.categories__button--art-next::after,
+.categories__button--topnews-next::after {
   content: "next";
 }
 
@@ -3332,25 +3238,9 @@ button,
   }
 */
 
-@media (max-width: 1919px) {
-  .top-news__image {
-    height: 7vw;
-  }
-}
-
-@media (max-width: 1439px) {
-  .top-news__image {
-    height: 27vw;
-  }
-}
-
 @media (max-width: 1279px) {
   .container {
     padding: 0 90px;
-  }
-
-  .top-news__image {
-    height: 23vw;
   }
 
   .footer__container {
@@ -3433,10 +3323,6 @@ button,
     height: 44.8vw;
   }
 
-  .top-news__image {
-    height: 47vw;
-  }
-
   .footer__container {
     padding-top: 35px;
     padding-bottom: 30px;
@@ -3454,7 +3340,8 @@ button,
   .categories__button--ecoeconomica-next,
   .categories__button--cossaks-next,
   .categories__button--geo-eco-next,
-  .categories__button--art-next {
+  .categories__button--art-next,
+  .categories__button--topnews-next {
     right: 10px;
   }
 }
@@ -3741,10 +3628,6 @@ button,
     margin: 0;
   }
 
-  .top-news__image {
-    height: auto;
-  }
-
   .footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3793,14 +3676,16 @@ button,
   .categories__button--ecoeconomica-prev,
   .categories__button--cossaks-prev,
   .categories__button--geo-eco-prev,
-  .categories__button--art-prev {
+  .categories__button--art-prev,
+  .categories__button--topnews-prev {
     left: 40px;
   }
 
   .categories__button--ecoeconomica-next,
   .categories__button--cossaks-next,
   .categories__button--geo-eco-next,
-  .categories__button--art-next {
+  .categories__button--art-next,
+  .categories__button--topnews-next {
     right: 0;
   }
 }
