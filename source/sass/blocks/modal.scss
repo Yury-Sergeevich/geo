@@ -296,6 +296,15 @@
     width: 460px;
     height: 330px;
   }
+
+  &--abandoned-pearls-3 {
+    width: 365px;
+    height: 600px;
+  }
+
+  &:hover {
+    transform: scale(1.5);
+  }
 }
 
 .modal__article-image-title {
@@ -326,4 +335,16 @@
 
 .next-article {
   color: $second-color;
+  border: 1px solid #4c4c4c;
+  display: block;
+  text-align: center;
+  width: 200px;
+  margin-left: auto;
+  padding: 10px;
+  transition: 0.4s ease-in-out;
+
+  &:hover {
+    border: 1px solid #cecece;
+    color: #ddb5f7;
+  }
 }

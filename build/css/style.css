@@ -1811,6 +1811,17 @@ button,
   height: 330px;
 }
 
+.modal__article-image--abandoned-pearls-3 {
+  width: 365px;
+  height: 600px;
+}
+
+.modal__article-image:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
 .modal__article-image-title {
   width: 300px;
   font-size: 16px;
@@ -1841,6 +1852,20 @@ button,
 
 .next-article {
   color: #ffffff;
+  border: 1px solid #4c4c4c;
+  display: block;
+  text-align: center;
+  width: 200px;
+  margin-left: auto;
+  padding: 10px;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.next-article:hover {
+  border: 1px solid #cecece;
+  color: #ddb5f7;
 }
 
 .custom-input,
@@ -3041,6 +3066,10 @@ button,
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
+}
+
+.categories__title span {
+  color: #d834ff;
 }
 
 .categories__card {
