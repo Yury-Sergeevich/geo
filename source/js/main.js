@@ -10,6 +10,8 @@ import { initSwiperEcoEconomica } from './modules/categories/SwiperEcoEconomica'
 import { initSwiperEthinicCossaks } from './modules/categories/SwiperEthinicCossaks';
 import { initSwiperArtCultural } from './modules/categories/ArtCultural';
 import { initAnimate } from './vendor/gspa-animate';
+import { initPreviewModal } from './modules/open-preview';
+import { initFunctionPreviewModal } from './modules/modals/preview-modal';
 
 // ---------------------------------
 
@@ -43,6 +45,11 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
   });
 });
+
+window.onload = function () {
+  setTimeout(initPreviewModal, 800);
+  initFunctionPreviewModal();
+};
 
 // ---------------------------------
 

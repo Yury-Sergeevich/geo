@@ -1,4 +1,5 @@
 .preface {
+  position: relative;
   background: #faf9e5;
 }
 
@@ -61,4 +62,21 @@
     color: #000000;
     padding: 0 10px;
   }
+}
+
+.preface__footer-colontitul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preface__text-star,
+.preface__text-end {
+  margin: 0;
+}
+
+.preface__content-image-first-man {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
