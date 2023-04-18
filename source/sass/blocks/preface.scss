@@ -1,0 +1,64 @@
+.preface {
+  background: #faf9e5;
+}
+
+.preface__container {
+  padding: 30px 0;
+  padding-bottom: 200px;
+}
+
+.preface__content {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.preface__content-title {
+  position: relative;
+  @include font(36px, 42px, 600, #000000);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  width: 60%;
+  padding-top: 30px;
+  margin: 0 auto 100px;
+
+  @include vp-767 {
+    @include font(26px, 28px, 600, #000000);
+    margin-bottom: 30px;
+
+    width: 100%;
+    padding-top: 30px;
+
+    &::after {
+      width: 0;
+    }
+
+    &::before {
+      width: 0;
+    }
+  }
+}
+
+.preface__text {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  @include font(16px, 26px, 400);
+  text-align: justify;
+  text-indent: 30px;
+  color: #000000;
+  margin: 0;
+  letter-spacing: 0.05em;
+
+  @include vp-767 {
+    @include font(14px, 22px, 400);
+    text-align: start;
+    color: #000000;
+    padding: 0 10px;
+  }
+}

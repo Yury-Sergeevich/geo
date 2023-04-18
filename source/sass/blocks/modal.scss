@@ -70,8 +70,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.5%;
+    right: 0.5%;
     z-index: 1;
 
     width: 40px;
@@ -118,6 +118,18 @@
 
     pointer-events: auto;
   }
+}
+
+.is-open-preview {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+
+  pointer-events: auto;
+}
+
+.modal__content-preview {
+  background: url("../../img/anim-background/10.png");
 }
 
 .modal__article-wrapper {
@@ -198,6 +210,24 @@
     @include font(16px, 22px, 400, $second-color);
     text-indent: 20px;
   }
+}
+
+.modal__article-content-text-preview {
+  @include font(18px, 30px, 400, $second-color);
+  color: $second-color;
+  text-align: justify;
+  text-indent: 50px;
+  letter-spacing: 0.03em;
+  margin: 0;
+
+  @include vp-767 {
+    @include font(16px, 22px, 400, $second-color);
+    text-indent: 20px;
+  }
+}
+
+.modal__article-content-text span {
+  @include font(16px, 22px, 400, #7db142);
 }
 
 .modal__article-text-decription {

@@ -1603,8 +1603,8 @@ button,
 
 .modal__close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0.5%;
+  right: 0.5%;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -1645,6 +1645,19 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.is-open-preview {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__content-preview {
+  background: url("../../img/anim-background/10.png");
 }
 
 .modal__article-wrapper {
@@ -1712,6 +1725,25 @@ button,
   text-indent: 50px;
   letter-spacing: 0.03em;
   margin: 0;
+}
+
+.modal__article-content-text-preview {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  color: #ffffff;
+  text-align: justify;
+  text-indent: 50px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.modal__article-content-text span {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #7db142;
 }
 
 .modal__article-text-decription {
@@ -3226,6 +3258,50 @@ button,
   text-align: end;
 }
 
+.preface {
+  background: #faf9e5;
+}
+
+.preface__container {
+  padding: 30px 0;
+  padding-bottom: 200px;
+}
+
+.preface__content {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.preface__content-title {
+  position: relative;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  width: 60%;
+  padding-top: 30px;
+  margin: 0 auto 100px;
+}
+
+.preface__text {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-align: justify;
+  text-indent: 30px;
+  color: #000000;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3422,6 +3498,14 @@ button,
   }
 
   .modal__article-content-text {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    text-indent: 20px;
+  }
+
+  .modal__article-content-text-preview {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -3716,6 +3800,38 @@ button,
   .categories__button--art-next,
   .categories__button--topnews-next {
     right: 0;
+  }
+
+  .preface__content {
+    width: 100%;
+  }
+
+  .preface__content-title {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 30px;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .preface__content-title::after {
+    width: 0;
+  }
+
+  .preface__content-title::before {
+    width: 0;
+  }
+
+  .preface__text {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #000000;
+    text-align: start;
+    color: #000000;
+    padding: 0 10px;
   }
 }
 
