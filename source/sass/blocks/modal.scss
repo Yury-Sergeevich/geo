@@ -256,7 +256,6 @@
 
 .modal__article-image-gallery {
   display: flex;
-  margin-bottom: 30px;
 
   @include vp-767 {
     flex-direction: column;
@@ -338,8 +337,8 @@
 }
 
 .modal__article-image-title {
-  width: 300px;
-  @include font(16px, 24px, 600, $second-color);
+  width: 60%;
+  @include font(16px, 22px, 400, #ffeb3b);
 
   text-align: center;
   margin: 0 auto 20px;

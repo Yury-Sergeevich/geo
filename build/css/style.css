@@ -1772,7 +1772,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
 }
 
 .modal__article-image {
@@ -1855,11 +1854,11 @@ button,
 }
 
 .modal__article-image-title {
-  width: 300px;
+  width: 60%;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  color: #ffffff;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffeb3b;
   text-align: center;
   margin: 0 auto 20px;
 }
