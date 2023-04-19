@@ -9,6 +9,7 @@ import { initSwiperGeoEco } from './modules/categories/SwiperGeoEco';
 import { initSwiperEcoEconomica } from './modules/categories/SwiperEcoEconomica';
 import { initSwiperEthinicCossaks } from './modules/categories/SwiperEthinicCossaks';
 import { initSwiperArtCultural } from './modules/categories/ArtCultural';
+import { initSwiperCategories } from './modules/categories/SwiperCategories';
 import { initAnimate } from './vendor/gspa-animate';
 import { initPreviewModal } from './modules/open-preview';
 import { initFunctionPreviewModal } from './modules/modals/preview-modal';
@@ -33,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initSwiperEcoEconomica(swiper);
   initSwiperEthinicCossaks(swiper);
   initSwiperArtCultural(swiper);
+  initSwiperCategories(swiper);
 
   initAnimate();
 
@@ -46,10 +48,10 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-window.onload = function () {
-  setTimeout(initPreviewModal, 800);
-  initFunctionPreviewModal();
-};
+// window.onload = function () {
+//   setTimeout(initPreviewModal, 800);
+//   initFunctionPreviewModal();
+// };
 
 // ---------------------------------
 

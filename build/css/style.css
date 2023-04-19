@@ -2943,11 +2943,11 @@ button,
   width: 25px;
 }
 
-.rubric-menu {
+.categories-menu {
   position: relative;
 }
 
-.rubric-menu:hover .rubric-menu__list {
+.categories-menu:hover .categories-menu__list {
   width: 100%;
   opacity: 1;
   visibility: visible;
@@ -2960,9 +2960,9 @@ button,
   transition: 0.5s ease-in-out;
 }
 
-.rubric-menu__list {
+.categories-menu__list {
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 0;
   opacity: 0;
   min-width: 265px;
@@ -2976,11 +2976,11 @@ button,
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
-.rubric-menu__item:not(:last-child) {
+.categories-menu__item:not(:last-child) {
   border-bottom: 1px solid #d9d9d9;
 }
 
-.rubric-menu__item-title {
+.categories-menu__item-title {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -2994,7 +2994,7 @@ button,
   background: linear-gradient(90deg, #332d2d, #182626, #281b1b);
 }
 
-.rubric-menu__link {
+.categories-menu__link {
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -3012,7 +3012,7 @@ button,
   transition: 0.3s ease-in-out;
 }
 
-.rubric-menu__link:hover {
+.categories-menu__link:hover {
   background: -webkit-gradient(linear, left top, right top, from(#332d2d), color-stop(#182626), to(#281b1b));
   background: -o-linear-gradient(left, #332d2d, #182626, #281b1b);
   background: linear-gradient(90deg, #332d2d, #182626, #281b1b);
@@ -3022,7 +3022,7 @@ button,
   transform: translateX(20px);
 }
 
-.rubric-menu__link::after {
+.categories-menu__link::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -3557,7 +3557,12 @@ button,
 .categories__button--cossaks-prev,
 .categories__button--geo-eco-prev,
 .categories__button--art-prev,
-.categories__button--topnews-prev {
+.categories__button--topnews-prev,
+.categories__button--fact-fiction-prev,
+.categories__button--mystical-places-prev,
+.categories__button--secrets-riddles-prev,
+.categories__button--non-standard-expeditions-prev,
+.categories__button--horeca-gastrotourism-prev {
   left: -40px;
 }
 
@@ -3565,7 +3570,12 @@ button,
 .categories__button--cossaks-prev::after,
 .categories__button--geo-eco-prev::after,
 .categories__button--art-prev::after,
-.categories__button--topnews-prev::after {
+.categories__button--topnews-prev::after,
+.categories__button--fact-fiction-prev::after,
+.categories__button--mystical-places-prev::after,
+.categories__button--secrets-riddles-prev::after,
+.categories__button--non-standard-expeditions-prev::after,
+.categories__button--horeca-gastrotourism-prev::after {
   content: "prev";
 }
 
@@ -3573,7 +3583,12 @@ button,
 .categories__button--cossaks-next,
 .categories__button--geo-eco-next,
 .categories__button--art-next,
-.categories__button--topnews-next {
+.categories__button--topnews-next,
+.categories__button--fact-fiction-next,
+.categories__button--mystical-places-next,
+.categories__button--secrets-riddles-next,
+.categories__button--non-standard-expeditions-next,
+.categories__button--horeca-gastrotourism-next {
   right: -65px;
 }
 
@@ -3581,8 +3596,29 @@ button,
 .categories__button--cossaks-next::after,
 .categories__button--geo-eco-next::after,
 .categories__button--art-next::after,
-.categories__button--topnews-next::after {
+.categories__button--topnews-next::after,
+.categories__button--fact-fiction-next::after,
+.categories__button--mystical-places-next::after,
+.categories__button--secrets-riddles-next::after,
+.categories__button--non-standard-expeditions-next::after,
+.categories__button--horeca-gastrotourism-next::after {
   content: "next";
+}
+
+.categories__journal-title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 500;
+  color: #dadada;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
 }
 
 .recept__title {
@@ -3839,7 +3875,12 @@ button,
   .categories__button--cossaks-next,
   .categories__button--geo-eco-next,
   .categories__button--art-next,
-  .categories__button--topnews-next {
+  .categories__button--topnews-next,
+  .categories__button--fact-fiction-next,
+  .categories__button--mystical-places-next,
+  .categories__button--secrets-riddles-next,
+  .categories__button--non-standard-expeditions-next,
+  .categories__button--horeca-gastrotourism-next {
     right: 10px;
   }
 }
@@ -3933,7 +3974,7 @@ button,
 
   .modal-preview__content {
     width: 100%;
-    padding: 15px;
+    padding: 0;
   }
 
   .modal-preview--fit-content .modal__content {
@@ -4090,7 +4131,7 @@ button,
     z-index: 100;
   }
 
-  .rubric-menu__item {
+  .categories-menu__item {
     position: relative;
   }
 
@@ -4261,7 +4302,12 @@ button,
   .categories__button--cossaks-prev,
   .categories__button--geo-eco-prev,
   .categories__button--art-prev,
-  .categories__button--topnews-prev {
+  .categories__button--topnews-prev,
+  .categories__button--fact-fiction-prev,
+  .categories__button--mystical-places-prev,
+  .categories__button--secrets-riddles-prev,
+  .categories__button--non-standard-expeditions-prev,
+  .categories__button--horeca-gastrotourism-prev {
     left: 40px;
   }
 
@@ -4269,8 +4315,20 @@ button,
   .categories__button--cossaks-next,
   .categories__button--geo-eco-next,
   .categories__button--art-next,
-  .categories__button--topnews-next {
+  .categories__button--topnews-next,
+  .categories__button--fact-fiction-next,
+  .categories__button--mystical-places-next,
+  .categories__button--secrets-riddles-next,
+  .categories__button--non-standard-expeditions-next,
+  .categories__button--horeca-gastrotourism-next {
     right: 0;
+  }
+
+  .categories__journal-title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #dadada;
   }
 
   .preface__content {
