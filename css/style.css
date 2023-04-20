@@ -3203,70 +3203,6 @@ button,
   color: #ffffff;
 }
 
-.promo-gym__container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.promo-gym__description {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 415px auto;
-  grid-template-columns: 415px auto;
-  gap: 22px;
-}
-
-.promo-gym__content {
-  padding-left: 60px;
-  z-index: 2;
-}
-
-.promo-gym__content h2 {
-  font-size: 48px;
-  line-height: 58px;
-  font-weight: 600;
-  color: #000000;
-  letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 6px;
-  padding-top: 39px;
-}
-
-.promo-gym__content span {
-  font-size: 18px;
-  line-height: 150%;
-  font-weight: 400;
-  color: #000000;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 39px;
-}
-
-.promo-gym__content p {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #000000;
-  font-size: 16px;
-  line-height: 150%;
-  font-weight: 300;
-  color: #000000;
-  margin: 0;
-  margin-bottom: 9px;
-}
-
-.promo-gym__content p + p {
-  margin: 0;
-}
-
-.promo-gym__gallery {
-  position: relative;
-}
-
-.promo-gym__gallery-image {
-  margin-left: auto;
-  height: 29.3vw;
-}
-
 .about {
   position: relative;
 }
@@ -3834,48 +3770,6 @@ button,
     padding: 20px 0 5px 0;
   }
 
-  .promo-gym__container {
-    padding-top: 107px;
-    padding-bottom: 103px;
-  }
-
-  .promo-gym__description {
-    display: block;
-  }
-
-  .promo-gym__content {
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .promo-gym__content h2 {
-    font-size: 42px;
-    line-height: 49px;
-    font-weight: 600;
-    color: #000000;
-    padding: 2px 15px 0 0;
-    margin: 0;
-  }
-
-  .promo-gym__content span {
-    margin-bottom: 33px;
-  }
-
-  .promo-gym__content p {
-    width: 76%;
-    margin: 0 auto;
-    margin-bottom: 44px;
-  }
-
-  .promo-gym__content p + p {
-    display: none;
-  }
-
-  .promo-gym__gallery-image {
-    width: 100%;
-    height: 44.8vw;
-  }
-
   .footer__container {
     padding-top: 35px;
     padding-bottom: 30px;
@@ -4222,7 +4116,8 @@ button,
   }
 
   .promo-slider__slides-image {
-    min-height: 320px;
+    width: 100%;
+    min-height: 100%;
     height: 64vw;
   }
 
@@ -4241,42 +4136,6 @@ button,
     color: #ffffff;
     letter-spacing: 0.03em;
     bottom: 20px;
-  }
-
-  .promo-gym__container {
-    padding: 64px 0 30px 0;
-  }
-
-  .promo-gym__description {
-    margin-bottom: 40px;
-  }
-
-  .promo-gym__content {
-    text-align: inherit;
-    padding: 0 15px;
-  }
-
-  .promo-gym__content h2 {
-    font-size: 32px;
-    line-height: 38px;
-    font-weight: 600;
-    color: #000000;
-    margin-bottom: 5px;
-    padding: 0;
-  }
-
-  .promo-gym__content span {
-    margin-bottom: 24px;
-  }
-
-  .promo-gym__content p {
-    margin: 0 0 33px 0;
-    width: 93%;
-  }
-
-  .promo-gym__gallery-image {
-    height: 97.8vw;
-    margin-bottom: 40px;
   }
 
   .about__title {
