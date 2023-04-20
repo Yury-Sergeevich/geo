@@ -343,6 +343,11 @@
   &:hover {
     transform: scale(1.5);
   }
+
+  @include vp-767 {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .modal__article-image-title {

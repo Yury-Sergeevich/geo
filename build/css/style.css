@@ -3732,6 +3732,10 @@ button,
   padding: 30px 0;
 }
 
+.preface__content-image {
+  margin: 0 auto;
+}
+
 .preface__content-title {
   position: relative;
   font-size: 36px;
@@ -3987,6 +3991,11 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .modal__article-image {
+    width: 100%;
+    height: auto;
   }
 
   .modal__article-image-title {
@@ -4362,6 +4371,11 @@ button,
 
   .preface__content {
     width: 100%;
+  }
+
+  .preface__content-image {
+    width: 100%;
+    height: auto;
   }
 
   .preface__content-title {
