@@ -7,8 +7,6 @@
     <meta name="description" content="Описание проекта" />
     <title>dragoman-geo</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   </head>
 
   <body>
@@ -64,7 +62,7 @@
                 <a class="nav__categories-link" href="#">La patrimoine</a>
               </li>
               <li class="nav__categories-item categories-menu">
-                <a class="nav__categories-link" href="#">
+                <a class="nav__categories-link" href="#journal">
                   <p class="nav__categories-title">крымские гипотезы</p>
                   <p class="nav__categories-subtitle">альманах этернализма</p>
                 </a>
@@ -135,7 +133,6 @@
             </div>
           </div>
         </section>
-
         <section class="about">
           <div class="about__container container">
             <div class="about__content">
@@ -152,7 +149,7 @@
             </div>
           </div>
         </section>
-        <section class="categories" id="categories">
+        <section class="categories anim-1" id="categories">
           <h2 class="visually-hidden">Категории</h2>
           <div class="container">
             <div class="categories__regional-cuisine" id="topNewsSwiper">
@@ -163,7 +160,10 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="house-arhitector">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/art-cultural/image004.jpg" width="370" height="369" alt="" />
+                          <picture>
+                            <source type="image/webp" srcset="img/categories/art-cultural/image004.webp 1x" />
+                            <img class="categories__image" loading="lazy" src="img/categories/art-cultural/image004.jpg" width="370" height="369" alt="" />
+                          </picture>
                         </div>
                         <div class="categories__footer-content">
                           <h2 class="categories__card-title">Снос дома архитектора Николая Краснова в Ялте</h2>
@@ -176,7 +176,7 @@
                 <button class="categories__button categories__button--topnews-next" type="button"></button>
               </div>
             </div>
-            <div class="categories__geo-eco" id="geo-eco">
+            <div class="categories__geo-eco anim-2" id="geo-eco">
               <h2 class="categories__title"><span>#</span>Географические и экологические особенности</h2>
               <div class="categories__wrapper-swiper">
                 <div class="swiper" id="SwiperGeoEco">
@@ -184,7 +184,10 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="big-black-1">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="img/categories/geo-eco/big-black-1/image-1.jpg" width="370" height="369" alt="" />
+                          <picture>
+                            <source type="image/webp" srcset="img/categories/geo-eco/big-black-1/image-1.webp 1x" />
+                            <img class="categories__image categories__image-anim-2" loading="lazy" src="img/categories/geo-eco/big-black-1/image-1.jpg" width="370" height="369" alt="" />
+                          </picture>
                         </div>
                         <h2 class="categories__card-title">Особенности Большого Причерноморья (1 часть)</h2>
                       </a>
@@ -192,7 +195,10 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="big-black-2">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="img/categories/geo-eco/big-black-2/image-1.jpg" width="370" height="369" alt="" />
+                          <picture>
+                            <source type="image/webp" srcset="img/categories/geo-eco/big-black-2/image-1.webp" />
+                            <img class="categories__image categories__image-anim-2" loading="lazy" src="img/categories/geo-eco/big-black-2/image-1.jpg" width="370" height="369" alt="" />
+                          </picture>
                         </div>
                         <h2 class="categories__card-title">Особенности Большого Причерноморья (2 часть)</h2>
                       </a>
@@ -200,7 +206,10 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="big-black-3">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="img/categories/geo-eco/big-black-3/image-1.jpg" width="370" height="369" alt="" />
+                          <picture>
+                            <source type="image/webp" srcset="img/categories/geo-eco/big-black-3/image-1.webp" />
+                            <img class="categories__image categories__image-anim-2" loading="lazy" src="img/categories/geo-eco/big-black-3/image-1.jpg" width="370" height="369" alt="" />
+                          </picture>
                         </div>
                         <h2 class="categories__card-title">Особенности Большого Причерноморья (3 часть)</h2>
                       </a>
@@ -208,7 +217,10 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="big-black-4">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/geo-eco/big-black-5/image-4.jpg" width="370" height="369" alt="Ночной Батуми (вид с Чёрного моря)" />
+                          <picture>
+                            <source type="image/webp" srcset="img/categories/geo-eco/big-black-5/image-4.webp" />
+                            <img class="categories__image categories__image-anim-2" loading="lazy" src="img/categories/geo-eco/big-black-5/image-4.jpg" width="370" height="369" alt="Ночной Батуми (вид с Чёрного моря)" />
+                          </picture>
                         </div>
                         <h2 class="categories__card-title">Особенности Большого Причерноморья (4 часть)</h2>
                       </a>
@@ -216,7 +228,10 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="big-black-5">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/geo-eco/big-black-5/image-2.jpg" width="370" height="369" alt="" />
+                          <picture>
+                            <source type="image/webp" srcset="img/categories/geo-eco/big-black-5/image-2.webp" />
+                            <img class="categories__image categories__image-anim-2" loading="lazy" src="img/categories/geo-eco/big-black-5/image-2.jpg" width="370" height="369" alt="" />
+                          </picture>
                         </div>
                         <h2 class="categories__card-title">Особенности Большого Причерноморья (5 часть)</h2>
                       </a>
@@ -227,7 +242,7 @@
                 <button class="categories__button categories__button--geo-eco-next" type="button"></button>
               </div>
             </div>
-            <div class="categories__ecoeconomica" id="eco-economica">
+            <div class="categories__ecoeconomica anim-3" id="eco-economica">
               <h2 class="categories__title"><span>#</span>экоэкономика и органическое хозяйство</h2>
               <div class="categories__wrapper-swiper">
                 <div class="swiper" id="SwiperEcoEconomica">
@@ -235,7 +250,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="organic-farming-1">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/title/image012.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-3" loading="lazy" src="./img/categories/title/image012.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Начало <span class="categories__card-title-decor">ЭКО</span>начал… (1 часть)</h2>
                       </a>
@@ -243,7 +258,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="organic-farming-2">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/part-2/image001.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-3" loading="lazy" src="./img/categories/part-2/image001.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Начало <span class="categories__card-title-decor">ЭКО</span>начал… (2 часть)</h2>
                       </a>
@@ -251,7 +266,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="organic-turkey">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/part-2/image002.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-3" loading="lazy" src="./img/categories/part-2/image002.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Органическая Турция (3 часть)</h2>
                       </a>
@@ -259,7 +274,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="manufacturers-turkey">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/manufacturers-turkey/image003.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-3" loading="lazy" src="./img/categories/manufacturers-turkey/image003.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Органические производители Турции</h2>
                       </a>
@@ -267,7 +282,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="organic-greeck">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/ecoeconomica/organic-greeck/image-1.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-3" loading="lazy" src="./img/categories/ecoeconomica/organic-greeck/image-1.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Органическая Греция</h2>
                       </a>
@@ -278,7 +293,7 @@
                 <button class="categories__button categories__button--ecoeconomica-next" type="button"></button>
               </div>
             </div>
-            <div class="categories__regional-cuisine" id="regional-cuisine">
+            <div class="categories__regional-cuisine anim-4" id="regional-cuisine">
               <h2 class="categories__title"><span>#</span>Этиотуризм и региональная кухня</h2>
               <div class="categories__wrapper-swiper">
                 <div class="swiper" id="SwiperGeoEco">
@@ -286,7 +301,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="harcho">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/cusine/harcho-light.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-4" loading="lazy" src="./img/categories/cusine/harcho-light.jpg" width="370" height="369" alt="" />
                         </div>
                         <div class="categories__footer-content">
                           <h2 class="categories__card-title">Харчо</h2>
@@ -296,7 +311,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="plov">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/cusine/plov-ride/image-1.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-4" loading="lazy" src="./img/categories/cusine/plov-ride/image-1.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Плов главный подарок Великого шёлкового пути</h2>
                       </a>
@@ -304,7 +319,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="error-plov">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/cusine/error-plov/image-2.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-4" loading="lazy" src="./img/categories/cusine/error-plov/image-2.jpg" width="370" height="369" alt="" />
                         </div>
                         <div class="categories__footer-content">
                           <h2 class="categories__card-title">Лже-Плов, как лжеплод Миротона!</h2>
@@ -314,7 +329,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="crimea-plov">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/cusine/crimea-plov/image-3.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-4" loading="lazy" src="./img/categories/cusine/crimea-plov/image-3.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Плов и Крым</h2>
                       </a>
@@ -322,7 +337,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="types-crimea-plov">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/cusine/types-crimea-plov/image-9.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-4" loading="lazy" src="./img/categories/cusine/types-crimea-plov/image-9.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Забытые виды Крымского плова&nbsp;&mdash; начало!</h2>
                       </a>
@@ -333,7 +348,7 @@
                 <button class="categories__button categories__button--ethno-next" type="button"></button>
               </div>
             </div>
-            <div class="categories__art-cultural" id="art-cultural">
+            <div class="categories__art-cultural anim-5" id="art-cultural">
               <h2 class="categories__title"><span>#</span>Исскуство и культурное наследие</h2>
               <div class="categories__wrapper-swiper">
                 <div class="swiper" id="ArtCultural">
@@ -341,7 +356,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="abandoned-pearls-1">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="img/categories/art-cultural/stati-1/image-1.jpg" width="370" height="369" alt="Современный вид поместья графа А.А. Мордвинова зимой" />
+                          <img class="categories__image categories__image-anim-5" loading="lazy" src="img/categories/art-cultural/stati-1/image-1.jpg" width="370" height="369" alt="Современный вид поместья графа А.А. Мордвинова зимой" />
                         </div>
                         <h2 class="categories__card-title">Заброшенные жемчужины &laquo;Хорошей пустоши&raquo;(1 часть)</h2>
                       </a>
@@ -349,7 +364,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="abandoned-pearls-2">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="img/categories/art-cultural/stati-2/image-4.jpg" width="370" height="369" alt="Нынешнее состояние данной столовой (рис. 2)" />
+                          <img class="categories__image categories__image-anim-5" loading="lazy" src="img/categories/art-cultural/stati-2/image-4.jpg" width="370" height="369" alt="Нынешнее состояние данной столовой (рис. 2)" />
                         </div>
                         <h2 class="categories__card-title">Заброшенные жемчужины &laquo;Хорошей пустоши&raquo;(2 часть)</h2>
                       </a>
@@ -357,7 +372,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="abandoned-pearls-3">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="img/categories/art-cultural/stati-3/image-2.jpg" width="370" height="369" alt="Старинный вид с юго-восточной стороны имения «Уч-Чам»" />
+                          <img class="categories__image categories__image-anim-5" loading="lazy" src="img/categories/art-cultural/stati-3/image-2.jpg" width="370" height="369" alt="Старинный вид с юго-восточной стороны имения «Уч-Чам»" />
                         </div>
                         <h2 class="categories__card-title">Заброшенные жемчужины &laquo;Хорошей пустоши&raquo;(3 часть)</h2>
                       </a>
@@ -365,7 +380,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="abandoned-pearls-4">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="img/categories/art-cultural/stati-4/image-2.jpg" width="370" height="369" alt="Вензель-монограмма О.Э. Вегенера" />
+                          <img class="categories__image categories__image-anim-5" loading="lazy" src="img/categories/art-cultural/stati-4/image-2.jpg" width="370" height="369" alt="Вензель-монограмма О.Э. Вегенера" />
                         </div>
                         <h2 class="categories__card-title">Заброшенные жемчужины &laquo;Хорошей пустоши&raquo;(4 часть)</h2>
                       </a>
@@ -373,7 +388,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="abandoned-pearls-5">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="img/categories/art-cultural/stati-5/image-3.jpg" width="370" height="369" alt="Современное состояние дома Ф.Ф. Мельцера с южной стороны" />
+                          <img class="categories__image categories__image-anim-5" loading="lazy" src="img/categories/art-cultural/stati-5/image-3.jpg" width="370" height="369" alt="Современное состояние дома Ф.Ф. Мельцера с южной стороны" />
                         </div>
                         <h2 class="categories__card-title">Заброшенные жемчужины &laquo;Хорошей пустоши&raquo;(5 часть)</h2>
                       </a>
@@ -384,7 +399,7 @@
                 <button class="categories__button categories__button--art-next" type="button"></button>
               </div>
             </div>
-            <div class="categories__cossaks" id="ethnic-cossacs">
+            <div class="categories__cossaks anim-6" id="ethnic-cossacs">
               <h2 class="categories__title"><span>#</span>Аборигенное казачество и&nbsp;интересные люди</h2>
               <div class="categories__wrapper-swiper">
                 <div class="swiper" id="SwiperEthinicCossaks">
@@ -392,7 +407,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="ethnic-cossacs">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/ethnic-cossaks/image003.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-6" loading="lazy" src="./img/categories/ethnic-cossaks/image003.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Становление этнического козачества в&nbsp;Крыму</h2>
                       </a>
@@ -400,7 +415,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="adventurer">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/ethnic-cossaks/adventurer/image004.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-6" loading="lazy" src="./img/categories/ethnic-cossaks/adventurer/image004.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Авантюрист или искатель приключений</h2>
                       </a>
@@ -408,7 +423,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="travel-arzrum">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/ethnic-cossaks/travel-arzrum/image-1.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-6" loading="lazy" src="./img/categories/ethnic-cossaks/travel-arzrum/image-1.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">&laquo;Путешествие в&nbsp;Арзрум&raquo;</h2>
                       </a>
@@ -416,7 +431,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="bignational-cossaks">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/ethnic-cossaks/bignational-cossaks/image-1.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-6" loading="lazy" src="./img/categories/ethnic-cossaks/bignational-cossaks/image-1.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Самое большое многонациональное формирование казаков и&nbsp;интересная личность из&nbsp;него</h2>
                       </a>
@@ -424,7 +439,7 @@
                     <li class="categories__card swiper-slide">
                       <a class="categories__card-link" href="#" data-open-modal="hero-war">
                         <div class="categories__image-wrapper">
-                          <img class="categories__image" loading="lazy" src="./img/categories/ethnic-cossaks/hero-war/image-2.jpg" width="370" height="369" alt="" />
+                          <img class="categories__image categories__image-anim-6" loading="lazy" src="./img/categories/ethnic-cossaks/hero-war/image-2.jpg" width="370" height="369" alt="" />
                         </div>
                         <h2 class="categories__card-title">Забытый герой войны из Каралеза</h2>
                       </a>
@@ -435,8 +450,8 @@
                 <button class="categories__button categories__button--cossaks-next" type="button"></button>
               </div>
             </div>
-            <div class="categories__journal">
-              <h2 class="categories__journal-title">Крымские гипотезы</h2>
+            <div class="categories__journal" id="journal">
+              <h2 class="categories__journal-title">АЛЬМАНАХ ЭТЕРНАЛИЗМА-Крымские гипотезы</h2>
               <div class="categories__cossaks" id="fact-fiction">
                 <h2 class="categories__title"><span>#</span>факт или фикция</h2>
                 <div class="categories__wrapper-swiper">
@@ -445,7 +460,7 @@
                       <li class="categories__card swiper-slide">
                         <a class="categories__card-link" href="#" data-open-modal="crimean-pyramids">
                           <div class="categories__image-wrapper">
-                            <img class="categories__image" loading="lazy" src="./img/categories/ethnic-cossaks/image003.jpg" width="370" height="369" alt="" />
+                            <img class="categories__image" loading="lazy" src="img/categories/journal/2023-04-20_17-04-08.png" width="370" height="369" alt="" />
                           </div>
                           <h2 class="categories__card-title">Крымские пирамиды миф или реальность?</h2>
                         </a>
@@ -464,7 +479,7 @@
                       <li class="categories__card swiper-slide">
                         <a class="categories__card-link" href="#" data-open-modal="crimean-shambhala">
                           <div class="categories__image-wrapper">
-                            <img class="categories__image" loading="lazy" src="./img/categories/ethnic-cossaks/image003.jpg" width="370" height="369" alt="" />
+                            <img class="categories__image" loading="lazy" src="img/categories/journal/2023-04-20_17-04-08.png" width="370" height="369" alt="" />
                           </div>
                           <h2 class="categories__card-title">Крымская шамбала или Священный Грааль?</h2>
                         </a>
@@ -483,7 +498,7 @@
                       <li class="categories__card swiper-slide">
                         <a class="categories__card-link" href="#" data-open-modal="karadag-snake">
                           <div class="categories__image-wrapper">
-                            <img class="categories__image" loading="lazy" src="./img/categories/ethnic-cossaks/image003.jpg" width="370" height="369" alt="" />
+                            <img class="categories__image" loading="lazy" src="img/categories/journal/2023-04-20_17-04-08.png" width="370" height="369" alt="" />
                           </div>
                           <h2 class="categories__card-title">Карадагский змей&nbsp;&mdash; главная загадка Крыма или известная всем &laquo;тайна&raquo;?</h2>
                         </a>
@@ -502,7 +517,7 @@
                       <li class="categories__card swiper-slide">
                         <a class="categories__card-link" href="#" data-open-modal="oikumen-brands">
                           <div class="categories__image-wrapper">
-                            <img class="categories__image" loading="lazy" src="./img/categories/ethnic-cossaks/image003.jpg" width="370" height="369" alt="" />
+                            <img class="categories__image" loading="lazy" src="img/categories/journal/2023-04-20_17-04-08.png" width="370" height="369" alt="" />
                           </div>
                           <h2 class="categories__card-title">Ойкумена тавров и&nbsp;скифов или перекрёсток 40-ка дорог?</h2>
                         </a>
@@ -521,7 +536,7 @@
                       <li class="categories__card swiper-slide">
                         <a class="categories__card-link" href="#" data-open-modal="crimean-venice">
                           <div class="categories__image-wrapper">
-                            <img class="categories__image" loading="lazy" src="./img/categories/ethnic-cossaks/image003.jpg" width="370" height="369" alt="" />
+                            <img class="categories__image" loading="lazy" src="img/categories/journal/2023-04-20_17-04-08.png" width="370" height="369" alt="" />
                           </div>
                           <h2 class="categories__card-title">Крымская Венеция…</h2>
                         </a>
@@ -549,30 +564,31 @@
               <a class="footer__link-nav" href="#categories">Рубрики</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">популярное</a>
+              <a class="footer__link-nav" href="#">Популярное</a>
             </li>
             <li class="footer__item-nav">
               <a class="footer__link-nav" href="#">партнеры</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">реклама</a>
+              <a class="footer__link-nav" href="#">Реклама</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">сотрудничество</a>
+              <a class="footer__link-nav" href="#">Сотрудничество</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">отзывы</a>
+              <a class="footer__link-nav" href="#">Отзывы</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">акции</a>
+              <a class="footer__link-nav" href="#">Акции</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">архив</a>
+              <a class="footer__link-nav" href="#">Архив</a>
             </li>
             <li class="footer__item-nav">
-              <a class="footer__link-nav" href="#">контакты</a>
+              <a class="footer__link-nav" href="#">Контакты</a>
             </li>
           </ul>
+          <div class="footer__contacts">почта</div>
         </div>
         <div class="container">
           <p class="footer__advisory">©2023 Крымский калейдоскоп. Все права защищены.</p>
@@ -621,40 +637,6 @@
                       </p>
                       <p class="preface__text-end">А. Меметов</p>
                     </div>
-                  </div>
-                  <div class="preface__content">
-                    <img class="preface__content-image-first-man" src="img/dragoman/amed.png" alt="" />
-                    <p class="preface__text">В&nbsp;1997&nbsp;году, Меметов Амет Энверович окончил среднюю общеобразовательную школу с&nbsp;математическим уклоном в&nbsp;г. Ялте.</p>
-                    <p class="preface__text">С&nbsp;1994 по&nbsp;2001&nbsp;годы, занимался боксом, являлся многократным чемпионом Крыма, победителем международных соревнований и&nbsp;матчевых встреч, входил в&nbsp;команду сборной страны по&nbsp;боксу.</p>
-                    <p class="preface__text">В&nbsp;2001&nbsp;году, получил первое специализированное образование и&nbsp;диплом &laquo;бакалавра&raquo; по&nbsp;направлению&nbsp;&mdash; правоведение, окончив Одесскую национальную юридическую академию.</p>
-                    <p class="preface__text">С&nbsp;2001&nbsp;года, начал трудовую деятельность по&nbsp;специальности и&nbsp;по&nbsp;2003 год работал юристом в&nbsp;ЗАО &laquo;Гурзуфский торговый дом&raquo;.</p>
-                    <p class="preface__text">В&nbsp;2002&nbsp;году, защитив диплом на&nbsp;тему&nbsp;&mdash; &laquo;Международное экологическое право&raquo;, окончил Одесскую национальную юридическую академию, получив полное высшее образование с&nbsp;квалификацией &laquo;юрист-специалист&raquo;.</p>
-                    <p class="preface__text">С&nbsp;2003 года по&nbsp;2004&nbsp;год, работал заместителем директора ОАО &laquo;Планета спорт&raquo; по&nbsp;юридическим вопросам.</p>
-                    <p class="preface__text">С&nbsp;июня 2004 года по&nbsp;июль 2016&nbsp;года, работал на&nbsp;всех прокурорско-следственных должностях органов прокуратуры.</p>
-                    <p class="preface__text">Неоднократно приглашался для участия в&nbsp;семинарах и&nbsp;тренингах проводимых под руководством ОБСЕ.</p>
-                    <p class="preface__text">Победитель чемпионата Крыма по&nbsp;шахматам посвящённому 65-ой годовщине победы в&nbsp;Великой Отечественной войне.</p>
-                    <p class="preface__text">В&nbsp;2014&nbsp;году, успешно сдал экзамены по&nbsp;кандидатскому минимуму.</p>
-                    <p class="preface__text">С&nbsp;2015&nbsp;года, является член-корреспондентом &laquo;Всемирной Академии наук комплексной безопасности&raquo;.</p>
-                    <p class="preface__text">Работал старшим преподавателем в&nbsp;Крымском институте бизнеса.</p>
-                    <p class="preface__text">В&nbsp;2016 году учредил &laquo;Федерацию бокса Ялтинского городского округа&raquo;, в&nbsp;которой был избран Первым вице-президентом. Получил квалификацию&nbsp;&mdash; тренер.</p>
-                    <p class="preface__text">В&nbsp;этом-же году, учредил АНО &laquo;Центр независимых юристов и&nbsp;правозащитников&raquo;.</p>
-                    <p class="preface__text">Прошёл специальное обучение по&nbsp;программе подготовки медиаторов права, получив соответствующий диплом.</p>
-                    <p class="preface__text">В&nbsp;2017 году получил специальную лицензию и&nbsp;являлся&nbsp;&mdash; независимым антикоррупционным экспертом.</p>
-                    <p class="preface__text">С&nbsp;2017 года по&nbsp;2023&nbsp;год, имея соответствующую лицензию работал&nbsp;&mdash; детективом.</p>
-                    <p class="preface__text">С&nbsp;2017 года по&nbsp;настоящее время президент Азово-Черноморской Академии геополитических проблем&nbsp;&mdash; группы &laquo;Тетис&raquo;.</p>
-                    <p class="preface__text">Является профессором геополитики.</p>
-                    <p class="preface__text">В&nbsp;2018&nbsp;году, получил второе высшее образование и&nbsp;получил квалификацию &laquo;магистра&raquo; по&nbsp;специальности&nbsp;&mdash; менеджмент.</p>
-                    <p class="preface__text">В&nbsp;2021&nbsp;году, получил диплом по&nbsp;ведению профессиональной деятельности в&nbsp;сфере культурологии, по&nbsp;программе&nbsp;&mdash; &laquo;Культурология и&nbsp;искусствоведение Франции&raquo;.</p>
-                    <p class="preface__text">Участвовал в&nbsp;научных заседаниях и&nbsp;конференциях организованных Академией наук Крыма, в&nbsp;т.ч.&nbsp;по&nbsp;проблемам водообеспечения полуострова, а&nbsp;также в&nbsp;праздновании 75-летия &laquo;Ялтинской конференции 1945&nbsp;года&raquo;.</p>
-                    <p class="preface__text">
-                      Подготовил публичное тиражное издание к&nbsp;100-летнему юбилею празднования Крымской АССР, которое было опубликовано в&nbsp;ГАУ РК&nbsp;&laquo;Медиацентр им. Исмаила Гаспринского&raquo;, а&nbsp;также является автором (соавтором) ряда монографий в&nbsp;области права и&nbsp;познавательных публикаций,
-                      в&nbsp;т.ч.&nbsp;в&nbsp;области аборигенного казачества.
-                    </p>
-                    <p class="preface__text">Писатель, поэт, коллекционер-антикварий.</p>
-                    <p class="preface__text">Является многодетным отцом.</p>
-                    <br />
-                    <br />
-                    <br />
                   </div>
                 </div>
                 <button class="modal-preview__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
@@ -3303,7 +3285,7 @@
                     <p class="modal__article-content-text">И&nbsp;этот, даже по&nbsp;нынешним меркам, безумный план чуть-ли не&nbsp;сбылся.<br /></p>
                     <p class="modal__article-content-text">
                       В&nbsp;1913-1914&nbsp;годах, задумывая прорубить в&nbsp;скалистых недрах Дженевез-Каи сквозной тоннель Праскофья Тикунова, наняла турецких специалистов, которые прорубили тоннель длиной в&nbsp;30,5&nbsp;метров, шириной от&nbsp;1,85 до&nbsp;2&nbsp;метров и&nbsp;высотой от&nbsp;2&nbsp;до&nbsp;2,15&nbsp;метров, провели
-                      к&nbsp;нему тропинку, ступени и&nbsp;закрепили всё стеной из&nbsp;бутовой кладки.&nbsp;в<br />
+                      к&nbsp;нему тропинку, ступени и&nbsp;закрепили всё стеной из&nbsp;бутовой кладки.&nbsp;<br />
                     </p>
                     <p class="modal__article-content-text">Но&nbsp;Первая Мировая война нарушила эти амбициозные планы и&nbsp;данному желанию, увы, уже не&nbsp;суждено было сбыться.<br /></p>
                     <p class="modal__article-content-text">Кроме этого, к&nbsp;сожалению, но&nbsp;не&nbsp;по&nbsp;предвиденным обстоятельствам, в&nbsp;1927&nbsp;году, во&nbsp;время произошедшего в&nbsp;Крыму сильнейшего землетрясения, был разрушен и&nbsp;сам ресторан &laquo;Венеция&raquo; и&nbsp;более не&nbsp;возрождался к&nbsp;жизни.<br /></p>
@@ -3327,6 +3309,8 @@
       </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

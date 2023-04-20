@@ -48,10 +48,10 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// window.onload = function () {
-//   setTimeout(initPreviewModal, 800);
-//   initFunctionPreviewModal();
-// };
+window.onload = function () {
+  setTimeout(initPreviewModal, 3000);
+  initFunctionPreviewModal();
+};
 
 // ---------------------------------
 

@@ -1,12 +1,13 @@
 .categories__title {
   position: relative;
 
-  @include font(26px, 42px, 500, #dadada);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  @include font(34px, 42px, 500, #dadada);
+  font-family: "Journalism", "Arial", sans-serif;
   margin: 0;
   margin-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
   width: fit-content;
+  letter-spacing: 0.05em;
 
   text-transform: uppercase;
 
@@ -151,6 +152,7 @@
 
     @include vp-767 {
       right: 0;
+      display: none;
     }
   }
 }
@@ -159,7 +161,7 @@
 
 .categories__journal-title {
   @include font(36px, 42px, 500, #dadada);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Journalism", "arial", sans-serif;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;

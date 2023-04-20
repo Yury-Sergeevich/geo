@@ -14,7 +14,6 @@ body {
 html {
   @include font(16px, 24px, 400, #1d1d1d);
   font-style: normal;
-  font-family: "Playfair Display", "Arial", sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,6 +27,7 @@ html {
 body {
   width: 100%;
   height: 100%;
+  font-family: "Playfair Display", "Arial", sans-serif;
 
   // background-color: #ffffff;
   background: -webkit-linear-gradient(153deg, #292b27, #292334); /* Chrome 10-25, Safari 5.1-6 */

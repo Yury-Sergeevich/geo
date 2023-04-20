@@ -14,6 +14,19 @@ function initAnimate() {
     }
   );
   tl.fromTo(
+    '.nav__categories-item',
+    {
+      y: -50,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      stagger: 0.15,
+    }
+  );
+  tl.fromTo(
     '.header__promo-subtitle',
     {
       y: 50,
@@ -51,22 +64,88 @@ function initAnimate() {
   gsap.to('.about__title', {
     scrollTrigger: {
       trigger: '.promo-slider',
-      markers: true,
+      start: 'center top',
+      scrub: true,
+    },
+
+    x: -400,
+    opacity: 0,
+    delay: 2,
+  });
+
+  gsap.to('.about__content', {
+    scrollTrigger: {
+      trigger: '.promo-slider',
       start: 'center top',
       scrub: true,
     },
 
     scale: 1.1,
   });
-  gsap.to('.about__content', {
-    scrollTrigger: {
-      trigger: '.promo-slider',
-      markers: true,
-      start: 'center top',
-      scrub: true,
-    },
 
-    scale: 1.1,
+  gsap.from('.categories__image-anim-2', {
+    scrollTrigger: {
+      trigger: '.anim-2',
+      start: '-30% center',
+      stop: '+=300px',
+    },
+    scale: 0,
+    transformOrigin: 'top center',
+    stagger: 1,
+    ease: 0,
+    scrub: 0.5,
+  });
+
+  gsap.from('.categories__image-anim-3', {
+    scrollTrigger: {
+      trigger: '.anim-3',
+      start: '-30% center',
+      stop: '+=300px',
+    },
+    scale: 0,
+    transformOrigin: 'top center',
+    stagger: 1,
+    ease: 0,
+    scrub: 0.5,
+  });
+
+  gsap.from('.categories__image-anim-4', {
+    scrollTrigger: {
+      trigger: '.anim-4',
+      start: '-30% center',
+      stop: '+=300px',
+    },
+    scale: 0,
+    transformOrigin: 'top center',
+    stagger: 1,
+    ease: 0,
+    scrub: 0.5,
+  });
+
+  gsap.from('.categories__image-anim-5', {
+    scrollTrigger: {
+      trigger: '.anim-5',
+      start: '-30% center',
+      stop: '+=300px',
+    },
+    scale: 0,
+    transformOrigin: 'top center',
+    stagger: 1,
+    ease: 0,
+    scrub: 0.5,
+  });
+
+  gsap.from('.categories__image-anim-6', {
+    scrollTrigger: {
+      trigger: '.anim-6',
+      start: '-30% center',
+      stop: '+=300px',
+    },
+    scale: 0,
+    transformOrigin: 'top center',
+    stagger: 1,
+    ease: 0,
+    scrub: 0.5,
   });
 }
 

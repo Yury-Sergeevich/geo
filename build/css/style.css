@@ -1255,6 +1255,14 @@ button.swiper-pagination-bullet {
   src: url("../fonts/Jawbreak-SlabCut.woff2") format("woff2"), url("../fonts/Jawbreak-SlabCut.woff") format("woff");
 }
 
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Journalism";
+  font-display: swap;
+  src: url("../fonts/JOURNALISM.woff2") format("woff2"), url("../fonts/JOURNALISM.woff") format("woff");
+}
+
 *,
 *::before,
 *::after {
@@ -1275,7 +1283,6 @@ html {
   font-weight: 400;
   color: #1d1d1d;
   font-style: normal;
-  font-family: "Playfair Display", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1285,6 +1292,7 @@ html {
 body {
   width: 100%;
   height: 100%;
+  font-family: "Playfair Display", "Arial", sans-serif;
   /* Chrome 10-25, Safari 5.1-6 */
   background: -o-linear-gradient(297deg, #292b27, #292334);
   background: linear-gradient(153deg, #292b27, #292334);
@@ -1531,6 +1539,38 @@ button,
   color: #dadada;
 }
 
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  font-display: swap;
+  src: url("../../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../../fonts/PlayfairDisplay-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik Dirt", "Arial", sans-serif;
+  font-display: swap;
+  src: url("../fonts/RubikDirt-Regular.woff2") format("woff2"), url("../fonts/RubikDirt-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Jawbreak", "Arial", sans-serif;
+  font-display: swap;
+  src: url("../fonts/Jawbreak-SlabCut.woff2") format("woff2"), url("../fonts/Jawbreak-SlabCut.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Journalism";
+  font-display: swap;
+  src: url("../fonts/JOURNALISM.woff2") format("woff2"), url("../fonts/JOURNALISM.woff") format("woff");
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1690,9 +1730,11 @@ button,
   font-size: 36px;
   line-height: 44px;
   font-weight: 600;
-  color: #ffffff;
+  color: #ff6060;
+  font-family: "Journalism", "Arial", sans-serif;
   text-align: center;
   width: 600px;
+  padding-top: 40px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -1716,8 +1758,8 @@ button,
 }
 
 .modal__article-content-text {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 400;
   color: #ffffff;
   color: #ffffff;
@@ -1725,6 +1767,10 @@ button,
   text-indent: 50px;
   letter-spacing: 0.03em;
   margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .modal__article-content-text-preview {
@@ -3330,9 +3376,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -3342,6 +3385,10 @@ button,
   transition: 0.4s ease-in-out;
 }
 
+.footer__logo {
+  margin-right: 100px;
+}
+
 .footer__list-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3349,12 +3396,17 @@ button,
   gap: 30px;
 }
 
+.footer__item-nav {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .footer__link-nav {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   color: #000000;
-  text-transform: uppercase;
 }
 
 .footer__contacts-link {
@@ -3444,22 +3496,28 @@ button,
 }
 
 .footer__advisory {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #676767;
+  margin: 0;
   padding: 15px;
 }
 
 .categories__title {
   position: relative;
-  font-size: 26px;
+  font-size: 34px;
   line-height: 42px;
   font-weight: 500;
   color: #dadada;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Journalism", "Arial", sans-serif;
   margin: 0;
   margin-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -3609,7 +3667,7 @@ button,
   line-height: 42px;
   font-weight: 500;
   color: #dadada;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Journalism", "arial", sans-serif;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -3726,47 +3784,6 @@ button,
   object-fit: cover;
 }
 
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/
-
 @media (max-width: 1279px) {
   .container {
     padding: 0 90px;
@@ -3780,12 +3797,11 @@ button,
 
 @media (max-width: 1200px) {
   .footer__list-nav {
-    width: 70%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 15px 50px;
   }
 }
 
@@ -3898,6 +3914,12 @@ button,
     padding: 15px;
   }
 
+  .modal__close-btn {
+    width: 20px;
+    height: 20px;
+    right: 5.5%;
+  }
+
   .modal--fit-content .modal__content {
     width: 100%;
   }
@@ -3931,7 +3953,7 @@ button,
   }
 
   .modal__article-content-text {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     font-weight: 400;
     color: #ffffff;
@@ -3965,6 +3987,14 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .modal__article-image-title {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffeb3b;
+    width: 90%;
   }
 
   .modal-preview__wrapper {
@@ -4261,17 +4291,16 @@ button,
     padding-bottom: 25px;
   }
 
+  .footer__logo {
+    margin: 0;
+  }
+
   .footer__list-nav {
     padding-top: 30px;
   }
 
   .footer__advisory {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #676767;
     text-align: center;
-    margin: 0;
     padding: 10px;
   }
 
@@ -4321,6 +4350,7 @@ button,
   .categories__button--non-standard-expeditions-next,
   .categories__button--horeca-gastrotourism-next {
     right: 0;
+    display: none;
   }
 
   .categories__journal-title {
