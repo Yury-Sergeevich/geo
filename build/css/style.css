@@ -3144,7 +3144,7 @@ button,
 .promo-slider__slides-image {
   -o-object-fit: cover;
   object-fit: cover;
-  height: 39vw;
+  height: 31vw;
   max-height: 670px;
   width: 100%;
 }
@@ -3345,6 +3345,10 @@ button,
   color: #000000;
 }
 
+.footer__link-nav:hover {
+  color: #ff6b6b;
+}
+
 .footer__contacts-link {
   font-size: 14px;
   line-height: 26px;
@@ -3432,12 +3436,29 @@ button,
 }
 
 .footer__advisory {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #676767;
+  font-family: "Journalism", "arial", sans-serif;
+  letter-spacing: 0.05em;
   margin: 0;
   padding: 15px;
+}
+
+.categories__section-title {
+  font-size: 46px;
+  line-height: 56px;
+  font-weight: 600;
+  color: #ff6b6b;
+  font-family: "Journalism", "arial", sans-serif;
+  letter-spacing: 0.05em;
+  padding-top: 50px;
+  border-bottom: 1px solid #dedede;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 50px;
 }
 
 .categories__title {
@@ -3599,18 +3620,19 @@ button,
 }
 
 .categories__journal-title {
-  font-size: 36px;
-  line-height: 42px;
-  font-weight: 500;
-  color: #dadada;
+  font-size: 46px;
+  line-height: 56px;
+  font-weight: 600;
+  color: #ff6b6b;
   font-family: "Journalism", "arial", sans-serif;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   border-bottom: 1px solid #d9d9d9;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding-top: 50px;
   text-transform: uppercase;
 }
 
@@ -3668,10 +3690,6 @@ button,
   padding: 30px 0;
 }
 
-.preface__content-image {
-  margin: 0 auto;
-}
-
 .preface__content-title {
   position: relative;
   font-size: 36px;
@@ -3722,6 +3740,83 @@ button,
   height: 100px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.partners__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.partners__title {
+  font-size: 46px;
+  line-height: 56px;
+  font-weight: 600;
+  color: #ff6b6b;
+  font-family: "Journalism", "arial", sans-serif;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #dedede;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 30px;
+}
+
+.partners__wrapper-cards {
+  padding: 40px 50px;
+  min-height: 300px;
+}
+
+.partners__list-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.partners__item-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #161023;
+  min-height: 200px;
+  width: 100%;
+  -webkit-box-shadow: -8px 8px 10px #000000, 8px -8px 10px #3c3c3c;
+  box-shadow: -8px 8px 10px #000000, 8px -8px 10px #3c3c3c;
+  border-radius: 10px;
+}
+
+.partners__card-content {
+  padding: 10px;
+}
+
+.partners__card-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #cfc3c3;
+  font-family: "Journalism", "arial", sans-serif;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin: 0;
+}
+
+.partners__card-subtitle {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #cfc3c3;
+  text-align: center;
+  display: block;
 }
 
 @media (max-width: 1279px) {
@@ -4172,11 +4267,19 @@ button,
     padding: 10px;
   }
 
+  .categories__section-title {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+    color: #ff6b6b;
+  }
+
   .categories__title {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
     color: #dadada;
+    letter-spacing: 0.03em;
   }
 
   .categories__card-title {
@@ -4222,19 +4325,15 @@ button,
   }
 
   .categories__journal-title {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-    color: #dadada;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+    color: #ff6b6b;
+    padding-top: 20px;
   }
 
   .preface__content {
     width: 100%;
-  }
-
-  .preface__content-image {
-    width: 100%;
-    height: auto;
   }
 
   .preface__content-title {
@@ -4263,6 +4362,15 @@ button,
     text-align: start;
     color: #000000;
     padding: 0 10px;
+  }
+
+  .partners__wrapper-cards {
+    padding: 20px 15px;
+  }
+
+  .partners__list-cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
