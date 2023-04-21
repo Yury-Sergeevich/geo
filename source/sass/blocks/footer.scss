@@ -6,7 +6,8 @@
   padding-top: 72px;
   padding-bottom: 57px;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+
   border-bottom: 1px solid #d9d9d9;
   transition: 0.4s ease-in-out;
 
@@ -27,26 +28,14 @@
   }
 }
 
-.footer__logo {
-  margin-right: 100px;
-
-  @include vp-767 {
-    margin: 0;
-  }
-}
-
 .footer__list-nav {
-  display: flex;
-  gap: 30px;
-
-  @media (max-width: 1200px) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px 50px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px 50px;
 
   @include vp-767 {
     padding-top: 30px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: 600px) {
@@ -138,6 +127,30 @@
 .footer__button-subscripe-title {
   @include font(14px, 18px, 400, #e35f00);
   text-transform: uppercase;
+}
+
+.footer__contacts-title {
+  @include font(16px, 22px, 500, #000000);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  margin-bottom: 15px;
+
+  &:hover {
+    color: #676767;
+  }
+}
+
+.footer__contact {
+  @include font(14px, 18px, 400, #000000);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: block;
+
+  margin-bottom: 10px;
+  text-decoration: none;
+
+  &:hover {
+    color: #676767;
+  }
 }
 
 .footer__advisory {
