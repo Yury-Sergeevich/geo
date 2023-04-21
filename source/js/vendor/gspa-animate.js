@@ -60,67 +60,89 @@ function initAnimate() {
     delay: 2,
   });
 
-  gsap.to('.categories__title-anim-1', {
+  gsap.from('.categories__section-title-anim', {
+    scrollTrigger: {
+      trigger: '.about',
+      start: '-20% center',
+      stop: '+=400px',
+      scrub: true,
+    },
+    scale: 0,
+    transformOrigin: 'top center',
+  });
+
+  gsap.from('.categories__journal-title', {
+    scrollTrigger: {
+      trigger: '.categories',
+      start: '-10% center',
+      stop: '+=400px',
+      scrub: true,
+    },
+    scale: 0,
+    delay: 12,
+    transformOrigin: 'top center',
+  });
+
+  gsap.from('.categories__title-anim-1', {
     scrollTrigger: {
       trigger: '.anim-1',
-      start: '-5% top',
+      start: '-90% bottom',
       stop: '+=100px',
       scrub: true,
     },
-    x: 100,
-    delay: 2,
+    scale: 0,
+    transformOrigin: 'left center',
   });
-
-  // gsap.to('.categories__title-anim-2', {
-  //   scrollTrigger: {
-  //     trigger: '.anim-2',
-  //     start: '-10% center',
-  //     stop: '+=100px',
-  //     scrub: true,
-  //   },
-  //   x: 100,
-  //   delay: 2,
-  // });
-  // gsap.to('.categories__title-anim-3', {
-  //   scrollTrigger: {
-  //     trigger: '.anim-3',
-  //     start: '-10% center',
-  //     stop: '+=100px',
-  //     scrub: true,
-  //   },
-  //   x: 100,
-  //   delay: 2,
-  // });
-  // gsap.to('.categories__title-anim-4', {
-  //   scrollTrigger: {
-  //     trigger: '.anim-4',
-  //     start: '-10% bottom',
-  //     stop: '+=100px',
-  //     scrub: true,
-  //   },
-  //   x: -100,
-  //   delay: 2,
-  // });
-  // gsap.to('.categories__title-anim-5', {
-  //   scrollTrigger: {
-  //     trigger: '.anim-5',
-  //     start: '-10% center',
-  //     stop: '+=100px',
-  //     scrub: true,
-  //   },
-  //   x: 100,
-  //   delay: 2,
-  // });
-  // gsap.from('.categories__title-anim-6', {
-  //   scrollTrigger: {
-  //     trigger: '.anim-6',
-  //     start: '-10% bottom',
-  //     stop: '+=100px',
-  //     scrub: true,
-  //   },
-  //   x: 100,
-  //   delay: 2,
-  // });
+  gsap.from('.categories__title-anim-2', {
+    scrollTrigger: {
+      trigger: '.anim-2',
+      start: '-90% bottom',
+      stop: '+=100px',
+      scrub: true,
+    },
+    scale: 0,
+    transformOrigin: 'left center',
+  });
+  gsap.from('.categories__title-anim-3', {
+    scrollTrigger: {
+      trigger: '.anim-3',
+      start: '-90% bottom',
+      stop: '+=100px',
+      scrub: true,
+    },
+    scale: 0,
+    transformOrigin: 'left center',
+  });
+  gsap.from('.categories__title-anim-4', {
+    scrollTrigger: {
+      trigger: '.anim-4',
+      start: '-90% bottom',
+      stop: '+=100px',
+      scrub: true,
+    },
+    scale: 0,
+    transformOrigin: 'left center',
+  });
+  gsap.from('.categories__title-anim-5', {
+    scrollTrigger: {
+      trigger: '.anim-5',
+      start: '-90% bottom',
+      stop: '+=100px',
+      scrub: true,
+    },
+    scale: 0,
+    transformOrigin: 'left center',
+  });
+  gsap.from('.categories__title-anim-6', {
+    scrollTrigger: {
+      trigger: '.anim-6',
+      start: '-90% bottom',
+      stop: '+=100px',
+      scrub: true,
+    },
+    scale: 0,
+    transformOrigin: 'left center',
+  });
 }
 
 export { initAnimate };
