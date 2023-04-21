@@ -1,7 +1,7 @@
 /* eslint-disable object-curly-spacing */
 import { iosVhFix } from './utils/ios-vh-fix';
 import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
+// import { Form } from './modules/form-validate/form';
 import { initSwiperArticles } from './modules/swiper-articles/swiper-articles';
 import { initMobMenu, closeMobMenu } from './modules/mob-menu/toggle-btn';
 import { initSwiperTopNews } from './modules/swiper-top-news/swiper-top-news';
@@ -11,8 +11,8 @@ import { initSwiperEthinicCossaks } from './modules/categories/SwiperEthinicCoss
 import { initSwiperArtCultural } from './modules/categories/ArtCultural';
 import { initSwiperCategories } from './modules/categories/SwiperCategories';
 import { initAnimate } from './vendor/gspa-animate';
-import { initPreviewModal } from './modules/open-preview';
-import { initFunctionPreviewModal } from './modules/modals/preview-modal';
+// import { initPreviewModal } from './modules/open-preview';
+// import { initFunctionPreviewModal } from './modules/modals/preview-modal';
 
 // ---------------------------------
 
@@ -42,9 +42,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
+    // const form = new Form();
+    // window.form = form;
+    // form.init();
   });
 });
 

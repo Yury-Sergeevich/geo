@@ -4416,6 +4416,7 @@ button,
   .categories__button--non-standard-expeditions-prev,
   .categories__button--horeca-gastrotourism-prev {
     left: 40px;
+    display: none;
   }
 
   .categories__button--ecoeconomica-next,
