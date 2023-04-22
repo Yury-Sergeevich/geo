@@ -1893,6 +1893,10 @@ button,
   height: 600px;
 }
 
+.modal__article-image--labirint {
+  width: 100%;
+}
+
 .modal__article-image:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
