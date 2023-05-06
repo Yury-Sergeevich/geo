@@ -1837,6 +1837,10 @@ button,
   margin-bottom: 20px;
 }
 
+.modal__article-image--height {
+  height: 396px;
+}
+
 .modal__article-image--contain {
   -o-object-fit: contain;
   object-fit: contain;
@@ -3727,7 +3731,6 @@ button,
 
 .preface__container {
   padding: 30px 0;
-  padding-bottom: 200px;
 }
 
 .preface__content {
@@ -3745,7 +3748,7 @@ button,
   color: #000000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  width: 60%;
+  width: 61%;
   padding-top: 30px;
   margin: 0 auto 100px;
 }
@@ -3879,12 +3882,24 @@ button,
   font-family: "Journalism", "arial", sans-serif;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
+}
+
+.museum__subtitle {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #ff6b6b;
+  font-family: "Journalism", "arial", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
 }
 
 .museum-cards__list {

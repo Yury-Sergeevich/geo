@@ -292,6 +292,10 @@
   margin-left: auto;
   margin-bottom: 20px;
 
+  &--height {
+    height: 396px;
+  }
+
   &--contain {
     object-fit: contain;
     margin-bottom: 15px;

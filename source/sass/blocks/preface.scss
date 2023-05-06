@@ -5,7 +5,7 @@
 
 .preface__container {
   padding: 30px 0;
-  padding-bottom: 200px;
+  // padding-bottom: 200px;
 }
 
 .preface__content {
@@ -24,7 +24,7 @@
   @include font(36px, 42px, 600, #000000);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  width: 60%;
+  width: 61%;
   padding-top: 30px;
   margin: 0 auto 100px;
 
