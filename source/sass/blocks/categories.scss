@@ -37,8 +37,18 @@
 }
 
 .categories__card {
+  position: relative;
   min-height: 310px;
   border-radius: 20px;
+}
+
+.categories__new-card {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: #e7ff34;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .categories__card-link {
