@@ -1820,6 +1820,13 @@ button,
   display: flex;
 }
 
+.modal__image-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .modal__article-image {
   width: 380px;
   height: 250px;
@@ -3944,6 +3951,104 @@ button,
   margin: 0;
 }
 
+.afisha__content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 50px;
+  background-color: #ffffff;
+  min-height: 300px;
+}
+
+.afisha__logo {
+  margin-bottom: 20px;
+}
+
+.afisha__mail {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 0.05em;
+  font-family: "Journalism", "arial", sans-serif;
+  display: block;
+  text-decoration: none;
+  color: #5f5959;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.afisha__text {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #5f5959;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.afisha__diskont-card {
+  padding: 20px 30px;
+}
+
+.afisha__discont-card {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  padding: 30px;
+}
+
+.afisha__discont-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #505050;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.afisha__discont-item {
+  position: relative;
+}
+
+.afisha__discont-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.afisha__discont-item::before {
+  content: "#";
+  font-size: 25px;
+  font-weight: 700;
+  color: #d834ff;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.afisha__discont-text {
+  margin: 0;
+}
+
+.afisha__description-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: red;
+}
+
+.afisha__description-subtext {
+  color: #505050;
+}
+
+.afisha__discont-text-warning {
+  color: red;
+}
+
 @media (max-width: 1279px) {
   .container {
     padding: 0 90px;
@@ -3962,6 +4067,11 @@ button,
 
   .modal__article-wrapper {
     width: 100%;
+  }
+
+  .modal__image-gallery {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .modal-preview__article-wrapper {
@@ -4095,6 +4205,11 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .modal__image-gallery {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .modal__article-image {
@@ -4509,6 +4624,36 @@ button,
 
   .museum__card-image {
     height: 200px;
+  }
+
+  .afisha__content {
+    padding: 20px 25px;
+  }
+
+  .afisha__text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #5f5959;
+    margin-bottom: 20px;
+  }
+
+  .afisha__diskont-card {
+    padding: 10px;
+  }
+
+  .afisha__discont-card {
+    padding: 20px;
+  }
+
+  .afisha__discont-item::before {
+    font-size: 20px;
+    top: 0;
+    left: -15px;
+  }
+
+  .afisha__discont-item:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 
