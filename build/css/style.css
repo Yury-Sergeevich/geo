@@ -1258,6 +1258,14 @@ button.swiper-pagination-bullet {
 @font-face {
   font-style: normal;
   font-weight: 400;
+  font-family: "Prata", "Arial", sans-serif;
+  font-display: swap;
+  src: url("../fonts/Prata-Regular.woff2") format("woff2"), url("../fonts/Prata-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
   font-family: "Journalism";
   font-display: swap;
   src: url("../fonts/JOURNALISM.woff2") format("woff2"), url("../fonts/JOURNALISM.woff") format("woff");
@@ -1561,6 +1569,14 @@ button,
   font-family: "Jawbreak", "Arial", sans-serif;
   font-display: swap;
   src: url("../fonts/Jawbreak-SlabCut.woff2") format("woff2"), url("../fonts/Jawbreak-SlabCut.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Prata", "Arial", sans-serif;
+  font-display: swap;
+  src: url("../fonts/Prata-Regular.woff2") format("woff2"), url("../fonts/Prata-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -3729,8 +3745,9 @@ button,
   background: #faf9e5;
 }
 
-.preface__container {
-  padding: 30px 0;
+.preface .container {
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .preface__content {
@@ -3746,11 +3763,11 @@ button,
   line-height: 42px;
   font-weight: 600;
   color: #000000;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Journalism", "Arial", sans-serif;
   text-align: center;
   width: 61%;
   padding-top: 30px;
-  margin: 0 auto 100px;
+  margin: 0 auto 60px;
 }
 
 .preface__text {
@@ -3761,6 +3778,7 @@ button,
   line-height: 26px;
   font-weight: 400;
   color: #000000;
+  font-family: "Prata", "Arial", sans-serif;
   text-align: justify;
   text-indent: 30px;
   color: #000000;
