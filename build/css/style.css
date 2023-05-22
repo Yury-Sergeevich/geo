@@ -1742,6 +1742,49 @@ button,
   justify-content: end;
 }
 
+.modal__numbertitle {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #7bdbff;
+  text-align: center;
+  display: block;
+}
+
+.modal__bottom-title {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #7bdbff;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal__recept-list {
+  margin: 0;
+}
+
+.modal__recept-item {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  color: #ffffff;
+  text-indent: 10px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.modal__recept-item::marker {
+  color: #ff3538;
+  font-weight: 600;
+}
+
 .modal__article-title {
   font-size: 36px;
   line-height: 44px;
@@ -1778,7 +1821,6 @@ button,
   line-height: 26px;
   font-weight: 400;
   color: #ffffff;
-  color: #ffffff;
   text-align: center;
   text-indent: 50px;
   letter-spacing: 0.03em;
@@ -1787,6 +1829,30 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.modal__footer-recept {
+  margin-bottom: 30px;
+}
+
+.modal__footer-advisory {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left: 40px;
+  margin: 0;
+}
+
+.modal__article-title-qutor {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  color: #cecece;
 }
 
 .modal__article-content-text-preview {
@@ -1841,6 +1907,10 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
+}
+
+.modal__image {
+  width: 100%;
 }
 
 .modal__article-image {
@@ -3846,6 +3916,7 @@ button,
 }
 
 .partners__item-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3863,7 +3934,28 @@ button,
   border-radius: 10px;
 }
 
+.partbers__image {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
 .partners__card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -3994,12 +4086,65 @@ button,
   margin: 0;
 }
 
-.afisha__content {
+.afisha .afisha__container {
+  padding-top: 50px;
+}
+
+.afisha__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.afisha__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 330px;
+}
+
+.afisha__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.afisha__image-wrapper {
+  border-radius: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.afisha__item-image {
+  height: 300px;
+  margin: 0 auto;
+}
+
+.afisha__item-title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #dadada;
+  text-align: center;
   width: 80%;
   margin: 0 auto;
+}
+
+.afisha__content {
+  width: 80%;
+  background-color: #dadada;
+  margin: 0 auto;
   padding: 30px 50px;
-  background-color: #ffffff;
-  min-height: 300px;
+  height: 100%;
 }
 
 .afisha__logo {
@@ -4138,9 +4283,16 @@ button,
     padding-bottom: 30px;
   }
 
+  .categories__card-title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #dadada;
+  }
+
   .categories__image {
     min-height: 260px;
-    height: 32vw;
+    height: 44vw;
   }
 
   .categories__wrapper-swiper {
@@ -4158,6 +4310,11 @@ button,
   .categories__button--non-standard-expeditions-next,
   .categories__button--horeca-gastrotourism-next {
     right: 10px;
+  }
+
+  .afisha__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -4549,7 +4706,6 @@ button,
     line-height: 28px;
     font-weight: 600;
     color: #dadada;
-    letter-spacing: 0.03em;
   }
 
   .categories__card-title {
@@ -4560,7 +4716,7 @@ button,
   }
 
   .categories__image {
-    min-height: 285px;
+    min-height: 400px;
   }
 
   .categories__wrapper-swiper {
@@ -4669,8 +4825,32 @@ button,
     height: 200px;
   }
 
+  .afisha__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .afisha__link {
+    width: 100%;
+  }
+
+  .afisha__item-image {
+    height: auto;
+    width: 100%;
+  }
+
+  .afisha__item-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #dadada;
+  }
+
   .afisha__content {
-    padding: 20px 25px;
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
   }
 
   .afisha__text {
@@ -4697,6 +4877,11 @@ button,
 
   .afisha__discont-item:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  .afisha__description-text {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 

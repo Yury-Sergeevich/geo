@@ -28,7 +28,6 @@
 
   @include vp-767 {
     @include font(20px, 28px, 600, #dadada);
-    letter-spacing: 0.03em;
   }
 }
 
@@ -69,6 +68,10 @@
   margin-top: auto;
   margin: 0;
 
+  @include vp-1023 {
+    @include font(16px, 22px, 400, #dadada);
+  }
+
   @include vp-767 {
     @include font(16px, 22px, 400, #dadada);
   }
@@ -93,11 +96,11 @@
 
   @include vp-1023 {
     min-height: 260px;
-    height: 32vw;
+    height: 44vw;
   }
 
   @include vp-767 {
-    min-height: 285px;
+    min-height: 400px;
   }
 }
 

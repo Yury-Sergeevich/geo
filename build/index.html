@@ -718,40 +718,27 @@
         <section class="afisha" id="Afisha">
           <div class="afisha__container container">
             <h2 class="museum__title">Афиша</h2>
-            <div class="afisha__content">
-              <div class="afisha__logo logo">
-                <img class="afisha__logo-image" src="img/logo/Кравченко Юрий_Логотип_CMYK_2.svg" width="150" height="150" alt="Логотип компании" />
-                <span class="logo__subtitle">Eco Group Tethis</span>
-              </div>
-              <a class="afisha__mail" href="mailto:dragoman.geo@gmail.com">dragoman.geo@gmail.com</a>
-              <p class="afisha__text">Ваши отзывы и предложения приветствуются!</p>
-              <div class="afisha__discont-card">
-                <h3 class="afisha__discont-title">Дисконтная визитка &laquo;Ди-Джи&raquo;</h3>
-                <ul class="afisha__discont-list reset-list">
-                  <li class="afisha__discont-item">
-                    <p class="afisha__discont-text">Обладателю дисконтной визитки гарантируется скидки на&nbsp;все виды услуг и&nbsp;товаров партнёров DRAGOMAN-GEO:</p>
-                    <div class="afisha__discont-description">
-                      <p class="afisha__description-text">при первом предъявлении&nbsp;&mdash; 5&nbsp;% скидки<span class="afisha__description-subtext">отметка применения ______</span></p>
-                      <p class="afisha__description-text">при втором предъявлении&nbsp;&mdash; 10% скидки<span class="afisha__description-subtext">отметка применения ______</span></p>
-                      <p class="afisha__description-text">при третьем предъявлении&nbsp;&mdash; 15% скидки<span class="afisha__description-subtext">отметка применения ______</span></p>
-                    </div>
-                  </li>
-                  <li class="afisha__discont-item">
-                    <p class="afisha__discont-text">
-                      Обладателю дисконтной визитки из&nbsp;числа социально-незащищённых граждан имеющих статус (инвалида I, II, III&nbsp;групп; участника ВОВ; детей-войны; детей-сирот), каждая пятая услуга или каждый пятый заказ одного из&nbsp;товаров партнёров DRAGOMAN-GEO оформляется бесплатно: <br />
-                      <span class="afisha__discont-text-warning">дополнительное предъявление соответствующего удостоверения обязательно!</span>
-                    </p>
-                  </li>
-                  <li class="afisha__discont-item">
-                    <p class="afisha__discont-text">
-                      Обладателю дисконтной карты из&nbsp;числа учащихся лиц средних, среднетехнических, либо высших учебных заведений&nbsp;&mdash; на&nbsp;&laquo;отлично&raquo;, а&nbsp;также спортсменам&nbsp;&mdash; победителям соревнований, предоставляется скидка в&nbsp;размере&nbsp;20%, на&nbsp;услуги и&nbsp;товары партнёров DRAGOMAN-GEO
-                      действующая постоянно: <br />
-                      <span class="afisha__discont-text-warning">дополнительное предъявление табеля успеваемости либо грамот обязательно!</span>
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <ul class="afisha__list reset-list">
+              <li class="afisha__item">
+                <a class="afisha__link" href="#" data-open-modal="visit-card">
+                  <div class="afisha__image-wrapper">
+                    <img class="afisha__item-image" src="img/logo/Кравченко Юрий_Логотип_CMYK_2.svg" width="214" height="303" alt="Визитная карточка" />
+                  </div>
+                  <h3 class="afisha__item-title">Дисконтная визитка «Ди-Джи»</h3>
+                </a>
+              </li>
+              <li class="afisha__item">
+                <a class="afisha__link" href="#" data-open-modal="boxing">
+                  <div class="afisha__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/afisha/IMG-20230518-WA0000.webp" />
+                      <img class="afisha__item-image" src="img/afisha/IMG-20230518-WA0000.jpg" width="214" height="303" loading="lazy" alt="Турнир по боксу" />
+                    </picture>
+                  </div>
+                  <h3 class="afisha__item-title">Турнир по боксу "Великий Шелковый путь"</h3>
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="partners" id="partners">
@@ -760,25 +747,40 @@
             <div class="partners__wrapper-cards">
               <ul class="partners__list-cards reset-list">
                 <li class="partners__item-card">
-                  <div class="partners__card-content">
+                  <a class="partners__card-content">
                     <h3 class="partners__card-title">АНО &laquo;Центр права&raquo;</h3>
-                  </div>
+                  </a>
                 </li>
                 <li class="partners__item-card">
-                  <div class="partners__card-content">
+                  <a class="partners__card-content" href="#" data-open-modal="academy">
                     <h3 class="partners__card-title">«Азово-Черноморская академия г.п. — группа Тетис»</h3>
-                  </div>
+                  </a>
                 </li>
                 <li class="partners__item-card">
-                  <div class="partners__card-content">
+                  <a class="partners__card-content" href="#" data-open-modal="sushi">
                     <h3 class="partners__card-title">Nashi Sushi</h3>
                     <span class="partners__card-subtitle">Партенит</span>
-                  </div>
+                  </a>
                 </li>
                 <li class="partners__item-card">
-                  <div class="partners__card-content">
+                  <a class="partners__card-content" href="#" data-open-modal="Balaban-yantuk">
                     <h3 class="partners__card-title">«Балабан янтык»</h3>
-                  </div>
+                  </a>
+                </li>
+                <li class="partners__item-card">
+                  <picture>
+                    <sourse type="image/webp" srcset="img/afisha/logo-boxing.webp">
+                      <img class="partbers__image" src="img/afisha/logo-boxing.png" loading="lazy" width="120" height="120" alt="Логотип Федерации бокса" />
+                    </sourse>
+                  </picture>
+                  <a class="partners__card-content" href="#" data-open-modal="boxing">
+                    <h3 class="partners__card-title">&laquo;Ялтинская федирация бокса&raquo;</h3>
+                  </a>
+                </li>
+                <li class="partners__item-card">
+                  <a class="partners__card-content" href="#" data-open-modal="boxing">
+                    <h3 class="partners__card-title">пекарня &laquo;Фурунджи&raquo;</h3>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -3305,7 +3307,7 @@
     </div>
 
     <!-- JOURNAL -->
-    <div class="journal-madals">
+    <div class="journal-modals">
       <!-- fact-fiction -->
       <div class="fact-fiction">
         <div class="modal modal--preload" data-modal="crimean-pyramids">
@@ -4070,6 +4072,268 @@
                 </svg>
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- afisha -->
+    <div class="afisha">
+      <div class="modal modal--preload" data-modal="visit-card">
+        <div class="modal__wrapper">
+          <div class="modal__overlay" data-close-modal></div>
+          <div class="modal__content">
+            <div class="modal__article-wrapper">
+              <h2 class="modal__article-title">Дисконтная визитка &laquo;Ди-Джи&raquo;</h2>
+              <div class="afisha__content">
+                <div class="afisha__logo logo">
+                  <img class="afisha__logo-image" src="img/logo/Кравченко Юрий_Логотип_CMYK_2.svg" width="150" height="150" alt="Логотип компании" />
+                  <span class="logo__subtitle">Eco Group Tethis</span>
+                </div>
+                <a class="afisha__mail" href="mailto:dragoman.geo@gmail.com">dragoman.geo@gmail.com</a>
+                <p class="afisha__text">Ваши отзывы и предложения приветствуются!</p>
+                <div class="afisha__discont-card">
+                  <h3 class="afisha__discont-title">Дисконтная визитка &laquo;Ди-Джи&raquo;</h3>
+                  <ul class="afisha__discont-list reset-list">
+                    <li class="afisha__discont-item">
+                      <p class="afisha__discont-text">Обладателю дисконтной визитки гарантируется скидки на&nbsp;все виды услуг и&nbsp;товаров партнёров DRAGOMAN-GEO:</p>
+                      <div class="afisha__discont-description">
+                        <p class="afisha__description-text">при первом предъявлении&nbsp;&mdash; 5&nbsp;% скидки<span class="afisha__description-subtext">отметка применения ______</span></p>
+                        <p class="afisha__description-text">при втором предъявлении&nbsp;&mdash; 10% скидки<span class="afisha__description-subtext">отметка применения ______</span></p>
+                        <p class="afisha__description-text">при третьем предъявлении&nbsp;&mdash; 15% скидки<span class="afisha__description-subtext">отметка применения ______</span></p>
+                      </div>
+                    </li>
+                    <li class="afisha__discont-item">
+                      <p class="afisha__discont-text">
+                        Обладателю дисконтной визитки из&nbsp;числа социально-незащищённых граждан имеющих статус (инвалида I, II, III&nbsp;групп; участника ВОВ; детей-войны; детей-сирот), каждая пятая услуга или каждый пятый заказ одного из&nbsp;товаров партнёров DRAGOMAN-GEO оформляется бесплатно: <br />
+                        <span class="afisha__discont-text-warning">дополнительное предъявление соответствующего удостоверения обязательно!</span>
+                      </p>
+                    </li>
+                    <li class="afisha__discont-item">
+                      <p class="afisha__discont-text">
+                        Обладателю дисконтной карты из&nbsp;числа учащихся лиц средних, среднетехнических, либо высших учебных заведений&nbsp;&mdash; на&nbsp;&laquo;отлично&raquo;, а&nbsp;также спортсменам&nbsp;&mdash; победителям соревнований, предоставляется скидка в&nbsp;размере&nbsp;20%, на&nbsp;услуги и&nbsp;товары партнёров DRAGOMAN-GEO
+                        действующая постоянно: <br />
+                        <span class="afisha__discont-text-warning">дополнительное предъявление табеля успеваемости либо грамот обязательно!</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+              <svg width="20" height="20" role="img">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--preload" data-modal="boxing">
+        <div class="modal__wrapper">
+          <div class="modal__overlay" data-close-modal></div>
+          <div class="modal__content">
+            <div class="modal__article-wrapper">
+              <h2 class="modal__article-title">Дисконтная визитка &laquo;Ди-Джи&raquo;</h2>
+              <div class="modal__afisha-content">
+                <picture>
+                  <source type="image/webp" srcset="img/afisha/IMG-20230518-WA0000.webp" />
+                  <img class="modal__image" src="img/afisha/IMG-20230518-WA0000.jpg" width="214" height="303" alt="Турнир по боксу" />
+                </picture>
+              </div>
+            </div>
+            <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+              <svg width="20" height="20" role="img">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- partners -->
+    <div class="partners-modal">
+      <div class="partners-balaban-yantuk">
+        <div class="modal modal--preload" data-modal="Balaban-yantuk">
+          <div class="modal__wrapper">
+            <div class="modal__overlay" data-close-modal></div>
+            <div class="modal__content">
+              <div class="modal__article-wrapper">
+                <h2 class="modal__article-title">Джевизлы-аш &laquo;По-Гурзуфски&raquo;</h2>
+                <div class="modal__article-content">
+                  <div class="modal__article-text-wrapper">
+                    <p class="modal__article-content-text">
+                      Полагаем, что старинное и&nbsp;самобытное блюдо южнобережных крымских татар&nbsp;&mdash; Джевизлы-аш незаслуженно забыто многими рестораторами Крыма и&nbsp;особенно обидно, когда это блюдо не&nbsp;способны подать, по&nbsp;просьбе, в&nbsp;заведениях общественного питания специализирующихся на&nbsp;готовке национальной кухни.<br />
+                    </p>
+                    <p class="modal__article-content-text">А&nbsp;жаль, ведь это блюдо олицетворяет собой весь шарм и&nbsp;колорит Южного берега Крыма, ведь оно остаётся сытным и&nbsp;к&nbsp;удивлению, легко усвояемым блюдом, а&nbsp;главное вкусным!<br /></p>
+                    <p class="modal__article-content-text">И&nbsp;это при том, что особенностью этого блюда является много- сочетаемость, казалось&nbsp;бы, несочетаемых вкусов и&nbsp;продуктов!<br /></p>
+                    <p class="modal__article-content-text">
+                      Из&nbsp;древне готовя Джевизлы-аш кулинары применяли лучшую крымскую муку (с&nbsp;большим процентом клейковины), получаемую из&nbsp;сорта пшеницы &laquo;Арноутка&raquo; и&nbsp;домашние перепелиные яйца, что являлось основой для подготовки теста &laquo;хамура&raquo;. А&nbsp;при подготовке фарша использовалась вымоченная
+                      за&nbsp;день зайчатина, зачастую заменяемая постной говядиной.<br />
+                    </p>
+                    <p class="modal__article-content-text">
+                      Высокий процент клейковины в&nbsp;муке, должен был быть для того, чтобы само тесто &laquo;хамур&raquo; и&nbsp;вылепленный из&nbsp;него &laquo;аш&raquo; (похожие на пельмени, но&nbsp;треугольной формы заготовки), было вязким и&nbsp;не&nbsp;в&nbsp;коем случае не&nbsp;разваривалось, (не&nbsp;рассыпалось) при готовке.<br />
+                    </p>
+                    <p class="modal__article-content-text">Естественно, подготавливая тесто и&nbsp;фарш не&nbsp;забывали про крымскую морскую соль. Заправлялось&nbsp;же приготовленное блюдо топлённым домашним сливочным маслом и&nbsp;засыпалось оно крымскими орехами с сахаром!<br /></p>
+                    <p class="modal__article-content-text">Да, именно сахаром, (желательно по&nbsp;типу мелкотолчёного &laquo;набата&raquo; &mdash; национального вида сахара, изготовляемого на&nbsp;молочных сливках).<br /></p>
+                    <p class="modal__article-content-text">Теперь&nbsp;вы, наверное, понимаете почему из&nbsp;древне охотники Южного берега Крыма доставляли к&nbsp;этому блюду&nbsp;&mdash; зайчатину!, которую кулинары использовали в&nbsp;это блюдо желаннее!<br /></p>
+                    <p class="modal__article-content-text">Ведь мясо зайчатины максимально витаминизировано дикой растительностью, постно, а&nbsp;главное сладковато на&nbsp;вкус, что усиливает вкус сочетаемости, таких несочетаемых продуктов, как&nbsp;&mdash; мясо и&nbsp;сахар!<br /></p>
+                    <p class="modal__article-content-text">
+                      Конечно, в&nbsp;настоящее время, сорта пшеницы &laquo;Арнаутка&raquo; практически не&nbsp;найти, да&nbsp;и&nbsp;зайчатину добыть трудно, поэтому сейчас, по&nbsp;большей части стараясь сохранить основу этого блюда, кулинары Крыма готовят его заменяя указанные выше ингредиенты и&nbsp;зачастую выглядит оно так:
+                    </p>
+                  </div>
+                  <picture>
+                    <source type="image/webp" srcset="img/categories/partners/balaban-yantuk/image-1.webp" />
+                    <img class="modal__article-image" src="img/categories/partners/balaban-yantuk/image-1.jpg" width="400" height="300" alt="Проплывающий пароход у Адаларов" />
+                  </picture>
+                  <div class="modal__article-text-wrapper">
+                    <p class="modal__article-content-text">Либо в&nbsp;таком виде, (сам &laquo;аш&raquo; налеплен более крупно):</p>
+                  </div>
+                  <picture>
+                    <source type="image/webp" srcset="img/categories/partners/balaban-yantuk/image-2.webp" />
+                    <img class="modal__article-image" src="img/categories/partners/balaban-yantuk/image-2.jpg" width="400" height="300" alt="Лодка, подвозящая продукты к «Венеции»" />
+                  </picture>
+                  <div class="modal__article-text-wrapper">
+                    <p class="modal__article-content-text">Или в&nbsp;такой формате, с&nbsp;подачей несильно забродившего, (без выраженной кислотности) крымско-татарского национального кисломолочного продукта &laquo;катык&raquo;, (улучшающего пищеварения трапезничающего) и&nbsp;с&nbsp;другой изготовленной формой &laquo;аша&raquo;.</p>
+                  </div>
+                  <picture>
+                    <source type="image/webp" srcset="img/categories/partners/balaban-yantuk/image-3.webp" />
+                    <img class="modal__article-image" src="img/categories/partners/balaban-yantuk/image-3.jpg" width="400" height="300" alt="Лодка, подвозящая продукты к «Венеции»" />
+                  </picture>
+                  <div class="modal__article-text-wrapper">
+                    <p class="modal__article-content-text">Сегодня, мы&nbsp;не&nbsp;спорим с&nbsp;кулинарами Крыма о&nbsp;точной форме приготовления этого старинного блюда.<br /></p>
+                    <p class="modal__article-content-text">Мы&nbsp;уверены, что каждый его готовил, по&nbsp;своему вкусу или со&nbsp;своей &laquo;изюминкой&raquo;, возможно, (как учили его предки или как какой-то из&nbsp;рецептов они где-то и&nbsp;когда-то слышали).<br /></p>
+                    <p class="modal__article-content-text">Главное, чтобы это блюдо помнили и&nbsp;не&nbsp;отклонялись от&nbsp;его основы (сочетаемость постного мяса и&nbsp;сахара!), готовя его, при возможности, повсеместно, ведь многим гостям Крыма (туристам, путешественникам) оно будет интересно!<br /></p>
+                    <p class="modal__article-content-text">В&nbsp;свою очередь, коллектив DRAGOMAN-GEO, постарался восстановить один из&nbsp;рецептов Джевизлы-аша, по&nbsp;тому методу, как его готовили в&nbsp;южнобережном Гурзуфе.<br /></p>
+                    <p class="modal__article-content-text">
+                      Известно, что словосочетание Джевизлы-аш, дословно переводится с&nbsp;крымско-татарского языка, как (&laquo;аш&raquo;-еда, &laquo;джевизлы&raquo;-орехи), т.е. &laquo;еда с&nbsp;орехами&raquo;. Приставка&nbsp;же &laquo;По-Гурзуфски&raquo; означает приготовление этого блюда с&nbsp;добавлением продуктов из&nbsp;древне
+                      произрастающих в&nbsp;этой местности и&nbsp;с&nbsp;его колоритом.<br />
+                    </p>
+                    <p class="modal__article-content-text">К&nbsp;примеру, самый лучший миндаль и&nbsp;отличные грецкие орехи росли в&nbsp;садах у&nbsp;подножья горы Балгатура в&nbsp;Гурзуфе, местность которая называлась&nbsp;&mdash; Джевизлык, ныне, район улиц Ореховой и&nbsp;Виноградной.<br /></p>
+                    <p class="modal__article-content-text">Итак, приступим, рецепт&nbsp;&mdash; Джевизлы-аш &laquo;По-Гурзуфски&raquo; с&nbsp;основными ингредиентами на&nbsp;порцию в&nbsp;четыре персоны:</p>
+                  </div>
+                  <span class="modal__numbertitle">1</span>
+                  <h2 class="modal__bottom-title">Тесто &laquo;хамур&raquo;</h2>
+                  <div class="modal__article-content">
+                    <ol class="modal__recept-list">
+                      <li class="modal__recept-item">Мука крымская пшеничная высшего качества (с&nbsp;высоким процентом клейковины)&nbsp;&mdash; 300&nbsp;гр.;</li>
+                      <li class="modal__recept-item">Чистая вода&nbsp;&mdash; 50&nbsp;гр.;</li>
+                      <li class="modal__recept-item">Четыре яйца крымских перепёлок;</li>
+                      <li class="modal__recept-item">Соль морская крымская по&nbsp;вкусу.</li>
+                    </ol>
+                  </div>
+                  <div class="modal__article-content">
+                    <p class="modal__article-content-text">
+                      Все указанные ингредиенты вручную равномерно замешиваются, образуя тесто &laquo;хамур&raquo;, которое, также вручную тонко раскатывается скалкой. Естественным образом, слегка подсушенный лист полученного теста разрезается на&nbsp;максимально ровные квадратики в&nbsp;3-4&nbsp;см.&nbsp;и&nbsp;оставляется в&nbsp;таком виде ожидая
+                      начинку из&nbsp;фарша.<br />
+                    </p>
+                  </div>
+                  <span class="modal__numbertitle">2</span>
+                  <h2 class="modal__bottom-title">Начинка &laquo;къыйма&raquo;</h2>
+                  <div class="modal__article-content">
+                    <ol class="modal__recept-list">
+                      <li class="modal__recept-item">Фарш из&nbsp;крымской постной телятины (можно из&nbsp;почечной части (без жира) или лопатки&nbsp;&mdash; 200&nbsp;гр.);</li>
+                      <li class="modal__recept-item">Ялтинский сладкий лук&nbsp;&mdash; 100&nbsp;гр.;</li>
+                      <li class="modal__recept-item">Паприка сухая крымская сладкая (рекомендуется подкопчённую)&nbsp;&mdash; 20&nbsp;гр.;</li>
+                      <li class="modal__recept-item">Соль морская крымская по&nbsp;вкусу.</li>
+                    </ol>
+                  </div>
+                  <div class="modal__article-content">
+                    <p class="modal__article-content-text">Мясо телятины необходимо прокрутить вручную, смешав его со&nbsp;всеми данными ингредиентами. При этом, лук необходимо нарезать очень мелко, убрав с&nbsp;него внутреннюю плёнку.<br /></p>
+                    <p class="modal__article-content-text">Полученную начинку необходимо по&nbsp;пол чайной ложки выложить на&nbsp;подготовленные указанные выше квадратики из&nbsp;теста, слепив их&nbsp;края в&nbsp;форме треугольника&nbsp;&mdash; заготовки &laquo;аша&raquo; готовы!</p>
+                  </div>
+                  <span class="modal__numbertitle">3</span>
+                  <h2 class="modal__bottom-title">Заправка &laquo;джевезлы&raquo;</h2>
+                  <div class="modal__article-content">
+                    <ol class="modal__recept-list">
+                      <li class="modal__recept-item">Гурзуфский миндаль сорта &laquo;Артек&raquo; (либо обычный грецкий орех) или вперемешку&nbsp;&mdash; 200&nbsp;гр.;</li>
+                      <li class="modal__recept-item">Мелкотолчёный сахар типа &laquo;набат&raquo;&nbsp;&mdash; 30-50&nbsp;гр.;</li>
+                      <li class="modal__recept-item">Топлённое сливочное масло (желательно приготовленное из&nbsp;молока коров или коз содержащимся в&nbsp;подворье гурзуфской долины)&nbsp;&mdash; 100-200&nbsp;гр.</li>
+                      <li class="modal__recept-item">Гурзуфские оливки или сладкий гранат (можно вместе)&nbsp;&mdash; по&nbsp;вкусу.</li>
+                    </ol>
+                  </div>
+                  <div class="modal__article-content">
+                    <p class="modal__article-content-text">Имеющиеся орехи вручную крошат скалкой. В&nbsp;случае&nbsp;же если нет готового топлённого масла, то&nbsp;обычное сливочное масло, в&nbsp;течении 3-5 минут истапливают на&nbsp;сковороде. Толчённый сахар, а&nbsp;также оливки или гранат держат наготове.<br /></p>
+                  </div>
+                  <span class="modal__numbertitle">4</span>
+                  <h2 class="modal__bottom-title">Подготовка варки &laquo;кайнатмак&raquo;</h2>
+                  <div class="modal__article-content">
+                    <ol class="modal__recept-list">
+                      <li class="modal__recept-item">Обязательна местная, богатая минералами и&nbsp;микроэлементами горная вода из&nbsp;гурзуфских источников&nbsp;&mdash; 2&nbsp;литра;</li>
+                      <li class="modal__recept-item">Гурзуфский розмарин&nbsp;&mdash; 10-20&nbsp;гр.</li>
+                      <li class="modal__recept-item">Гурзуфский лавровый лист&nbsp;&mdash; 2-3&nbsp;листа.</li>
+                    </ol>
+                  </div>
+                  <span class="modal__numbertitle">5</span>
+                  <h2 class="modal__bottom-title">Итог приготовления</h2>
+                  <div class="modal__article-content">
+                    <p class="modal__article-content-text">
+                      В&nbsp;круто кипячённую воду закидывается розмарин и&nbsp;лавровый лист. Спустя 2-3&nbsp;минуты, в&nbsp;указанную суспензию, осторожно закладывается подготовленный &laquo;аш&raquo; и&nbsp;варится до&nbsp;5&nbsp;минут, (до&nbsp;состояния &laquo;Al&nbsp;dente&raquo;). После варки &laquo;аш&raquo; осушено выкладывается
+                      на&nbsp;тарелку и&nbsp;заливается топлённым маслом. Завершающим этапом является посыпка &laquo;аша&raquo; орехами и&nbsp;мелкотолчёным сахаром. Готовое блюдо украшается оливками и&nbsp;зёрнами сладкого граната (допускается, как по&nbsp;раздельности, так и&nbsp;вместе) и&nbsp;всё&nbsp;&mdash; Джевизлы-аш
+                      &laquo;По-Гурзуфски&raquo; готов!
+                    </p>
+                  </div>
+                  <div class="modal__footer-recept">
+                    <p class="modal__footer-advisory">Приятного аппетита!</p>
+                    <strong class="modal__article-title-qutor">Права защищены DRAGOMAN-GEO</strong>
+                  </div>
+                  <picture>
+                    <source type="image/webp" srcset="img/categories/partners/balaban-yantuk/image-4.webp" />
+                    <img class="modal__article-image" src="img/categories/partners/balaban-yantuk/image-4.jpg" width="400" height="300" alt="Лодка, подвозящая продукты к «Венеции»" />
+                  </picture>
+                  <div class="modal__article-text-wrapper">
+                    <p class="modal__article-content-text">
+                      Обращаем Ваше внимание, что это Джевизлы-аш &laquo;По-Гурзуфски&raquo;, профессионально готовится и&nbsp;подаётся по&nbsp;заказу в&nbsp;кафе крымской этнической кухни &laquo;Балабан Янтык&raquo;, которое расположено в&nbsp;пгт. Гурзуф, по&nbsp;ул. Альфреда Вагула, 1&nbsp;и&nbsp;которое является партнёром DRAGOMAN-GEO.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+                <svg width="20" height="20" role="img">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="horeca-gastrotourism">
+      <div class="modal modal--preload" data-modal="crimean-venice">
+        <div class="modal__wrapper">
+          <div class="modal__overlay" data-close-modal></div>
+          <div class="modal__content">
+            <div class="modal__article-wrapper">
+              <h2 class="modal__article-title">Крымская Венеция...</h2>
+              <div class="modal__article-content">
+                <div class="modal__article-text-wrapper">
+                  <p class="modal__article-content-text"><br /></p>
+                  <p class="modal__article-content-text"><br /></p>
+                  <p class="modal__article-content-text"><br /></p>
+                  <p class="modal__article-content-text"><br /></p>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="img/categories/journal/hoReCa-gastrotourism/crimean-venice/image-1.webp" />
+                  <img class="modal__article-image" src="img/categories/journal/hoReCa-gastrotourism/crimean-venice/image-1.jpg" width="300" height="200" alt="Проплывающий пароход у Адаларов" />
+                </picture>
+                <div class="modal__article-text-wrapper">
+                  <p class="modal__article-content-text"><br /></p>
+                  <p class="modal__article-content-text"><br /></p>
+                  <p class="modal__article-content-text"><br /></p>
+                  <p class="modal__article-content-text"><br /></p>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="img/categories/journal/hoReCa-gastrotourism/crimean-venice/image-2.webp" />
+                  <img class="modal__article-image" src="img/categories/journal/hoReCa-gastrotourism/crimean-venice/image-2.jpg" width="300" height="200" alt="Лодка, подвозящая продукты к «Венеции»" />
+                </picture>
+              </div>
+            </div>
+            <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+              <svg width="20" height="20" role="img">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>

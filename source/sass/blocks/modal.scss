@@ -170,6 +170,37 @@
   }
 }
 
+.modal__numbertitle {
+  @include font(22px, 28px, 700, #7bdbff);
+  text-align: center;
+  display: block;
+}
+
+.modal__bottom-title {
+  @include font(22px, 28px, 600, #7bdbff);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal__recept-list {
+  margin: 0;
+}
+
+.modal__recept-item {
+  @include font(16px, 26px, 400, $second-color);
+  color: $second-color;
+  text-indent: 10px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  user-select: none;
+
+  &::marker {
+    color: #ff3538;
+    font-weight: 600;
+  }
+}
+
 .modal__article-title {
   @include font(36px, 44px, 600, #ff6060);
   font-family: "Journalism", "Arial", sans-serif;
@@ -208,7 +239,6 @@
 
 .modal__article-content-text {
   @include font(16px, 26px, 400, $second-color);
-  color: $second-color;
   text-align: center;
   text-indent: 50px;
   letter-spacing: 0.03em;
@@ -219,6 +249,23 @@
     @include font(14px, 22px, 400, $second-color);
     text-indent: 20px;
   }
+}
+
+.modal__footer-recept {
+  margin-bottom: 30px;
+}
+
+.modal__footer-advisory {
+  @include font(16px, 26px, 400, $second-color);
+  margin-left: 40px;
+  margin: 0;
+}
+
+.modal__article-title-qutor {
+  font-weight: 600;
+  display: flex;
+  justify-content: end;
+  color: #cecece;
 }
 
 .modal__article-content-text-preview {
@@ -282,6 +329,10 @@
   @include vp-767 {
     grid-template-columns: 1fr;
   }
+}
+
+.modal__image {
+  width: 100%;
 }
 
 .modal__article-image {

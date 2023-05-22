@@ -33,6 +33,7 @@
 }
 
 .partners__item-card {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +44,19 @@
   border-radius: 10px;
 }
 
+.partbers__image {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 .partners__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   padding: 10px;
 }
 

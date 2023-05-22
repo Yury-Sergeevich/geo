@@ -1,12 +1,78 @@
-.afisha__content {
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px 50px;
-  background-color: #ffffff;
-  min-height: 300px;
+.afisha .afisha__container {
+  padding-top: 50px;
+}
+
+.afisha__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   @include vp-767 {
-    padding: 20px 25px;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+}
+
+.afisha__item {
+  display: flex;
+  min-height: 330px;
+}
+
+.afisha__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.afisha__image-wrapper {
+  border-radius: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.afisha__item-image {
+  height: 300px;
+  margin: 0 auto;
+
+  @include vp-767 {
+    height: auto;
+
+    width: 100%;
+  }
+}
+
+.afisha__item-title {
+  @include font(14px, 18px, 400, #dadada);
+  text-align: center;
+
+  width: 80%;
+  margin: 0 auto;
+
+  @include vp-767 {
+    @include font(16px, 24px, 500, #dadada);
+  }
+}
+
+.afisha__content {
+  width: 80%;
+  background-color: #dadada;
+  margin: 0 auto;
+  padding: 30px 50px;
+
+  height: 100%;
+
+  @include vp-767 {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
   }
 }
 
@@ -100,6 +166,10 @@
   display: flex;
   justify-content: space-between;
   color: red;
+
+  @include vp-767 {
+    flex-wrap: wrap;
+  }
 }
 
 .afisha__description-subtext {
