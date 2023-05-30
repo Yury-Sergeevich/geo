@@ -4,7 +4,7 @@ const videoEnabled = () => {
   function createIframe() {
     const iframe = document.createElement('iframe');
 
-    iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
+    iframe.setAttribute('src', 'https://www.youtube.com/embed/XexfP-XhNzs');
     iframe.classList.add('video__media');
     iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
     iframe.setAttribute('allowfullscreen', '');

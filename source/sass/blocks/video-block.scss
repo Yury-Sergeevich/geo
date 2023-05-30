@@ -1,16 +1,13 @@
-.promo-gym__gallery {
-  // position: relative;
-}
-
 .video {
-  // position: relative;
+  position: relative;
   width: 100%;
   height: 460px;
+
   // margin-top: -113px;
 
   @include vp-1023 {
-    width: 39.2%;
-    height: 21.5vw;
+    // width: 39.2%;
+    height: 56.5vw;
     left: 0;
     // margin: -84px auto 0;
   }
@@ -18,7 +15,8 @@
   @include vp-767 {
     margin: 0 auto;
     width: 100%;
-    height: 52.2vw;
+    height: 85.2vw;
+    margin-bottom: 40px;
   }
 }
 
@@ -31,12 +29,13 @@
 }
 
 .video__link {
-  // position: relative;
+  position: relative;
   z-index: 1;
   display: block;
   width: 100%;
   height: 100%;
   cursor: pointer;
+  margin-bottom: 30px;
 
   // &::before {
   //   content: "";
@@ -69,44 +68,44 @@
   border: none;
 
   @include vp-1023 {
-    height: 21.5vw;
+    height: 56.5vw;
   }
 
   @include vp-767 {
-    height: 52.2vw;
+    height: 85.2vw;
   }
 }
 
-// .video__button {
-//   display: none;
-//   z-index: 2;
-//   position: absolute;
-//   padding: 0;
-//   top: 50%;
-//   left: 50%;
-//   width: 100px;
-//   height: 100px;
-//   border: none;
-//   transform: translate(-50%, -50%);
-//   background-color: transparent;
-//   border-radius: 50%;
-//   cursor: pointer;
+.video__button {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border: none;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
 
-//   @include vp-1023 {
-//     width: 73px;
-//     height: 73px;
-//   }
+  @include vp-1023 {
+    width: 73px;
+    height: 73px;
+  }
 
-//   &:focus-visible {
-//     outline-offset: 2px;
-//     outline: 1px solid #0095ff;
-//   }
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 1px solid #0095ff;
+  }
 
-//   &:hover {
-//     opacity: 0.8;
-//   }
+  &:hover {
+    opacity: 0.8;
+  }
 
-//   &:active {
-//     opacity: 0.5;
-//   }
-// }
+  &:active {
+    opacity: 0.5;
+  }
+}
