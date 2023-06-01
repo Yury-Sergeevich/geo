@@ -3630,7 +3630,8 @@ button,
   position: absolute;
   top: 5px;
   left: 10px;
-  color: #e7ff34;
+  color: #ffeb3b;
+  background-color: #000000;
   text-transform: uppercase;
   font-weight: 700;
 }
