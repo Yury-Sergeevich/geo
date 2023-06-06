@@ -1859,6 +1859,7 @@ button,
   -ms-flex-pack: end;
   justify-content: end;
   color: #cecece;
+  margin-bottom: 30px;
 }
 
 .modal__article-content-text-preview {
@@ -4249,6 +4250,10 @@ button,
   color: red;
 }
 
+.promo-gym__gallery {
+  margin-bottom: 30px;
+}
+
 .video {
   position: relative;
   width: 100%;
@@ -4289,7 +4294,6 @@ button,
 }
 
 .video__button {
-  display: none;
   z-index: 2;
   position: absolute;
   padding: 0;
