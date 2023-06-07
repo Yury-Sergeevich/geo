@@ -1,0 +1,9 @@
+.article-list {
+  margin: 0;
+  padding: 25px;
+}
+
+.article-list__description-item {
+  @include font(22px, 26px, 400, $second-color);
+  color: #ffffff;
+}

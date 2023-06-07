@@ -1,0 +1,13 @@
+.text-article__text {
+  @include font(22px, 26px, 400, $second-color);
+
+  text-indent: 50px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  user-select: none;
+
+  @include vp-767 {
+    @include font(14px, 22px, 400, $second-color);
+    text-indent: 20px;
+  }
+}
