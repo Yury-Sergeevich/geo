@@ -1,0 +1,18 @@
+.button-detail {
+  cursor: pointer;
+
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  width: 150px;
+  margin: 0 auto 30px;
+  display: block;
+
+  background: linear-gradient(180deg, #a869f0 0, #834cc2 100%);
+  border-radius: 20px;
+  box-shadow: 0 0 10px #a869f0;
+}
+
+.button-detail__text {
+  @include font(14px, 17px, 500, #e5e5e5);
+}

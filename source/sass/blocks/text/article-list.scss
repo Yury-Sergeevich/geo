@@ -4,6 +4,5 @@
 }
 
 .article-list__description-item {
-  @include font(22px, 26px, 400, $second-color);
-  color: #ffffff;
+  @include font(18px, 24px, 500, #f9efae);
 }

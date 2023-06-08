@@ -12,6 +12,7 @@ import { initSwiperArtCultural } from './modules/categories/ArtCultural';
 import { initSwiperCategories } from './modules/categories/SwiperCategories';
 import { initAnimate } from './vendor/gspa-animate';
 import { videoEnabled } from './modules/video-burungi';
+import { openAboutDetail } from './modules/button-details';
 // import { initPreviewModal } from './modules/open-preview';
 // import { initFunctionPreviewModal } from './modules/modals/preview-modal';
 
@@ -37,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initSwiperEthinicCossaks(swiper);
   initSwiperArtCultural(swiper);
   initSwiperCategories(swiper);
+  openAboutDetail();
 
   initAnimate();
 
