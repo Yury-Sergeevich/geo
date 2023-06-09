@@ -1,8 +1,8 @@
 .btn {
-  @include font(14px, 17px, 400, #515151);
+  @include font(14px, 17px, 400, #d5d5d5);
 
   display: inline-flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   border: none;
   cursor: pointer;
@@ -10,6 +10,10 @@
   padding: 15px 0;
   transition: opacity $trans-default;
   outline: none;
+  background: linear-gradient(180deg, #a869f0 0, #834cc2 100%);
+  border-radius: 20px;
+  box-shadow: 0 0 60px #a869f0;
+  width: 100px;
 
   &:disabled {
     opacity: 0.5;

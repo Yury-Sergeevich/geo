@@ -1511,13 +1511,13 @@ button,
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  color: #515151;
+  color: #d5d5d5;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1529,6 +1529,13 @@ button,
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   outline: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #a869f0), to(#834cc2));
+  background: -o-linear-gradient(top, #a869f0 0, #834cc2 100%);
+  background: linear-gradient(180deg, #a869f0 0, #834cc2 100%);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 60px #a869f0;
+  box-shadow: 0 0 60px #a869f0;
+  width: 100px;
 }
 
 .btn:disabled {
@@ -1571,8 +1578,8 @@ button,
 }
 
 .text-article__text {
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 17px;
+  line-height: 27px;
   font-weight: 400;
   color: #ffffff;
   text-indent: 50px;
@@ -3318,7 +3325,7 @@ button,
 .promo-slider__slides-image {
   -o-object-fit: cover;
   object-fit: cover;
-  height: 31vw;
+  height: 38vw;
   max-height: 670px;
   width: 100%;
 }
