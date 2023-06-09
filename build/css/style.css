@@ -1512,6 +1512,7 @@ button,
   line-height: 17px;
   font-weight: 400;
   color: #d5d5d5;
+  text-transform: uppercase;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1524,7 +1525,7 @@ button,
   border: none;
   cursor: pointer;
   vertical-align: text-bottom;
-  padding: 15px 0;
+  padding: 10px 0;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -1533,8 +1534,8 @@ button,
   background: -o-linear-gradient(top, #a869f0 0, #834cc2 100%);
   background: linear-gradient(180deg, #a869f0 0, #834cc2 100%);
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 60px #a869f0;
-  box-shadow: 0 0 60px #a869f0;
+  -webkit-box-shadow: 0 0 30px #a869f0;
+  box-shadow: 0 0 30px #a869f0;
   width: 100px;
 }
 
@@ -4529,6 +4530,10 @@ button,
 @media (max-width: 767px) {
   .container {
     padding: 0 16px;
+  }
+
+  .btn {
+    display: none;
   }
 
   .text-article__text {

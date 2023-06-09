@@ -1,5 +1,6 @@
 .btn {
   @include font(14px, 17px, 400, #d5d5d5);
+  text-transform: uppercase;
 
   display: inline-flex;
   justify-content: center;
@@ -7,12 +8,12 @@
   border: none;
   cursor: pointer;
   vertical-align: text-bottom;
-  padding: 15px 0;
+  padding: 10px 0;
   transition: opacity $trans-default;
   outline: none;
   background: linear-gradient(180deg, #a869f0 0, #834cc2 100%);
   border-radius: 20px;
-  box-shadow: 0 0 60px #a869f0;
+  box-shadow: 0 0 30px #a869f0;
   width: 100px;
 
   &:disabled {
@@ -23,6 +24,10 @@
 
   @include hover-focus {
     opacity: 0.8;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
