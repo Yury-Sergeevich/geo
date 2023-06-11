@@ -1504,7 +1504,7 @@ button,
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 125px;
+  padding: 0 70px;
 }
 
 .btn {
@@ -1707,7 +1707,7 @@ button,
   align-items: center;
   width: 100%;
   min-height: 100%;
-  padding: 0;
+  padding: 30px 35px;
 }
 
 .modal__overlay {
@@ -1721,18 +1721,18 @@ button,
 
 .modal__content {
   position: relative;
-  padding: 40px;
+  padding: 0;
   margin-bottom: auto;
   background-color: transparent;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 0.5%;
-  right: 0.5%;
+  top: 0;
+  right: 0;
   z-index: 1;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   padding: 0;
   background: rgba(255, 255, 255, 0);
   border: none;
@@ -1785,6 +1785,19 @@ button,
   background: url("../../img/anim-background/10.png");
 }
 
+.modal__up-scroll {
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #607d8b;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffeb3b;
+}
+
 .modal__article-wrapper {
   width: 800px;
   margin: 0 auto;
@@ -1801,6 +1814,10 @@ button,
   margin-left: auto;
 }
 
+.modal__article-title-start {
+  padding-top: 50px;
+}
+
 .modal__article-title-autor {
   font-weight: 600;
   display: -webkit-box;
@@ -1809,6 +1826,7 @@ button,
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
+  margin-top: 25px;
 }
 
 .modal__numbertitle {
@@ -1862,23 +1880,24 @@ button,
   color: #ff6060;
   font-family: "Journalism", "Arial", sans-serif;
   text-align: center;
-  width: 600px;
-  padding-top: 40px;
+  width: 80%;
+  padding-top: 70px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .modal__article-subtitle {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 500;
   color: #ffffff;
+  font-family: "Prata", "Arial", sans-serif;
   text-align: center;
   margin: 0;
-  margin-bottom: 30px;
 }
 
 .modal__article-content {
+  padding-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -1889,9 +1908,10 @@ button,
 .modal__article-content-text {
   font-size: 16px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 500;
   color: #ffffff;
-  text-align: center;
+  font-family: "Prata", "Arial", sans-serif;
+  text-align: justify;
   text-indent: 50px;
   letter-spacing: 0.03em;
   margin: 0;
@@ -1996,7 +2016,7 @@ button,
   object-fit: cover;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .modal__article-image--height {
@@ -2085,10 +2105,11 @@ button,
   width: 60%;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 500;
   color: #ffeb3b;
+  font-family: "Prata", "Arial", sans-serif;
   text-align: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 15px;
 }
 
 .modal__article-description-list {
@@ -3671,9 +3692,9 @@ button,
 
 .categories__title {
   position: relative;
-  font-size: 34px;
-  line-height: 42px;
-  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
   color: #dadada;
   font-family: "Journalism", "Arial", sans-serif;
   margin: 0;
@@ -3697,13 +3718,18 @@ button,
 }
 
 .categories__new-card {
-  position: absolute;
-  top: 5px;
-  left: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
   color: #ffeb3b;
-  background-color: #000000;
+  font-family: "Arial", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background-color: #ff3b3b;
 }
 
 .categories__card-link {
@@ -3730,30 +3756,31 @@ button,
 }
 
 .categories__card-title {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
   color: #dadada;
+  font-family: "Prata", "Arial", sans-serif;
   margin-top: auto;
   margin: 0;
 }
 
 .categories__image-wrapper {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-radius: 20px;
   overflow: hidden;
 }
 
 .categories__image {
   width: 100%;
-  height: 300px;
+  height: 350px;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
 .categories__wrapper-swiper {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .categories__button {
@@ -4121,7 +4148,7 @@ button,
 }
 
 .museum__card-title {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 600;
   color: #f0f0f0;
@@ -4149,12 +4176,12 @@ button,
 }
 
 .museum__image-description {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
   color: #ffeb3b;
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -4426,7 +4453,7 @@ button,
 
 @media (max-width: 1279px) {
   .container {
-    padding: 0 90px;
+    padding: 0 60px;
   }
 
   .footer__container {
@@ -4441,7 +4468,7 @@ button,
   }
 
   .modal__article-wrapper {
-    width: 100%;
+    width: 71%;
   }
 
   .modal__image-gallery {
@@ -4470,20 +4497,23 @@ button,
     padding-bottom: 30px;
   }
 
+  .categories__title {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #dadada;
+  }
+
   .categories__card-title {
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400;
+    font-weight: 500;
     color: #dadada;
   }
 
   .categories__image {
     min-height: 260px;
     height: 44vw;
-  }
-
-  .categories__wrapper-swiper {
-    margin-bottom: 25px;
   }
 
   .categories__button--ecoeconomica-next,
@@ -4544,59 +4574,67 @@ button,
     text-indent: 20px;
   }
 
+  .article-list {
+    padding: 15px;
+  }
+
   .modal__wrapper {
-    padding: 20px 0;
+    padding: 15px 15px;
   }
 
   .modal__content {
     width: 100%;
-    padding: 15px;
   }
 
   .modal__close-btn {
-    width: 20px;
-    height: 20px;
-    right: 5.5%;
+    width: 50px;
+    height: 50px;
   }
 
   .modal--fit-content .modal__content {
     width: 100%;
   }
 
+  .modal__article-wrapper {
+    width: 100%;
+  }
+
   .modal__article-title-start,
   .modal__article-title-autor {
     font-size: 14px;
-    line-height: 30px;
+    line-height: 24px;
     font-weight: 400;
     color: #ffffff;
     width: 90%;
   }
 
-  .modal__article-title-autor {
-    font-weight: 600;
-  }
-
   .modal__article-title {
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 26px;
+    line-height: 36px;
     font-weight: 600;
-    color: #ffffff;
+    color: #ff6060;
     width: 100%;
+    letter-spacing: 0.03em;
   }
 
   .modal__article-subtitle {
     font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
+    line-height: 22px;
+    font-weight: 500;
     color: #ffffff;
   }
 
+  .modal__article-text-wrapper {
+    margin-bottom: 15px;
+  }
+
   .modal__article-content-text {
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
     color: #ffffff;
     text-indent: 20px;
+    text-align: start;
   }
 
   .modal__article-content-text-preview {
@@ -4638,9 +4676,15 @@ button,
     height: auto;
   }
 
+  .modal__article-image:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
   .modal__article-image-title {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 20px;
     font-weight: 500;
     color: #ffeb3b;
     width: 90%;
@@ -4730,7 +4774,7 @@ button,
 
   .header__nav {
     border-bottom: none;
-    padding: 0;
+    padding: 10px 0 0 0;
   }
 
   .header__nav-categories {
@@ -4923,25 +4967,21 @@ button,
   }
 
   .categories__title {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 26px;
+    line-height: 32px;
     font-weight: 600;
     color: #dadada;
   }
 
   .categories__card-title {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
     color: #dadada;
   }
 
   .categories__image {
     min-height: 400px;
-  }
-
-  .categories__wrapper-swiper {
-    margin-bottom: 50px;
   }
 
   .categories__button--ecoeconomica-prev,
@@ -4978,6 +5018,7 @@ button,
     font-weight: 600;
     color: #ff6b6b;
     padding-top: 20px;
+    margin-bottom: 30px;
   }
 
   .preface__content {
@@ -5031,6 +5072,7 @@ button,
     line-height: 42px;
     font-weight: 600;
     color: #ff6b6b;
+    margin-bottom: 10px;
   }
 
   .museum-cards__list {
@@ -5042,8 +5084,15 @@ button,
     padding: 20px 15px 30px 15px;
   }
 
+  .museum__title-description {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #f0f0f0;
+  }
+
   .museum__card-image {
-    height: 200px;
+    height: 350px;
   }
 
   .afisha__list {

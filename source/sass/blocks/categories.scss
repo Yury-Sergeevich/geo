@@ -16,7 +16,7 @@
 .categories__title {
   position: relative;
 
-  @include font(34px, 42px, 500, #dadada);
+  @include font(36px, 48px, 700, #dadada);
   font-family: "Journalism", "Arial", sans-serif;
   margin: 0;
   margin-bottom: 20px;
@@ -26,8 +26,12 @@
 
   text-transform: uppercase;
 
+  @include vp-1023 {
+    @include font(32px, 38px, 600, #dadada);
+  }
+
   @include vp-767 {
-    @include font(20px, 28px, 600, #dadada);
+    @include font(26px, 32px, 600, #dadada);
   }
 }
 
@@ -42,13 +46,17 @@
 }
 
 .categories__new-card {
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  color: #ffeb3b;
-  background-color: #000000;
+  @include font(14px, 18px, 600, #ffeb3b);
+  font-family: "Arial", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  padding: 5px 10px;
+  border-radius: 50px;
+  background-color: #ff3b3b;
 }
 
 .categories__card-link {
@@ -64,29 +72,30 @@
 }
 
 .categories__card-title {
-  @include font(14px, 18px, 400, #dadada);
+  @include font(16px, 24px, 500, #dadada);
+  font-family: "Prata", "Arial", sans-serif;
 
   margin-top: auto;
   margin: 0;
 
   @include vp-1023 {
-    @include font(16px, 22px, 400, #dadada);
+    @include font(16px, 22px, 500, #dadada);
   }
 
   @include vp-767 {
-    @include font(16px, 22px, 400, #dadada);
+    @include font(15px, 20px, 500, #dadada);
   }
 }
 
 .categories__image-wrapper {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-radius: 20px;
   overflow: hidden;
 }
 
 .categories__image {
   width: 100%;
-  height: 300px;
+  height: 350px;
 
   object-fit: cover;
 
@@ -107,15 +116,7 @@
 
 .categories__wrapper-swiper {
   position: relative;
-  margin-bottom: 40px;
-
-  @include vp-1023 {
-    margin-bottom: 25px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 50px;
-  }
+  margin-bottom: 50px;
 }
 
 .categories__button {
@@ -205,5 +206,6 @@
   @include vp-767 {
     @include font(36px, 42px, 600, #ff6b6b);
     padding-top: 20px;
+    margin-bottom: 30px;
   }
 }

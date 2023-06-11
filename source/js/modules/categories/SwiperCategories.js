@@ -20,7 +20,7 @@ const initSwiperCategories = (swiper) => {
         },
 
         400: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           slidesPerGroup: 1,
           spaceBetween: 22,
           initialSlide: 1,
@@ -28,7 +28,7 @@ const initSwiperCategories = (swiper) => {
 
         500: {
           slidesPerView: 2,
-          slidesPerGroup: 1,
+          slidesPerGroup: 2,
           spaceBetween: 22,
           initialSlide: 1,
         },

@@ -20,7 +20,7 @@ const initSwiperArtCultural = (swiper) => {
         },
 
         400: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           slidesPerGroup: 1,
           spaceBetween: 22,
           initialSlide: 1,

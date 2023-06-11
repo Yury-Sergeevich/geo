@@ -24,6 +24,13 @@ const initSwiperTopNews = (swiper) => {
           initialSlide: 2,
         },
 
+        500: {
+          slidesPerView: 2,
+          slidesPerGroup: 1,
+          spaceBetween: 22,
+          initialSlide: 1,
+        },
+
         768: {
           slidesPerView: 2,
           slidesPerGroup: 1,
@@ -32,17 +39,24 @@ const initSwiperTopNews = (swiper) => {
         },
 
         1024: {
-          slidesPerView: 5,
+          slidesPerView: 4,
           slidesPerGroup: 2,
           spaceBetween: 30,
           initialSlide: 2,
+        },
+
+        1184: {
+          slidesPerView: 5,
+          slidesPerGroup: 1,
+          spaceBetween: 20,
+          initialSlide: 1,
         },
 
         1440: {
           slidesPerView: 5,
           slidesPerGroup: 1,
           spaceBetween: 30,
-          initialSlide: 0,
+          initialSlide: 1,
         },
       },
     });
