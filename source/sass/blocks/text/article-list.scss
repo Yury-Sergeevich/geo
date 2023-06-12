@@ -9,4 +9,8 @@
 
 .article-list__description-item {
   @include font(18px, 24px, 500, #f9efae);
+
+  @include vp-767 {
+    @include font(16px, 20px, 500, #f9efae);
+  }
 }

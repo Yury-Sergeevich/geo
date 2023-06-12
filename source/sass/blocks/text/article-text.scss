@@ -7,7 +7,7 @@
   user-select: none;
 
   @include vp-767 {
-    @include font(14px, 18px, 400, $second-color);
+    @include font(14px, 20px, 400, $second-color);
     text-indent: 20px;
   }
 }

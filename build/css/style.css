@@ -4202,11 +4202,11 @@ button,
 .afisha__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-  grid-template-columns: repeat(5, 1fr);
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
 }
 
 .afisha__item {
@@ -4236,16 +4236,16 @@ button,
 .afisha__item-image {
   height: 300px;
   margin: 0 auto;
+  border-radius: 20px;
 }
 
 .afisha__item-title {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 500;
   color: #dadada;
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 0;
 }
 
 .afisha__content {
@@ -4559,7 +4559,7 @@ button,
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 10px;
   }
 
   .btn {
@@ -4568,7 +4568,7 @@ button,
 
   .text-article__text {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     font-weight: 400;
     color: #ffffff;
     text-indent: 20px;
@@ -4578,8 +4578,15 @@ button,
     padding: 15px;
   }
 
+  .article-list__description-item {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #f9efae;
+  }
+
   .modal__wrapper {
-    padding: 15px 15px;
+    padding: 15px 10px;
   }
 
   .modal__content {
@@ -4629,9 +4636,9 @@ button,
   }
 
   .modal__article-content-text {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: #ffffff;
     text-indent: 20px;
     text-align: start;

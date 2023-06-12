@@ -129,6 +129,46 @@
                       <h3 class="promo-slider__slides-title">Особенности Большого Причерноморья</h3>
                     </a>
                   </li>
+                  <li class="promo-slider__slides-item swiper-slide">
+                    <a href="#" class="promo-slider__slides-link">
+                      <picture>
+                        <source type="image/webp" srcset="img/promo-slider/slide-3.webp" />
+                        <img class="promo-slider__slides-image" src="img/promo-slider/slide-3.jpg" loading="lazy" width="800" height="682" alt="Турнир по боксу" />
+                      </picture>
+                    </a>
+                  </li>
+                  <li class="promo-slider__slides-item swiper-slide">
+                    <a href="#" class="promo-slider__slides-link">
+                      <picture>
+                        <source type="image/webp" srcset="img/promo-slider/slide-4.webp" />
+                        <img class="promo-slider__slides-image" src="img/promo-slider/slide-4.jpg" loading="lazy" width="800" height="682" alt="Турнир по боксу" />
+                      </picture>
+                    </a>
+                  </li>
+                  <li class="promo-slider__slides-item swiper-slide">
+                    <a href="#" class="promo-slider__slides-link">
+                      <picture>
+                        <source type="image/webp" srcset="img/promo-slider/slide-5.webp" />
+                        <img class="promo-slider__slides-image" src="img/promo-slider/slide-5.jpg" loading="lazy" width="800" height="682" alt="Турнир по боксу" />
+                      </picture>
+                    </a>
+                  </li>
+                  <li class="promo-slider__slides-item swiper-slide">
+                    <a href="#" class="promo-slider__slides-link">
+                      <picture>
+                        <source type="image/webp" srcset="img/promo-slider/slide-6.webp" />
+                        <img class="promo-slider__slides-image" src="img/promo-slider/slide-6.jpg" loading="lazy" width="800" height="682" alt="Турнир по боксу" />
+                      </picture>
+                    </a>
+                  </li>
+                  <li class="promo-slider__slides-item swiper-slide">
+                    <a href="#" class="promo-slider__slides-link">
+                      <picture>
+                        <source type="image/webp" srcset="img/promo-slider/slide-7.webp" />
+                        <img class="promo-slider__slides-image" src="img/promo-slider/slide-7.jpg" loading="lazy" width="800" height="682" alt="Турнир по боксу" />
+                      </picture>
+                    </a>
+                  </li>
                 </ul>
                 <button class="promo-slider__button promo-slider__button--prev swiper-button-prev" type="button">
                   <svg class="promo-slider__button-icon promo-slider__button-icon--prev" role="img" aria-label="кнопка назад." width="16" height="32">
@@ -735,6 +775,16 @@
             <h2 class="museum__title">Афиша</h2>
             <ul class="afisha__list reset-list">
               <li class="afisha__item">
+                <a class="afisha__link" href="#" data-open-modal="happy">
+                  <div class="afisha__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/afisha/image-3.webp" />
+                      <img class="afisha__item-image" src="img/afisha/image-3.jpg" width="214" height="303" loading="lazy" alt="Турнир по боксу" />
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="afisha__item">
                 <a class="afisha__link" href="#" data-open-modal="visit-card">
                   <div class="afisha__image-wrapper">
                     <img class="afisha__item-image" src="img/logo/logo-dg.jpg" loading="lazy" width="214" height="303" alt="Визитная карточка" />
@@ -745,11 +795,10 @@
                 <a class="afisha__link" href="#" data-open-modal="boxing">
                   <div class="afisha__image-wrapper">
                     <picture>
-                      <source type="image/webp" srcset="img/afisha/IMG-20230518-WA0000.webp" />
-                      <img class="afisha__item-image" src="img/afisha/IMG-20230518-WA0000.jpg" width="214" height="303" loading="lazy" alt="Турнир по боксу" />
+                      <source type="image/webp" srcset="img/afisha/image-1.webp" />
+                      <img class="afisha__item-image" src="img/afisha/image-1.jpg" width="214" height="303" loading="lazy" alt="Турнир по боксу" />
                     </picture>
                   </div>
-                  <h3 class="afisha__item-title">Турнир по боксу "Великий Шелковый путь"</h3>
                 </a>
               </li>
             </ul>
@@ -4330,11 +4379,34 @@
           <div class="modal__overlay" data-close-modal></div>
           <div class="modal__content">
             <div class="modal__article-wrapper">
-              <h2 class="modal__article-title">Дисконтная визитка &laquo;Ди-Джи&raquo;</h2>
               <div class="modal__afisha-content">
                 <picture>
-                  <source type="image/webp" srcset="img/afisha/IMG-20230518-WA0000.webp" />
-                  <img class="modal__image" src="img/afisha/IMG-20230518-WA0000.jpg" width="214" height="303" alt="Турнир по боксу" />
+                  <source type="image/webp" srcset="img/afisha/image-1.webp" />
+                  <img class="modal__image" src="img/afisha/image-1.jpg" width="214" height="303" alt="Турнир по боксу" />
+                </picture>
+              </div>
+            </div>
+            <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+              <svg width="20" height="20" role="img">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--preload" data-modal="happy">
+        <div class="modal__wrapper">
+          <div class="modal__overlay" data-close-modal></div>
+          <div class="modal__content">
+            <div class="modal__article-wrapper">
+              <div class="modal__afisha-content">
+                <picture>
+                  <source type="image/webp" srcset="img/afisha/image-2.webp" />
+                  <img class="modal__image" src="img/afisha/image-2.jpg" width="214" height="303" alt="Турнир по боксу" />
+                </picture>
+                <picture>
+                  <source type="image/webp" srcset="img/afisha/image-3.webp" />
+                  <img class="modal__image" src="img/afisha/image-3.jpg" width="214" height="303" alt="Турнир по боксу" />
                 </picture>
               </div>
             </div>

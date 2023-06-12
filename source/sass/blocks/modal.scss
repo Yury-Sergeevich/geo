@@ -39,7 +39,7 @@
     padding: 30px 35px;
 
     @include vp-767 {
-      padding: 15px 15px;
+      padding: 15px 10px;
     }
   }
 
@@ -267,7 +267,7 @@
   user-select: none;
 
   @include vp-767 {
-    @include font(15px, 20px, 500, $second-color);
+    @include font(14px, 20px, 400, $second-color);
     text-indent: 20px;
     text-align: start;
   }
