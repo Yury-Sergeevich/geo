@@ -1619,7 +1619,24 @@ button,
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  text-align: center;
   margin: 0 auto 30px;
+}
+
+.article-image__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 25px;
+  -moz-column-gap: 25px;
+  column-gap: 25px;
+}
+
+.article-image {
+  padding: 30px 0;
+  margin: 0 auto;
+  height: 100%;
 }
 
 @font-face {
@@ -3314,7 +3331,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 78.11%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -4563,6 +4580,16 @@ button,
   margin: 0;
 }
 
+.brigth-crimea .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.brigth-crimea__content {
+  padding: 10px 15px;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1279px) {
   .container {
     padding: 0 60px;
@@ -4695,6 +4722,22 @@ button,
     line-height: 20px;
     font-weight: 500;
     color: #f9efae;
+  }
+
+  .title-article {
+    width: 100%;
+  }
+
+  .article-image__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: normal;
+    -moz-column-gap: normal;
+    column-gap: normal;
+  }
+
+  .article-image {
+    width: 100%;
   }
 
   .modal__wrapper {
@@ -5303,6 +5346,10 @@ button,
   .cooperation__list-cards {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .brigth-crimea__content {
+    padding: 10px 0;
   }
 }
 

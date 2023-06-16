@@ -1,0 +1,13 @@
+.brigth-crimea .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.brigth-crimea__content {
+  padding: 10px 15px;
+  margin-bottom: 30px;
+
+  @include vp-767 {
+    padding: 10px 0;
+  }
+}

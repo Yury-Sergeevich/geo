@@ -4,5 +4,10 @@
   letter-spacing: 0.05em;
   border-bottom: 1px solid #dedede;
   width: max-content;
+  text-align: center;
   margin: 0 auto 30px;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
