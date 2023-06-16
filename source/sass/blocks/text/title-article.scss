@@ -1,4 +1,8 @@
 .title-article {
-  @include font(28px, 34px, 700, #946bff);
-  text-align: center;
+  @include font(46px, 56px, 600, #ff6b6b);
+  font-family: "Journalism", "arial", sans-serif;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #dedede;
+  width: max-content;
+  margin: 0 auto 30px;
 }

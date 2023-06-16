@@ -1609,11 +1609,17 @@ button,
 }
 
 .title-article {
-  font-size: 28px;
-  line-height: 34px;
-  font-weight: 700;
-  color: #946bff;
-  text-align: center;
+  font-size: 46px;
+  line-height: 56px;
+  font-weight: 600;
+  color: #ff6b6b;
+  font-family: "Journalism", "arial", sans-serif;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #dedede;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 30px;
 }
 
 @font-face {
@@ -4481,6 +4487,82 @@ button,
   margin-bottom: 30px;
 }
 
+.cooperation__title {
+  font-size: 46px;
+  line-height: 56px;
+  font-weight: 600;
+  color: #ff6b6b;
+  font-family: "Journalism", "arial", sans-serif;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #dedede;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 30px;
+}
+
+.cooperation__wrapper-cards {
+  padding: 40px 50px;
+  min-height: 300px;
+}
+
+.cooperation__list-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cooperation__item-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #e4e1ec;
+  min-height: 200px;
+  width: 100%;
+  -webkit-box-shadow: -8px 8px 10px #000000, 8px -8px 10px #3c3c3c;
+  box-shadow: -8px 8px 10px #000000, 8px -8px 10px #3c3c3c;
+  border-radius: 10px;
+}
+
+.cooperation__card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.cooperation__card-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #5f5959;
+  font-family: "Journalism", "arial", sans-serif;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin: 0;
+}
+
 @media (max-width: 1279px) {
   .container {
     padding: 0 60px;
@@ -5212,6 +5294,15 @@ button,
 
   .boxing__promo-content {
     padding: 10px 0;
+  }
+
+  .cooperation__wrapper-cards {
+    padding: 20px 0;
+  }
+
+  .cooperation__list-cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
