@@ -13,6 +13,7 @@ import { initSwiperCategories } from './modules/categories/SwiperCategories';
 import { initAnimate } from './vendor/gspa-animate';
 import { videoEnabled } from './modules/video-burungi';
 import { openAboutDetail } from './modules/button-details';
+import { linkAnchor } from './utils/scroll-anchor';
 // import { initPreviewModal } from './modules/open-preview';
 // import { initFunctionPreviewModal } from './modules/modals/preview-modal';
 
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   videoEnabled();
+  linkAnchor();
 
   // Modules
   // ---------------------------------
