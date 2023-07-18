@@ -43,6 +43,10 @@
   position: relative;
   min-height: 310px;
   border-radius: 20px;
+
+  &:focus {
+    outline: 1px solid red;
+  }
 }
 
 .categories__new-card {

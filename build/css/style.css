@@ -3240,7 +3240,7 @@ button,
 .categories-menu__list {
   position: absolute;
   top: 50px;
-  left: 0;
+  left: -86px;
   opacity: 0;
   min-width: 265px;
   visibility: hidden;
@@ -3768,6 +3768,10 @@ button,
   position: relative;
   min-height: 310px;
   border-radius: 20px;
+}
+
+.categories__card:focus {
+  outline: 1px solid red;
 }
 
 .categories__new-card {

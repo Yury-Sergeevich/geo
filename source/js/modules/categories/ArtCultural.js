@@ -55,7 +55,7 @@ const initSwiperArtCultural = (swiper) => {
         },
 
         1184: {
-          slidesPerView: 5,
+          slidesPerView: 4,
           slidesPerGroup: 2,
           spaceBetween: 20,
           initialSlide: 3,
