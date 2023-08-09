@@ -1,0 +1,16 @@
+.map {
+  width: 100%;
+  height: 480px;
+  margin: 20px auto 50px;
+  // padding-top: 50px;
+  // padding-bottom: 50px;
+
+  @include vp-1023 {
+    width: 100%;
+    margin: 15px auto 25px;
+  }
+
+  @include vp-767 {
+    margin: 10px auto 15px;
+  }
+}
